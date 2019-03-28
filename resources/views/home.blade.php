@@ -1,6 +1,5 @@
 @extends('layout')
 
 @section('content')
-<example-component></example-component>
-
+<home></home>
 @endsection
