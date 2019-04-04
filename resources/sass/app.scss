@@ -5,10 +5,41 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+body {
+    margin: 0;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    &__logo {
+        display: inline-block;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+.fullpage-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    display: block;
+}
+
+.page-1 {
+    padding-top: 20vh;
+    height: 100vh !important;
+    background-color: $pink;
+}
+
+.page-2 {
+    background-color: $blue;
 }

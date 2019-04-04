@@ -1,23 +1,43 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
+<div class="fullpage-container">
+    <div class="navbar">
+        <a href="/" alt="Statement Making" class="navbar__logo"><img src="/img/logo.png" alt="Statement Making Logo"></a>
+    </div>
+    <div class="fullpage-wp" v-fullpage="opts" ref="example">
+        <div class="page-1 page">
+        </div>
+        <div class="page-2 page">
+        </div>
+        <div class="page-3 page">
 
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
+export default {
+    mounted() {
+        console.log('Component mounted.')
+    },
+    data() {
+      return {
+        opts: {
+          start: 0,
+          dir: 'v',
+          loop: false,
+          duration: 300,
+          beforeChange: function (currentSlideEl,currenIndex,nextIndex) {
+          },
+          afterChange: function (currentSlideEl,currenIndex,nextIndex) {
+          }
         }
+      }
+    },
+    methods: {
+      moveNext(){
+        this.$refs.example.$fullpage.moveNext(); //Move to the next page
+      }
     }
+}
 </script>
