@@ -5,11 +5,13 @@
 // Variables
 @import 'variables';
 
+@import '~bootstrap/scss/bootstrap';
+
 body {
     margin: 0;
 }
-.navbar {
-    position: absolute;
+.header {
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
@@ -20,6 +22,18 @@ body {
             width: 150px;
             height: 150px;
         }
+    }
+
+    &__navbar {
+      &__item {
+        list-style: none;
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+      }
     }
 }
 .fullpage-container {
@@ -38,8 +52,32 @@ body {
     padding-top: 20vh;
     height: 100vh !important;
     background-color: $pink;
+
+    position: relative;
+
+    .blue-rec {
+      position: absolute;
+      margin-left: -253px;
+      margin-top: -360px;
+      z-index: 3;
+    }
+
+    .yellow-rec {
+      position: absolute;
+      margin-top: -450px;
+      margin-left: -400px;
+      z-index: 2;
+    }
+    .lblue-rec {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: -60px;
+      z-index: 1;
+    }
+
+
 }
 
 .page-2 {
-    background-color: $blue;
+    background-color: $orange;
 }

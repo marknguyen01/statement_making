@@ -142,6 +142,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -1877,7 +1892,7 @@ var render = function() {
         staticClass: "fullpage-wp"
       },
       [
-        _c("div", { staticClass: "page-1 page" }),
+        _vm._m(1),
         _vm._v(" "),
         _c("div", { staticClass: "page-2 page" }),
         _vm._v(" "),
@@ -1891,19 +1906,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar" }, [
-      _c(
-        "a",
-        {
-          staticClass: "navbar__logo",
-          attrs: { href: "/", alt: "Statement Making" }
-        },
-        [
-          _c("img", {
-            attrs: { src: "/img/logo.png", alt: "Statement Making Logo" }
-          })
-        ]
-      )
+    return _c("header", { staticClass: "header" }, [
+      _c("nav", { staticClass: "navbar navbar-expand-sm" }, [
+        _c(
+          "a",
+          {
+            staticClass: "header__logo navbar-brand",
+            attrs: { href: "/", alt: "Statement Making" }
+          },
+          [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "/img/logo.png", alt: "Statement Making Logo" }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c("ul", { staticClass: "header__navbar navbar-nav mr-auto" }, [
+          _c(
+            "li",
+            { staticClass: "header__navbar__item nav-item active px-3" },
+            [
+              _c("a", { staticClass: "nav-link", attrs: { href: "#home" } }, [
+                _vm._v("Home")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("li", { staticClass: "header__navbar__item nav-item px-3" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#contact" } }, [
+              _vm._v("Contact")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "page-1 page" }, [
+      _c("img", {
+        staticClass: "blue-rec",
+        attrs: { src: "/img/blue_rec.svg" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "yellow-rec",
+        attrs: { src: "/img/yellow_rec.svg" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "lblue-rec",
+        attrs: { src: "/img/lblue_rec.svg" }
+      })
     ])
   }
 ]
@@ -14138,8 +14195,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Project\statement_making\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Project\statement_making\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Projects\Websites\statement_making\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Projects\Websites\statement_making\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
