@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "animate.css": "^3.7.0",
-        "fullpage-vue": "^1.8.3"
+        "fullpage-vue": "^1.8.3",
+        "vue-carousel": "^0.18.0"
     }
 }

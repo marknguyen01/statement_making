@@ -9,12 +9,14 @@
 
 body {
     margin: 0;
+    color: $text-primary-color;
 }
 .header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
+    width: 100vw;
 
     &__logo {
         display: inline-block;
@@ -28,13 +30,37 @@ body {
       &__item {
         list-style: none;
           a {
+              transition: color 0.3s;
             text-decoration: none;
-            color: $white;
+            color: $white !important;
+            cursor: pointer;
             font-size: 1.5rem;
             font-weight: bold;
+
+            &::before {
+                font-weight: normal;
+                position: relative;
+                top: 25px;
+                left: 50%;
+                color: transparent;
+                content: '•';
+                text-shadow: 0 0 transparent;
+                font-size: 1em;
+                transition: text-shadow 0.3s, color 0.3s;
+                transform: translateX(-50%);
+                pointer-events: none;
+            }
+            &.active::before, &:hover::before, &:focus::before {
+                color: #fff;
+                text-shadow: 15px 0 #fff, -15px 0 #fff;
+            }
           }
       }
     }
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
 }
 .fullpage-container {
     position: absolute;
@@ -42,42 +68,114 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
-
+.fullpage-wp {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fullpage-wp.anim {
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 500ms ease-out 0s;
+    transition: all 500ms ease-out 0s;
+}
+.fullpage-wp.fullpage-wp-h {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .page {
+    box-sizing: border-box;
     display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.animated {
+    opacity: 1;
 }
 
 .page-1 {
     padding-top: 20vh;
-    height: 100vh !important;
     background-color: $pink;
 
     position: relative;
 
     .blue-rec {
-      position: absolute;
-      margin-left: -253px;
-      margin-top: -360px;
       z-index: 3;
     }
 
     .yellow-rec {
-      position: absolute;
-      margin-top: -450px;
-      margin-left: -400px;
       z-index: 2;
     }
-    .lblue-rec {
-      position: absolute;
-      margin-top: 20px;
-      margin-left: -60px;
+    .teal-rec {
       z-index: 1;
+    }
+
+    .shape {
+        transition: 0.5s;
+        position: absolute;
     }
 
 
 }
-
+$bar-heading-margin: 8px;
+$heading-content-margin: $bar-heading-margin * 2;
 .page-2 {
     background-color: $orange;
+    padding-top: calc(200px + 3rem);
+    padding-left: 20vw;
+    padding-right: 20vw;
+    h2 {
+        text-transform: uppercase;
+        color: $white;
+        font-weight: bold;
+
+        &:first-of-type {
+            margin-bottom: $heading-content-margin
+        }
+        &:last-of-type {
+            margin-top: $heading-content-margin
+        }
+    }
+    .white-bar {
+        width: 100%;
+        height: 5px;
+        background-color: $white;
+        &:first-of-type {
+            margin-bottom: $bar-heading-margin;
+        }
+    }
+    .content {
+        background-color: $white;
+        padding: 5vh 1.35rem;
+        letter-spacing: 2px;
+    }
+}
+
+.page-3 {
+    background-color: $blue;
+
+    .VueCarousel-slide {
+        text-align: center;
+
+        img {
+            max-height: 80vh;
+        }
+    }
+}
+
+.page-4 {
+    background-color: $red;
+}
+
+.page-5 {
+    background-color: $pink;
 }
