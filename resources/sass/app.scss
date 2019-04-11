@@ -1,16 +1,13 @@
-
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
-
-// Variables
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,600'); // Variables
 @import 'variables';
-
 @import '~bootstrap/scss/bootstrap';
 
 body {
     margin: 0;
     color: $text-primary-color;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -20,48 +17,54 @@ body {
 
     &__logo {
         display: inline-block;
+
         img {
-            width: 150px;
-            height: 150px;
+            width: 90px;
+            height: 90px;
         }
     }
 
     &__navbar {
-      &__item {
-        list-style: none;
-          a {
-              transition: color 0.3s;
-            text-decoration: none;
-            color: $white !important;
-            cursor: pointer;
-            font-size: 1.5rem;
-            font-weight: bold;
+        &__item {
+            list-style: none;
 
-            &::before {
-                font-weight: normal;
-                position: relative;
-                top: 25px;
-                left: 50%;
-                color: transparent;
-                content: '•';
-                text-shadow: 0 0 transparent;
-                font-size: 1em;
-                transition: text-shadow 0.3s, color 0.3s;
-                transform: translateX(-50%);
-                pointer-events: none;
+            a {
+                transition: color 0.3s;
+                text-decoration: none;
+                color: $white !important;
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: bold;
+
+                &::before {
+                    font-weight: normal;
+                    position: relative;
+                    top: 25px;
+                    left: 50%;
+                    color: transparent;
+                    content: '•';
+                    text-shadow: 0 0 transparent;
+                    font-size: 1em;
+                    transition: text-shadow 0.3s, color 0.3s;
+                    transform: translateX(-50%);
+                    pointer-events: none;
+                }
+
+                &.active::before,
+                &:focus::before,
+                &:hover::before {
+                    color: #fff;
+                    text-shadow: 15px 0 #fff, -15px 0 #fff;
+                }
             }
-            &.active::before, &:hover::before, &:focus::before {
-                color: #fff;
-                text-shadow: 15px 0 #fff, -15px 0 #fff;
-            }
-          }
-      }
+        }
     }
 }
 
 * {
     -webkit-overflow-scrolling: touch;
 }
+
 .fullpage-container {
     position: absolute;
     left: 0;
@@ -70,6 +73,7 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
 .fullpage-wp {
     display: flex;
     width: 100%;
@@ -78,17 +82,20 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+
 .fullpage-wp.anim {
     transform: translate3d(0, 0, 0);
     -webkit-transition: all 500ms ease-out 0s;
     transition: all 500ms ease-out 0s;
 }
+
 .fullpage-wp.fullpage-wp-h {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
 }
+
 .page {
     box-sizing: border-box;
     display: block;
@@ -98,6 +105,7 @@ body {
     flex-shrink: 0;
     overflow: hidden;
 }
+
 .animated {
     opacity: 1;
 }
@@ -105,58 +113,83 @@ body {
 .page-1 {
     padding-top: 20vh;
     background-color: $pink;
-
     position: relative;
 
     .blue-rec {
-      z-index: 3;
+        z-index: 3;
     }
 
     .yellow-rec {
-      z-index: 2;
+        z-index: 2;
     }
+
     .teal-rec {
-      z-index: 1;
+        z-index: 1;
     }
 
     .shape {
-        transition: 0.3s;
+        transition: 0.5s;
         position: absolute;
     }
-
-
 }
 $bar-heading-margin: 8px;
 $heading-content-margin: $bar-heading-margin * 2;
-.page-2 {
-    background-color: $orange;
-    padding-top: calc(200px + 3rem);
-    padding-left: 20vw;
-    padding-right: 20vw;
-    h2 {
-        text-transform: uppercase;
-        color: $white;
-        font-weight: bold;
 
-        &:first-of-type {
-            margin-bottom: $heading-content-margin
+.about {
+    background-color: $orange;
+    // padding-top: calc(200px + 3rem);
+    // padding-left: 20vw;
+    // padding-right: 20vw;
+    &__body {
+        top: 50%;
+        position: relative;
+        transform: translatey(-50%);
+        padding: 0 5vw;
+        @include media-breakpoint-up(md) {
+            padding: 0 10vw;
         }
-        &:last-of-type {
-            margin-top: $heading-content-margin
+        @include media-breakpoint-up(lg) {
+            padding: 0 20vw;
         }
-    }
-    .white-bar {
-        width: 100%;
-        height: 5px;
-        background-color: $white;
-        &:first-of-type {
-            margin-bottom: $bar-heading-margin;
+
+        &__bar {
+            width: 100%;
+            height: 5px;
+            background-color: $white;
+
+            &:first-of-type {
+                margin-bottom: $bar-heading-margin;
+            }
         }
-    }
-    .content {
-        background-color: $white;
-        padding: 5vh 1.35rem;
-        letter-spacing: 2px;
+
+        &__content {
+            background-color: $white;
+            padding: 5vh 1.35rem;
+            letter-spacing: 2px;
+            font-size: $h4-font-size;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            color: $white;
+            font-weight: bold;
+            font-size: $h4-font-size;
+            @include media-breakpoint-up(md) {
+                font-size: $h3-font-size;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: $h2-font-size;
+            }
+
+
+            &:first-of-type {
+                margin-bottom: $heading-content-margin;
+            }
+
+            &:last-of-type {
+                margin-top: $heading-content-margin;
+            }
+        }
     }
 }
 
@@ -178,4 +211,27 @@ $heading-content-margin: $bar-heading-margin * 2;
 
 .page-5 {
     background-color: $pink;
+
+    .contact__form {
+        color: $white;
+        @extend .about__body;
+
+        .form {
+            &__submit {
+                border: 3px solid white;
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+                width: 100%;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+        label {
+            font-weight: 600;
+            font-size: $h4-font-size;
+        }
+    }
 }

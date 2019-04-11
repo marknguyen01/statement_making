@@ -1,13 +1,15 @@
 <template>
 <div class="fullpage-container">
     <header class="header">
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand">
             <a href="/" alt="Statement Making" class="header__logo navbar-brand">
                 <img src="/img/logo.png" class="img-fluid" alt="Statement Making Logo">
             </a>
             <ul class="header__navbar navbar-nav mr-auto">
                 <li class="header__navbar__item nav-item active px-3">
-                    <a :class="{active:index == 0}" class="nav-link" @click="moveTo(0)">Home</a>
+                    <a :class="{active:index == 0}" class="nav-link" @click="moveTo(0)">
+                        Home
+                    </a>
                 </li>
                 <li class="header__navbar__item nav-item px-3">
                     <a :class="{active:index == 1}" class="nav-link" @click="moveTo(1)">About</a>
@@ -25,19 +27,21 @@
         </nav>
     </header>
     <div class="fullpage-wp" v-fullpage="opts" ref="fullpage">
-        <div class="page-1 page" @mousemove="moveShapes">
+        <div class="page-1 page home" @mousemove="moveShapes">
             <img src="/img/blue_rec.svg" class="blue-rec shape" :style="{marginLeft: blue.left + 'px', marginTop: blue.top + 'px'}">
             <img src="/img/yellow_rec.svg" class="yellow-rec shape" :style="{marginLeft: yellow.left + 'px', marginTop: yellow.top + 'px'}">
             <img src="/img/teal_rec.svg" class="teal-rec shape" :style="{marginLeft: teal.left + 'px', marginTop: teal.top + 'px'}">
         </div>
-        <div class="page-2 page">
-            <div class="white-bar"></div>
-            <h2>Be a part of UNCC's first</h2>
-            <h4 class="content">statement making showcases technological advancements in fashion and wearable technology</h4>
-            <h2>Campus wide maker fashion show!</h2>
-            <div class="white-bar"></div>
+        <div class="page-2 page about">
+            <div class="about__body">
+                <div class="about__body__bar"></div>
+                <div class="about__body__title">Be a part of UNCC's first</div>
+                <div class="about__body__content">statement making showcases technological advancements in fashion and wearable technology</div>
+                <div class="about__body__title">Campus wide maker fashion show!</div>
+                <div class="about__body__bar"></div>
+            </div>
         </div>
-        <div class="page-3 page">
+        <div class="page-3 page gallery">
             <div class="row">
                 <div class="col-12 col-lg-8">
                     stylesheet
@@ -60,9 +64,26 @@
                 </div>
             </div>
         </div>
-        <div class="page-4 page">
+        <div class="page-4 page event">
         </div>
-        <div class="page-5 page">
+        <div class="page-5 page contact">
+            <form action="/contact" method="POST" class="contact__form">
+                <div class="form-row mb-3">
+                    <div class="col-md-6 col-12">
+                        <label for="form__email">Email address</label>
+                        <input type="email" class="form-control" id="form__email" placeholder="Your email" name="email" required>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="form__name">Name</label>
+                        <input type="text" class="form-control" id="form__name" placeholder="Your name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label form="form__message">Message</label>
+                    <textarea class="form-control" id="form__message" placeholder="Your message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn form__submit">Submit</button>
+            </form>
         </div>
     </div>
 </div>
@@ -126,9 +147,9 @@ export default {
             let windowWidth = window.innerWidth;
             let windowHeight = window.innerHeight;
 
-                this.blue.left = this.blue.defLeft + (mouseX / 10);
-                this.yellow.left = this.yellow.defLeft + (mouseX / 10);;
-                this.teal.left = this.teal.defLeft + (mouseX / 10);
+            this.blue.left = this.blue.defLeft + (mouseX / 10);
+            this.yellow.left = this.yellow.defLeft + (mouseX / 10);;
+            this.teal.left = this.teal.defLeft + (mouseX / 10);
 
 
             this.blue.top = this.blue.defTop + (mouseY / 8);

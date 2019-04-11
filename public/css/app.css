@@ -10673,8 +10673,8 @@ body {
 }
 
 .header__logo img {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
 }
 
 .header__navbar__item {
@@ -10706,8 +10706,8 @@ body {
 }
 
 .header__navbar__item a.active::before,
-.header__navbar__item a:hover::before,
-.header__navbar__item a:focus::before {
+.header__navbar__item a:focus::before,
+.header__navbar__item a:hover::before {
   color: #fff;
   text-shadow: 15px 0 #fff, -15px 0 #fff;
 }
@@ -10780,45 +10780,79 @@ body {
 }
 
 .page-1 .shape {
-  transition: 0.3s;
+  transition: 0.5s;
   position: absolute;
 }
 
-.page-2 {
+.about {
   background-color: #F68B1F;
-  padding-top: calc(200px + 3rem);
-  padding-left: 20vw;
-  padding-right: 20vw;
 }
 
-.page-2 h2 {
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: bold;
+.about__body,
+.page-5 .contact__form {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  padding: 0 5vw;
 }
 
-.page-2 h2:first-of-type {
-  margin-bottom: 16px;
+@media (min-width: 768px) {
+  .about__body,
+  .page-5 .contact__form {
+    padding: 0 10vw;
+  }
 }
 
-.page-2 h2:last-of-type {
-  margin-top: 16px;
+@media (min-width: 992px) {
+  .about__body,
+  .page-5 .contact__form {
+    padding: 0 20vw;
+  }
 }
 
-.page-2 .white-bar {
+.about__body__bar {
   width: 100%;
   height: 5px;
   background-color: #fff;
 }
 
-.page-2 .white-bar:first-of-type {
+.about__body__bar:first-of-type {
   margin-bottom: 8px;
 }
 
-.page-2 .content {
+.about__body__content {
   background-color: #fff;
   padding: 5vh 1.35rem;
   letter-spacing: 2px;
+  font-size: 1.35rem;
+}
+
+.about__body__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+@media (min-width: 768px) {
+  .about__body__title {
+    font-size: 1.575rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about__body__title {
+    font-size: 1.8rem;
+  }
+}
+
+.about__body__title:first-of-type {
+  margin-bottom: 16px;
+}
+
+.about__body__title:last-of-type {
+  margin-top: 16px;
 }
 
 .page-3 {
@@ -10839,5 +10873,26 @@ body {
 
 .page-5 {
   background-color: #ED5C85;
+}
+
+.page-5 .contact__form {
+  color: #fff;
+}
+
+.page-5 .contact__form .form__submit {
+  border: 3px solid white;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.page-5 .contact__form textarea {
+  resize: none;
+}
+
+.page-5 .contact__form label {
+  font-weight: 600;
+  font-size: 1.35rem;
 }
 

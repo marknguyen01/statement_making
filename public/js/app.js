@@ -195,6 +195,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -1924,7 +1945,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "fullpage-container" }, [
     _c("header", { staticClass: "header" }, [
-      _c("nav", { staticClass: "navbar navbar-expand-sm" }, [
+      _c("nav", { staticClass: "navbar navbar-expand" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("ul", { staticClass: "header__navbar navbar-nav mr-auto" }, [
@@ -1943,7 +1964,11 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Home")]
+                [
+                  _vm._v(
+                    "\r\n                        Home\r\n                    "
+                  )
+                ]
               )
             ]
           ),
@@ -2032,7 +2057,10 @@ var render = function() {
       [
         _c(
           "div",
-          { staticClass: "page-1 page", on: { mousemove: _vm.moveShapes } },
+          {
+            staticClass: "page-1 page home",
+            on: { mousemove: _vm.moveShapes }
+          },
           [
             _c("img", {
               staticClass: "blue-rec shape",
@@ -2065,7 +2093,7 @@ var render = function() {
         _vm._v(" "),
         _vm._m(1),
         _vm._v(" "),
-        _c("div", { staticClass: "page-3 page" }, [
+        _c("div", { staticClass: "page-3 page gallery" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-12 col-lg-8" }, [
               _vm._v("\r\n                    stylesheet\r\n                ")
@@ -2103,9 +2131,9 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "page-4 page" }),
+        _c("div", { staticClass: "page-4 page event" }),
         _vm._v(" "),
-        _c("div", { staticClass: "page-5 page" })
+        _vm._m(2)
       ]
     )
   ])
@@ -2133,20 +2161,97 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "page-2 page" }, [
-      _c("div", { staticClass: "white-bar" }),
-      _vm._v(" "),
-      _c("h2", [_vm._v("Be a part of UNCC's first")]),
-      _vm._v(" "),
-      _c("h4", { staticClass: "content" }, [
-        _vm._v(
-          "statement making showcases technological advancements in fashion and wearable technology"
-        )
-      ]),
-      _vm._v(" "),
-      _c("h2", [_vm._v("Campus wide maker fashion show!")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "white-bar" })
+    return _c("div", { staticClass: "page-2 page about" }, [
+      _c("div", { staticClass: "about__body" }, [
+        _c("div", { staticClass: "about__body__bar" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__title" }, [
+          _vm._v("Be a part of UNCC's first")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__content" }, [
+          _vm._v(
+            "statement making showcases technological advancements in fashion and wearable technology"
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__title" }, [
+          _vm._v("Campus wide maker fashion show!")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__bar" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "page-5 page contact" }, [
+      _c(
+        "form",
+        {
+          staticClass: "contact__form",
+          attrs: { action: "/contact", method: "POST" }
+        },
+        [
+          _c("div", { staticClass: "form-row mb-3" }, [
+            _c("div", { staticClass: "col-md-6 col-12" }, [
+              _c("label", { attrs: { for: "form__email" } }, [
+                _vm._v("Email address")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "email",
+                  id: "form__email",
+                  placeholder: "Your email",
+                  name: "email",
+                  required: ""
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 col-12" }, [
+              _c("label", { attrs: { for: "form__name" } }, [_vm._v("Name")]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  id: "form__name",
+                  placeholder: "Your name",
+                  name: "name",
+                  required: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group mb-3" }, [
+            _c("label", { attrs: { form: "form__message" } }, [
+              _vm._v("Message")
+            ]),
+            _vm._v(" "),
+            _c("textarea", {
+              staticClass: "form-control",
+              attrs: {
+                id: "form__message",
+                placeholder: "Your message",
+                name: "message",
+                required: ""
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            { staticClass: "btn form__submit", attrs: { type: "submit" } },
+            [_vm._v("Submit")]
+          )
+        ]
+      )
     ])
   }
 ]
