@@ -204,9 +204,9 @@ __webpack_require__.r(__webpack_exports__);
     return {
       blue: {
         defLeft: -255,
-        defTop: -360,
+        defTop: -390,
         left: -255,
-        top: -360
+        top: -390
       },
       yellow: {
         defLeft: -400,
@@ -249,18 +249,10 @@ __webpack_require__.r(__webpack_exports__);
       var mouseY = event.clientY;
       var windowWidth = window.innerWidth;
       var windowHeight = window.innerHeight;
-
-      if (mouseX > windowWidth / 2) {
-        this.blue.left = this.blue.defLeft + mouseX / 10;
-        this.yellow.left = this.yellow.defLeft + mouseX / 10;
-        ;
-        this.teal.left = this.teal.defLeft + mouseX / 10;
-      } else {
-        this.blue.left = this.blue.defLeft;
-        this.yellow.left = this.yellow.defLeft;
-        this.teal.left = this.teal.defLeft;
-      }
-
+      this.blue.left = this.blue.defLeft + mouseX / 10;
+      this.yellow.left = this.yellow.defLeft + mouseX / 10;
+      ;
+      this.teal.left = this.teal.defLeft + mouseX / 10;
       this.blue.top = this.blue.defTop + mouseY / 8;
       this.yellow.top = this.yellow.defTop + mouseY / 8;
       ;
