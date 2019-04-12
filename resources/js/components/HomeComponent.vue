@@ -6,22 +6,35 @@
                 <img src="/img/logo.png" class="img-fluid" alt="Statement Making Logo">
             </a>
             <ul class="header__navbar navbar-nav mr-auto">
-                <li class="header__navbar__item nav-item active px-3">
+                <li class="header__navbar__item nav-item active px-lg-3 px-1">
                     <a :class="{active:index == 0}" class="nav-link" @click="moveTo(0)">
-                        Home
+                        <i class="fas fa-home d-block d-md-none"></i>
+                        <span class="d-none d-md-inline-block">Home</span>
                     </a>
                 </li>
-                <li class="header__navbar__item nav-item px-3">
-                    <a :class="{active:index == 1}" class="nav-link" @click="moveTo(1)">About</a>
+                <li class="header__navbar__item nav-item px-lg-3 px-1">
+                    <a :class="{active:index == 1}" class="nav-link" @click="moveTo(1)">
+                      <i class="fas fa-info d-block d-md-none"></i>
+                      <span class="d-none d-md-inline-block">About</span>
+                    </a>
                 </li>
-                <li class="header__navbar__item nav-item px-3">
-                    <a :class="{active:index == 2}" class="nav-link" @click="moveTo(2)">Gallery</a>
+                <li class="header__navbar__item nav-item px-lg-3 px-1">
+                    <a :class="{active:index == 2}" class="nav-link" @click="moveTo(2)">
+                      <i class="fas fa-images d-block d-md-none"></i>
+                      <span class="d-none d-md-inline-block">Gallery</span>
+                    </a>
                 </li>
-                <li class="header__navbar__item nav-item px-3">
-                    <a :class="{active:index == 3}" class="nav-link" @click="moveTo(3)">Events</a>
+                <li class="header__navbar__item nav-item px-lg-3 px-1">
+                    <a :class="{active:index == 3}" class="nav-link" @click="moveTo(3)">
+                      <i class="fas fa-calendar-alt d-block d-md-none"></i>
+                      <span class="d-none d-md-inline-block">Events</span>
+                    </a>
                 </li>
-                <li class="header__navbar__item nav-item px-3">
-                    <a :class="{active:index == 4}" class="nav-link" @click="moveTo(4)">Contact</a>
+                <li class="header__navbar__item nav-item px-lg-3 px-1">
+                    <a :class="{active:index == 4}" class="nav-link" @click="moveTo(4)">
+                      <i class="fas fa-envelope-open-text d-block d-md-none"></i>
+                      <span class="d-none d-md-inline-block">Contact</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -31,17 +44,39 @@
             <img src="/img/blue_rec.svg" class="blue-rec shape" :style="{marginLeft: blue.left + 'px', marginTop: blue.top + 'px'}">
             <img src="/img/yellow_rec.svg" class="yellow-rec shape" :style="{marginLeft: yellow.left + 'px', marginTop: yellow.top + 'px'}">
             <img src="/img/teal_rec.svg" class="teal-rec shape" :style="{marginLeft: teal.left + 'px', marginTop: teal.top + 'px'}">
+            <div class="home__heading">ready to make a <span class="font-weight-bold title-font">STATEMENT</span>
+            </div>
+            <div class="home__scroll" @click="moveTo(1)">
+              scroll to learn more...
+            </div>
+            <div class="home__model">
+              <img src="/img/model.png" class="home__model__image">
+              <div class="model__content">
+                <div class="content__heading mb-3">
+                  <span class="title-font">Statement </span>
+                  <p>making</p>
+                </div>
+                <div class="content__body">
+                  Thursday March 15th<br>
+                  7PM Storrs Atrium<br><br>
+                  Digital Fabrication.<br>
+                  Connection.<br>
+                  Fashion.
+                </div>
+              </div>
+            </div>
         </div>
         <div class="page-2 page about">
             <div class="about__body">
                 <div class="about__body__bar"></div>
-                <div class="about__body__title">Be a part of UNCC's first</div>
+                <div class="about__body__title mb-5">Be a part of UNCC's first</div>
                 <div class="about__body__content">statement making showcases technological advancements in fashion and wearable technology</div>
-                <div class="about__body__title">Campus wide maker fashion show!</div>
+                <div class="about__body__title mt-5">Campus wide maker fashion show!</div>
                 <div class="about__body__bar"></div>
             </div>
         </div>
         <div class="page-3 page gallery">
+          <div class="gallery__body">
             <div class="row">
                 <div class="col-12 col-lg-8">
                     stylesheet
@@ -63,6 +98,7 @@
                     </carousel>
                 </div>
             </div>
+          </div>
         </div>
         <div class="page-4 page event">
         </div>
@@ -98,10 +134,10 @@ export default {
         let that = this;
         return {
             blue: {
-                defLeft: -255,
-                defTop: -390,
-                left: -255,
-                top: -390,
+                defLeft: -580,
+                defTop: -480,
+                left: -580,
+                top: -480,
             },
             yellow: {
                 defLeft: -400,

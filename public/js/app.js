@@ -216,6 +216,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -224,10 +260,10 @@ __webpack_require__.r(__webpack_exports__);
     var that = this;
     return {
       blue: {
-        defLeft: -255,
-        defTop: -390,
-        left: -255,
-        top: -390
+        defLeft: -580,
+        defTop: -480,
+        left: -580,
+        top: -480
       },
       yellow: {
         defLeft: -400,
@@ -1951,7 +1987,9 @@ var render = function() {
         _c("ul", { staticClass: "header__navbar navbar-nav mr-auto" }, [
           _c(
             "li",
-            { staticClass: "header__navbar__item nav-item active px-3" },
+            {
+              staticClass: "header__navbar__item nav-item active px-lg-3 px-1"
+            },
             [
               _c(
                 "a",
@@ -1965,77 +2003,123 @@ var render = function() {
                   }
                 },
                 [
-                  _vm._v(
-                    "\r\n                        Home\r\n                    "
-                  )
+                  _c("i", { staticClass: "fas fa-home d-block d-md-none" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "d-none d-md-inline-block" }, [
+                    _vm._v("Home")
+                  ])
                 ]
               )
             ]
           ),
           _vm._v(" "),
-          _c("li", { staticClass: "header__navbar__item nav-item px-3" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                class: { active: _vm.index == 1 },
-                on: {
-                  click: function($event) {
-                    return _vm.moveTo(1)
+          _c(
+            "li",
+            { staticClass: "header__navbar__item nav-item px-lg-3 px-1" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link",
+                  class: { active: _vm.index == 1 },
+                  on: {
+                    click: function($event) {
+                      return _vm.moveTo(1)
+                    }
                   }
-                }
-              },
-              [_vm._v("About")]
-            )
-          ]),
+                },
+                [
+                  _c("i", { staticClass: "fas fa-info d-block d-md-none" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "d-none d-md-inline-block" }, [
+                    _vm._v("About")
+                  ])
+                ]
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("li", { staticClass: "header__navbar__item nav-item px-3" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                class: { active: _vm.index == 2 },
-                on: {
-                  click: function($event) {
-                    return _vm.moveTo(2)
+          _c(
+            "li",
+            { staticClass: "header__navbar__item nav-item px-lg-3 px-1" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link",
+                  class: { active: _vm.index == 2 },
+                  on: {
+                    click: function($event) {
+                      return _vm.moveTo(2)
+                    }
                   }
-                }
-              },
-              [_vm._v("Gallery")]
-            )
-          ]),
+                },
+                [
+                  _c("i", { staticClass: "fas fa-images d-block d-md-none" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "d-none d-md-inline-block" }, [
+                    _vm._v("Gallery")
+                  ])
+                ]
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("li", { staticClass: "header__navbar__item nav-item px-3" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                class: { active: _vm.index == 3 },
-                on: {
-                  click: function($event) {
-                    return _vm.moveTo(3)
+          _c(
+            "li",
+            { staticClass: "header__navbar__item nav-item px-lg-3 px-1" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link",
+                  class: { active: _vm.index == 3 },
+                  on: {
+                    click: function($event) {
+                      return _vm.moveTo(3)
+                    }
                   }
-                }
-              },
-              [_vm._v("Events")]
-            )
-          ]),
+                },
+                [
+                  _c("i", {
+                    staticClass: "fas fa-calendar-alt d-block d-md-none"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "d-none d-md-inline-block" }, [
+                    _vm._v("Events")
+                  ])
+                ]
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("li", { staticClass: "header__navbar__item nav-item px-3" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                class: { active: _vm.index == 4 },
-                on: {
-                  click: function($event) {
-                    return _vm.moveTo(4)
+          _c(
+            "li",
+            { staticClass: "header__navbar__item nav-item px-lg-3 px-1" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link",
+                  class: { active: _vm.index == 4 },
+                  on: {
+                    click: function($event) {
+                      return _vm.moveTo(4)
+                    }
                   }
-                }
-              },
-              [_vm._v("Contact")]
-            )
-          ])
+                },
+                [
+                  _c("i", {
+                    staticClass: "fas fa-envelope-open-text d-block d-md-none"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "d-none d-md-inline-block" }, [
+                    _vm._v("Contact")
+                  ])
+                ]
+              )
+            ]
+          )
         ])
       ])
     ]),
@@ -2087,53 +2171,76 @@ var render = function() {
                 marginTop: _vm.teal.top + "px"
               },
               attrs: { src: "/img/teal_rec.svg" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "page-3 page gallery" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12 col-lg-8" }, [
-              _vm._v("\r\n                    stylesheet\r\n                ")
-            ]),
+            }),
+            _vm._v(" "),
+            _vm._m(1),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "col-12 col-lg-4" },
+              {
+                staticClass: "home__scroll",
+                on: {
+                  click: function($event) {
+                    return _vm.moveTo(1)
+                  }
+                }
+              },
               [
-                _c(
-                  "carousel",
-                  { attrs: { perPage: 1 } },
-                  [
-                    _c("slide", [
-                      _c("img", { attrs: { src: "/img/slide/1.png" } })
-                    ]),
-                    _vm._v(" "),
-                    _c("slide", [
-                      _c("img", { attrs: { src: "/img/slide/1.png" } })
-                    ]),
-                    _vm._v(" "),
-                    _c("slide", [
-                      _c("img", { attrs: { src: "/img/slide/1.png" } })
-                    ]),
-                    _vm._v(" "),
-                    _c("slide", [
-                      _c("img", { attrs: { src: "/img/slide/1.png" } })
-                    ])
-                  ],
-                  1
+                _vm._v(
+                  "\r\n              scroll to learn more...\r\n            "
                 )
-              ],
-              1
-            )
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(2)
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("div", { staticClass: "page-3 page gallery" }, [
+          _c("div", { staticClass: "gallery__body" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-12 col-lg-8" }, [
+                _vm._v("\r\n                    stylesheet\r\n                ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-12 col-lg-4" },
+                [
+                  _c(
+                    "carousel",
+                    { attrs: { perPage: 1 } },
+                    [
+                      _c("slide", [
+                        _c("img", { attrs: { src: "/img/slide/1.png" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("slide", [
+                        _c("img", { attrs: { src: "/img/slide/1.png" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("slide", [
+                        _c("img", { attrs: { src: "/img/slide/1.png" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("slide", [
+                        _c("img", { attrs: { src: "/img/slide/1.png" } })
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ])
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "page-4 page event" }),
         _vm._v(" "),
-        _vm._m(2)
+        _vm._m(4)
       ]
     )
   ])
@@ -2161,11 +2268,54 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "home__heading" }, [
+      _vm._v("ready to make a "),
+      _c("span", { staticClass: "font-weight-bold title-font" }, [
+        _vm._v("STATEMENT")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "home__model" }, [
+      _c("img", {
+        staticClass: "home__model__image",
+        attrs: { src: "/img/model.png" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "model__content" }, [
+        _c("div", { staticClass: "content__heading mb-3" }, [
+          _c("span", { staticClass: "title-font" }, [_vm._v("Statement ")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("making")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "content__body" }, [
+          _vm._v("\r\n                  Thursday March 15th"),
+          _c("br"),
+          _vm._v("\r\n                  7PM Storrs Atrium"),
+          _c("br"),
+          _c("br"),
+          _vm._v("\r\n                  Digital Fabrication."),
+          _c("br"),
+          _vm._v("\r\n                  Connection."),
+          _c("br"),
+          _vm._v("\r\n                  Fashion.\r\n                ")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "page-2 page about" }, [
       _c("div", { staticClass: "about__body" }, [
         _c("div", { staticClass: "about__body__bar" }),
         _vm._v(" "),
-        _c("div", { staticClass: "about__body__title" }, [
+        _c("div", { staticClass: "about__body__title mb-5" }, [
           _vm._v("Be a part of UNCC's first")
         ]),
         _vm._v(" "),
@@ -2175,7 +2325,7 @@ var staticRenderFns = [
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "about__body__title" }, [
+        _c("div", { staticClass: "about__body__title mt-5" }, [
           _vm._v("Campus wide maker fashion show!")
         ]),
         _vm._v(" "),
@@ -14487,8 +14637,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Project\statement_making\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Project\statement_making\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Projects\Websites\statement_making\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Projects\Websites\statement_making\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
