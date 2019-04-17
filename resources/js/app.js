@@ -2,12 +2,13 @@
 import Vue from 'vue';
 import 'animate.css';
 import VueFullpage from 'fullpage-vue';
-import VueCarousel from 'vue-carousel';
+import VueGlide from 'vue-glide-js'
+import 'vue-glide-js/dist/vue-glide.css'
 
-Vue.use(VueFullpage)
-Vue.use(VueCarousel);
+Vue.use(VueFullpage);
+Vue.use(VueGlide);
 
-Vue.component('home', require('./components/HomeComponent.vue').default);
+Vue.component('home', require('./components/LayoutComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

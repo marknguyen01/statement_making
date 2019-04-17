@@ -116,10 +116,44 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GalleryPage.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GalleryPage.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    var that = this;
+    return {
+      active: 0
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LandingPage.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LandingPage.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -153,112 +187,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  },
   data: function data() {
     var that = this;
     return {
+      active: 0,
       blue: {
         defLeft: -580,
         defTop: -480,
@@ -276,28 +209,10 @@ __webpack_require__.r(__webpack_exports__);
         defTop: 40,
         left: -60,
         top: 40
-      },
-      index: 0,
-      opts: {
-        start: 0,
-        dir: 'v',
-        loop: false,
-        duration: 300,
-        beforeChange: function beforeChange(ele, current, next) {
-          console.log('before', current, next);
-          that.index = next;
-        },
-        afterChange: function afterChange(ele, current) {
-          that.index = current;
-          console.log('after', current);
-        }
       }
     };
   },
   methods: {
-    moveTo: function moveTo(index) {
-      this.$refs.fullpage.$fullpage.moveTo(index, true);
-    },
     moveShapes: function moveShapes(event) {
       var blue = document.querySelector('.blue-rec').getBoundingClientRect();
       var yellow = document.querySelector('.yellow-rec').getBoundingClientRect();
@@ -320,6 +235,117 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LandingPage_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LandingPage.vue */ "./resources/js/components/LandingPage.vue");
+/* harmony import */ var _GalleryPage_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GalleryPage.vue */ "./resources/js/components/GalleryPage.vue");
+/* harmony import */ var _AboutPage_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutPage.vue */ "./resources/js/components/AboutPage.vue");
+/* harmony import */ var _EventPage_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./EventPage.vue */ "./resources/js/components/EventPage.vue");
+/* harmony import */ var _ContactPage_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContactPage.vue */ "./resources/js/components/ContactPage.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    'landing-page': _LandingPage_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    'gallery-page': _GalleryPage_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    'about-page': _AboutPage_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+    'event-page': _EventPage_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    'contact-page': _ContactPage_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  },
+  data: function data() {
+    var that = this;
+    return {
+      active: 0,
+      index: 0,
+      opts: {
+        start: 0,
+        dir: 'v',
+        loop: false,
+        duration: 300,
+        beforeChange: function beforeChange(ele, current, next) {
+          console.log('before', current, next);
+          that.index = next;
+        },
+        afterChange: function afterChange(ele, current) {
+          that.index = current;
+          console.log('after', current);
+        }
+      }
+    };
+  },
+  methods: {
+    moveTo: function moveTo(index) {
+      this.$refs.fullpage.$fullpage.moveTo(index, true);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/animate.css/animate.css":
 /*!******************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/animate.css/animate.css ***!
@@ -333,6 +359,25 @@ exports = module.exports = __webpack_require__(/*! ../css-loader/lib/css-base.js
 
 // module
 exports.push([module.i, "@charset \"UTF-8\";\n\n/*!\n * animate.css -http://daneden.me/animate\n * Version - 3.7.0\n * Licensed under the MIT license - http://opensource.org/licenses/MIT\n *\n * Copyright (c) 2018 Daniel Eden\n */\n\n@-webkit-keyframes bounce {\n  from,\n  20%,\n  53%,\n  80%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  40%,\n  43% {\n    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0);\n  }\n}\n\n@keyframes bounce {\n  from,\n  20%,\n  53%,\n  80%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  40%,\n  43% {\n    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0);\n  }\n}\n\n.bounce {\n  -webkit-animation-name: bounce;\n  animation-name: bounce;\n  -webkit-transform-origin: center bottom;\n  transform-origin: center bottom;\n}\n\n@-webkit-keyframes flash {\n  from,\n  50%,\n  to {\n    opacity: 1;\n  }\n\n  25%,\n  75% {\n    opacity: 0;\n  }\n}\n\n@keyframes flash {\n  from,\n  50%,\n  to {\n    opacity: 1;\n  }\n\n  25%,\n  75% {\n    opacity: 0;\n  }\n}\n\n.flash {\n  -webkit-animation-name: flash;\n  animation-name: flash;\n}\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n\n@-webkit-keyframes pulse {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n@keyframes pulse {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n.pulse {\n  -webkit-animation-name: pulse;\n  animation-name: pulse;\n}\n\n@-webkit-keyframes rubberBand {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1);\n  }\n\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1);\n  }\n\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1);\n  }\n\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1);\n  }\n\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n@keyframes rubberBand {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1);\n  }\n\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1);\n  }\n\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1);\n  }\n\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1);\n  }\n\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n.rubberBand {\n  -webkit-animation-name: rubberBand;\n  animation-name: rubberBand;\n}\n\n@-webkit-keyframes shake {\n  from,\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%,\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%,\n  40%,\n  60%,\n  80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0);\n  }\n}\n\n@keyframes shake {\n  from,\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%,\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%,\n  40%,\n  60%,\n  80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0);\n  }\n}\n\n.shake {\n  -webkit-animation-name: shake;\n  animation-name: shake;\n}\n\n@-webkit-keyframes headShake {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  6.5% {\n    -webkit-transform: translateX(-6px) rotateY(-9deg);\n    transform: translateX(-6px) rotateY(-9deg);\n  }\n\n  18.5% {\n    -webkit-transform: translateX(5px) rotateY(7deg);\n    transform: translateX(5px) rotateY(7deg);\n  }\n\n  31.5% {\n    -webkit-transform: translateX(-3px) rotateY(-5deg);\n    transform: translateX(-3px) rotateY(-5deg);\n  }\n\n  43.5% {\n    -webkit-transform: translateX(2px) rotateY(3deg);\n    transform: translateX(2px) rotateY(3deg);\n  }\n\n  50% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n@keyframes headShake {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n\n  6.5% {\n    -webkit-transform: translateX(-6px) rotateY(-9deg);\n    transform: translateX(-6px) rotateY(-9deg);\n  }\n\n  18.5% {\n    -webkit-transform: translateX(5px) rotateY(7deg);\n    transform: translateX(5px) rotateY(7deg);\n  }\n\n  31.5% {\n    -webkit-transform: translateX(-3px) rotateY(-5deg);\n    transform: translateX(-3px) rotateY(-5deg);\n  }\n\n  43.5% {\n    -webkit-transform: translateX(2px) rotateY(3deg);\n    transform: translateX(2px) rotateY(3deg);\n  }\n\n  50% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n  }\n}\n\n.headShake {\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n  -webkit-animation-name: headShake;\n  animation-name: headShake;\n}\n\n@-webkit-keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg);\n  }\n\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg);\n  }\n\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg);\n  }\n\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg);\n  }\n\n  to {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg);\n  }\n}\n\n@keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg);\n  }\n\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg);\n  }\n\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg);\n  }\n\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg);\n  }\n\n  to {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg);\n  }\n}\n\n.swing {\n  -webkit-transform-origin: top center;\n  transform-origin: top center;\n  -webkit-animation-name: swing;\n  animation-name: swing;\n}\n\n@-webkit-keyframes tada {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  10%,\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n  }\n\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n  }\n\n  40%,\n  60%,\n  80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n@keyframes tada {\n  from {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n\n  10%,\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n  }\n\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n  }\n\n  40%,\n  60%,\n  80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n  }\n\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n.tada {\n  -webkit-animation-name: tada;\n  animation-name: tada;\n}\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n\n@-webkit-keyframes wobble {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n  }\n\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n  }\n\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n  }\n\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n  }\n\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes wobble {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n  }\n\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n  }\n\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n  }\n\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n  }\n\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.wobble {\n  -webkit-animation-name: wobble;\n  animation-name: wobble;\n}\n\n@-webkit-keyframes jello {\n  from,\n  11.1%,\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  22.2% {\n    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);\n    transform: skewX(-12.5deg) skewY(-12.5deg);\n  }\n\n  33.3% {\n    -webkit-transform: skewX(6.25deg) skewY(6.25deg);\n    transform: skewX(6.25deg) skewY(6.25deg);\n  }\n\n  44.4% {\n    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);\n    transform: skewX(-3.125deg) skewY(-3.125deg);\n  }\n\n  55.5% {\n    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);\n    transform: skewX(1.5625deg) skewY(1.5625deg);\n  }\n\n  66.6% {\n    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);\n    transform: skewX(-0.78125deg) skewY(-0.78125deg);\n  }\n\n  77.7% {\n    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);\n    transform: skewX(0.390625deg) skewY(0.390625deg);\n  }\n\n  88.8% {\n    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);\n    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);\n  }\n}\n\n@keyframes jello {\n  from,\n  11.1%,\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  22.2% {\n    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);\n    transform: skewX(-12.5deg) skewY(-12.5deg);\n  }\n\n  33.3% {\n    -webkit-transform: skewX(6.25deg) skewY(6.25deg);\n    transform: skewX(6.25deg) skewY(6.25deg);\n  }\n\n  44.4% {\n    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);\n    transform: skewX(-3.125deg) skewY(-3.125deg);\n  }\n\n  55.5% {\n    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);\n    transform: skewX(1.5625deg) skewY(1.5625deg);\n  }\n\n  66.6% {\n    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);\n    transform: skewX(-0.78125deg) skewY(-0.78125deg);\n  }\n\n  77.7% {\n    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);\n    transform: skewX(0.390625deg) skewY(0.390625deg);\n  }\n\n  88.8% {\n    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);\n    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);\n  }\n}\n\n.jello {\n  -webkit-animation-name: jello;\n  animation-name: jello;\n  -webkit-transform-origin: center;\n  transform-origin: center;\n}\n\n@-webkit-keyframes heartBeat {\n  0% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n\n  14% {\n    -webkit-transform: scale(1.3);\n    transform: scale(1.3);\n  }\n\n  28% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n\n  42% {\n    -webkit-transform: scale(1.3);\n    transform: scale(1.3);\n  }\n\n  70% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n@keyframes heartBeat {\n  0% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n\n  14% {\n    -webkit-transform: scale(1.3);\n    transform: scale(1.3);\n  }\n\n  28% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n\n  42% {\n    -webkit-transform: scale(1.3);\n    transform: scale(1.3);\n  }\n\n  70% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n.heartBeat {\n  -webkit-animation-name: heartBeat;\n  animation-name: heartBeat;\n  -webkit-animation-duration: 1.3s;\n  animation-duration: 1.3s;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes bounceIn {\n  from,\n  20%,\n  40%,\n  60%,\n  80%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1);\n  }\n\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03);\n  }\n\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n@keyframes bounceIn {\n  from,\n  20%,\n  40%,\n  60%,\n  80%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1);\n  }\n\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03);\n  }\n\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n.bounceIn {\n  -webkit-animation-duration: 0.75s;\n  animation-duration: 0.75s;\n  -webkit-animation-name: bounceIn;\n  animation-name: bounceIn;\n}\n\n@-webkit-keyframes bounceInDown {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes bounceInDown {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.bounceInDown {\n  -webkit-animation-name: bounceInDown;\n  animation-name: bounceInDown;\n}\n\n@-webkit-keyframes bounceInLeft {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes bounceInLeft {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.bounceInLeft {\n  -webkit-animation-name: bounceInLeft;\n  animation-name: bounceInLeft;\n}\n\n@-webkit-keyframes bounceInRight {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes bounceInRight {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.bounceInRight {\n  -webkit-animation-name: bounceInRight;\n  animation-name: bounceInRight;\n}\n\n@-webkit-keyframes bounceInUp {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes bounceInUp {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0);\n  }\n\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0);\n  }\n\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.bounceInUp {\n  -webkit-animation-name: bounceInUp;\n  animation-name: bounceInUp;\n}\n\n@-webkit-keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9);\n  }\n\n  50%,\n  55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n}\n\n@keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9);\n  }\n\n  50%,\n  55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n}\n\n.bounceOut {\n  -webkit-animation-duration: 0.75s;\n  animation-duration: 0.75s;\n  -webkit-animation-name: bounceOut;\n  animation-name: bounceOut;\n}\n\n@-webkit-keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0);\n  }\n\n  40%,\n  45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n\n@keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0);\n  }\n\n  40%,\n  45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n\n.bounceOutDown {\n  -webkit-animation-name: bounceOutDown;\n  animation-name: bounceOutDown;\n}\n\n@-webkit-keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n\n@keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n\n.bounceOutLeft {\n  -webkit-animation-name: bounceOutLeft;\n  animation-name: bounceOutLeft;\n}\n\n@-webkit-keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n\n@keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n\n.bounceOutRight {\n  -webkit-animation-name: bounceOutRight;\n  animation-name: bounceOutRight;\n}\n\n@-webkit-keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0);\n  }\n\n  40%,\n  45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n\n@keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0);\n  }\n\n  40%,\n  45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n\n.bounceOutUp {\n  -webkit-animation-name: bounceOutUp;\n  animation-name: bounceOutUp;\n}\n\n@-webkit-keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n.fadeIn {\n  -webkit-animation-name: fadeIn;\n  animation-name: fadeIn;\n}\n\n@-webkit-keyframes fadeInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInDown {\n  -webkit-animation-name: fadeInDown;\n  animation-name: fadeInDown;\n}\n\n@-webkit-keyframes fadeInDownBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInDownBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInDownBig {\n  -webkit-animation-name: fadeInDownBig;\n  animation-name: fadeInDownBig;\n}\n\n@-webkit-keyframes fadeInLeft {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInLeft {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInLeft {\n  -webkit-animation-name: fadeInLeft;\n  animation-name: fadeInLeft;\n}\n\n@-webkit-keyframes fadeInLeftBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInLeftBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInLeftBig {\n  -webkit-animation-name: fadeInLeftBig;\n  animation-name: fadeInLeftBig;\n}\n\n@-webkit-keyframes fadeInRight {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInRight {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInRight {\n  -webkit-animation-name: fadeInRight;\n  animation-name: fadeInRight;\n}\n\n@-webkit-keyframes fadeInRightBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInRightBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInRightBig {\n  -webkit-animation-name: fadeInRightBig;\n  animation-name: fadeInRightBig;\n}\n\n@-webkit-keyframes fadeInUp {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInUp {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInUp {\n  -webkit-animation-name: fadeInUp;\n  animation-name: fadeInUp;\n}\n\n@-webkit-keyframes fadeInUpBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes fadeInUpBig {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.fadeInUpBig {\n  -webkit-animation-name: fadeInUpBig;\n  animation-name: fadeInUpBig;\n}\n\n@-webkit-keyframes fadeOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n@keyframes fadeOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n.fadeOut {\n  -webkit-animation-name: fadeOut;\n  animation-name: fadeOut;\n}\n\n@-webkit-keyframes fadeOutDown {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n}\n\n@keyframes fadeOutDown {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n}\n\n.fadeOutDown {\n  -webkit-animation-name: fadeOutDown;\n  animation-name: fadeOutDown;\n}\n\n@-webkit-keyframes fadeOutDownBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n\n@keyframes fadeOutDownBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n\n.fadeOutDownBig {\n  -webkit-animation-name: fadeOutDownBig;\n  animation-name: fadeOutDownBig;\n}\n\n@-webkit-keyframes fadeOutLeft {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n@keyframes fadeOutLeft {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n.fadeOutLeft {\n  -webkit-animation-name: fadeOutLeft;\n  animation-name: fadeOutLeft;\n}\n\n@-webkit-keyframes fadeOutLeftBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n\n@keyframes fadeOutLeftBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n\n.fadeOutLeftBig {\n  -webkit-animation-name: fadeOutLeftBig;\n  animation-name: fadeOutLeftBig;\n}\n\n@-webkit-keyframes fadeOutRight {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n@keyframes fadeOutRight {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n.fadeOutRight {\n  -webkit-animation-name: fadeOutRight;\n  animation-name: fadeOutRight;\n}\n\n@-webkit-keyframes fadeOutRightBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n\n@keyframes fadeOutRightBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n\n.fadeOutRightBig {\n  -webkit-animation-name: fadeOutRightBig;\n  animation-name: fadeOutRightBig;\n}\n\n@-webkit-keyframes fadeOutUp {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n}\n\n@keyframes fadeOutUp {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n}\n\n.fadeOutUp {\n  -webkit-animation-name: fadeOutUp;\n  animation-name: fadeOutUp;\n}\n\n@-webkit-keyframes fadeOutUpBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n\n@keyframes fadeOutUpBig {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n\n.fadeOutUpBig {\n  -webkit-animation-name: fadeOutUpBig;\n  animation-name: fadeOutUpBig;\n}\n\n@-webkit-keyframes flip {\n  from {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out;\n  }\n\n  50% {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n}\n\n@keyframes flip {\n  from {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out;\n  }\n\n  50% {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg);\n    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n}\n\n.animated.flip {\n  -webkit-backface-visibility: visible;\n  backface-visibility: visible;\n  -webkit-animation-name: flip;\n  animation-name: flip;\n}\n\n@-webkit-keyframes flipInX {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n}\n\n@keyframes flipInX {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n}\n\n.flipInX {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInX;\n  animation-name: flipInX;\n}\n\n@-webkit-keyframes flipInY {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n}\n\n@keyframes flipInY {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in;\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n}\n\n.flipInY {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInY;\n  animation-name: flipInY;\n}\n\n@-webkit-keyframes flipOutX {\n  from {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n@keyframes flipOutX {\n  from {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n.flipOutX {\n  -webkit-animation-duration: 0.75s;\n  animation-duration: 0.75s;\n  -webkit-animation-name: flipOutX;\n  animation-name: flipOutX;\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n}\n\n@-webkit-keyframes flipOutY {\n  from {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n@keyframes flipOutY {\n  from {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n.flipOutY {\n  -webkit-animation-duration: 0.75s;\n  animation-duration: 0.75s;\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipOutY;\n  animation-name: flipOutY;\n}\n\n@-webkit-keyframes lightSpeedIn {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0;\n  }\n\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes lightSpeedIn {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0;\n  }\n\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.lightSpeedIn {\n  -webkit-animation-name: lightSpeedIn;\n  animation-name: lightSpeedIn;\n  -webkit-animation-timing-function: ease-out;\n  animation-timing-function: ease-out;\n}\n\n@-webkit-keyframes lightSpeedOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0;\n  }\n}\n\n@keyframes lightSpeedOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0;\n  }\n}\n\n.lightSpeedOut {\n  -webkit-animation-name: lightSpeedOut;\n  animation-name: lightSpeedOut;\n  -webkit-animation-timing-function: ease-in;\n  animation-timing-function: ease-in;\n}\n\n@-webkit-keyframes rotateIn {\n  from {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n@keyframes rotateIn {\n  from {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n.rotateIn {\n  -webkit-animation-name: rotateIn;\n  animation-name: rotateIn;\n}\n\n@-webkit-keyframes rotateInDownLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n@keyframes rotateInDownLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n.rotateInDownLeft {\n  -webkit-animation-name: rotateInDownLeft;\n  animation-name: rotateInDownLeft;\n}\n\n@-webkit-keyframes rotateInDownRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n@keyframes rotateInDownRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n.rotateInDownRight {\n  -webkit-animation-name: rotateInDownRight;\n  animation-name: rotateInDownRight;\n}\n\n@-webkit-keyframes rotateInUpLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n@keyframes rotateInUpLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n.rotateInUpLeft {\n  -webkit-animation-name: rotateInUpLeft;\n  animation-name: rotateInUpLeft;\n}\n\n@-webkit-keyframes rotateInUpRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n@keyframes rotateInUpRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n  }\n}\n\n.rotateInUpRight {\n  -webkit-animation-name: rotateInUpRight;\n  animation-name: rotateInUpRight;\n}\n\n@-webkit-keyframes rotateOut {\n  from {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0;\n  }\n}\n\n@keyframes rotateOut {\n  from {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0;\n  }\n}\n\n.rotateOut {\n  -webkit-animation-name: rotateOut;\n  animation-name: rotateOut;\n}\n\n@-webkit-keyframes rotateOutDownLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n}\n\n@keyframes rotateOutDownLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0;\n  }\n}\n\n.rotateOutDownLeft {\n  -webkit-animation-name: rotateOutDownLeft;\n  animation-name: rotateOutDownLeft;\n}\n\n@-webkit-keyframes rotateOutDownRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n}\n\n@keyframes rotateOutDownRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n}\n\n.rotateOutDownRight {\n  -webkit-animation-name: rotateOutDownRight;\n  animation-name: rotateOutDownRight;\n}\n\n@-webkit-keyframes rotateOutUpLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n}\n\n@keyframes rotateOutUpLeft {\n  from {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0;\n  }\n}\n\n.rotateOutUpLeft {\n  -webkit-animation-name: rotateOutUpLeft;\n  animation-name: rotateOutUpLeft;\n}\n\n@-webkit-keyframes rotateOutUpRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0;\n  }\n}\n\n@keyframes rotateOutUpRight {\n  from {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0;\n  }\n}\n\n.rotateOutUpRight {\n  -webkit-animation-name: rotateOutUpRight;\n  animation-name: rotateOutUpRight;\n}\n\n@-webkit-keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n  }\n\n  20%,\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n  }\n\n  40%,\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0;\n  }\n}\n\n@keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n  }\n\n  20%,\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n  }\n\n  40%,\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0;\n  }\n}\n\n.hinge {\n  -webkit-animation-duration: 2s;\n  animation-duration: 2s;\n  -webkit-animation-name: hinge;\n  animation-name: hinge;\n}\n\n@-webkit-keyframes jackInTheBox {\n  from {\n    opacity: 0;\n    -webkit-transform: scale(0.1) rotate(30deg);\n    transform: scale(0.1) rotate(30deg);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n  }\n\n  50% {\n    -webkit-transform: rotate(-10deg);\n    transform: rotate(-10deg);\n  }\n\n  70% {\n    -webkit-transform: rotate(3deg);\n    transform: rotate(3deg);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n@keyframes jackInTheBox {\n  from {\n    opacity: 0;\n    -webkit-transform: scale(0.1) rotate(30deg);\n    transform: scale(0.1) rotate(30deg);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n  }\n\n  50% {\n    -webkit-transform: rotate(-10deg);\n    transform: rotate(-10deg);\n  }\n\n  70% {\n    -webkit-transform: rotate(3deg);\n    transform: rotate(3deg);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n.jackInTheBox {\n  -webkit-animation-name: jackInTheBox;\n  animation-name: jackInTheBox;\n}\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n\n@-webkit-keyframes rollIn {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes rollIn {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.rollIn {\n  -webkit-animation-name: rollIn;\n  animation-name: rollIn;\n}\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n\n@-webkit-keyframes rollOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n  }\n}\n\n@keyframes rollOut {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n  }\n}\n\n.rollOut {\n  -webkit-animation-name: rollOut;\n  animation-name: rollOut;\n}\n\n@-webkit-keyframes zoomIn {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  50% {\n    opacity: 1;\n  }\n}\n\n@keyframes zoomIn {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  50% {\n    opacity: 1;\n  }\n}\n\n.zoomIn {\n  -webkit-animation-name: zoomIn;\n  animation-name: zoomIn;\n}\n\n@-webkit-keyframes zoomInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomInDown {\n  -webkit-animation-name: zoomInDown;\n  animation-name: zoomInDown;\n}\n\n@-webkit-keyframes zoomInLeft {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomInLeft {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomInLeft {\n  -webkit-animation-name: zoomInLeft;\n  animation-name: zoomInLeft;\n}\n\n@-webkit-keyframes zoomInRight {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomInRight {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomInRight {\n  -webkit-animation-name: zoomInRight;\n  animation-name: zoomInRight;\n}\n\n@-webkit-keyframes zoomInUp {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomInUp {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomInUp {\n  -webkit-animation-name: zoomInUp;\n  animation-name: zoomInUp;\n}\n\n@-webkit-keyframes zoomOut {\n  from {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n@keyframes zoomOut {\n  from {\n    opacity: 1;\n  }\n\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n.zoomOut {\n  -webkit-animation-name: zoomOut;\n  animation-name: zoomOut;\n}\n\n@-webkit-keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomOutDown {\n  -webkit-animation-name: zoomOutDown;\n  animation-name: zoomOutDown;\n}\n\n@-webkit-keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center;\n  }\n}\n\n@keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center;\n  }\n}\n\n.zoomOutLeft {\n  -webkit-animation-name: zoomOutLeft;\n  animation-name: zoomOutLeft;\n}\n\n@-webkit-keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center;\n  }\n}\n\n@keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center;\n  }\n}\n\n.zoomOutRight {\n  -webkit-animation-name: zoomOutRight;\n  animation-name: zoomOutRight;\n}\n\n@-webkit-keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n@keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n  }\n}\n\n.zoomOutUp {\n  -webkit-animation-name: zoomOutUp;\n  animation-name: zoomOutUp;\n}\n\n@-webkit-keyframes slideInDown {\n  from {\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes slideInDown {\n  from {\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.slideInDown {\n  -webkit-animation-name: slideInDown;\n  animation-name: slideInDown;\n}\n\n@-webkit-keyframes slideInLeft {\n  from {\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes slideInLeft {\n  from {\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.slideInLeft {\n  -webkit-animation-name: slideInLeft;\n  animation-name: slideInLeft;\n}\n\n@-webkit-keyframes slideInRight {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes slideInRight {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.slideInRight {\n  -webkit-animation-name: slideInRight;\n  animation-name: slideInRight;\n}\n\n@-webkit-keyframes slideInUp {\n  from {\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes slideInUp {\n  from {\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n    visibility: visible;\n  }\n\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n.slideInUp {\n  -webkit-animation-name: slideInUp;\n  animation-name: slideInUp;\n}\n\n@-webkit-keyframes slideOutDown {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n}\n\n@keyframes slideOutDown {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n  }\n}\n\n.slideOutDown {\n  -webkit-animation-name: slideOutDown;\n  animation-name: slideOutDown;\n}\n\n@-webkit-keyframes slideOutLeft {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n@keyframes slideOutLeft {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n.slideOutLeft {\n  -webkit-animation-name: slideOutLeft;\n  animation-name: slideOutLeft;\n}\n\n@-webkit-keyframes slideOutRight {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n@keyframes slideOutRight {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n.slideOutRight {\n  -webkit-animation-name: slideOutRight;\n  animation-name: slideOutRight;\n}\n\n@-webkit-keyframes slideOutUp {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n}\n\n@keyframes slideOutUp {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n  }\n\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0);\n  }\n}\n\n.slideOutUp {\n  -webkit-animation-name: slideOutUp;\n  animation-name: slideOutUp;\n}\n\n.animated {\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n}\n\n.animated.infinite {\n  -webkit-animation-iteration-count: infinite;\n  animation-iteration-count: infinite;\n}\n\n.animated.delay-1s {\n  -webkit-animation-delay: 1s;\n  animation-delay: 1s;\n}\n\n.animated.delay-2s {\n  -webkit-animation-delay: 2s;\n  animation-delay: 2s;\n}\n\n.animated.delay-3s {\n  -webkit-animation-delay: 3s;\n  animation-delay: 3s;\n}\n\n.animated.delay-4s {\n  -webkit-animation-delay: 4s;\n  animation-delay: 4s;\n}\n\n.animated.delay-5s {\n  -webkit-animation-delay: 5s;\n  animation-delay: 5s;\n}\n\n.animated.fast {\n  -webkit-animation-duration: 800ms;\n  animation-duration: 800ms;\n}\n\n.animated.faster {\n  -webkit-animation-duration: 500ms;\n  animation-duration: 500ms;\n}\n\n.animated.slow {\n  -webkit-animation-duration: 2s;\n  animation-duration: 2s;\n}\n\n.animated.slower {\n  -webkit-animation-duration: 3s;\n  animation-duration: 3s;\n}\n\n@media (prefers-reduced-motion) {\n  .animated {\n    -webkit-animation: unset !important;\n    animation: unset !important;\n    transition: none !important;\n  }\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-glide-js/dist/vue-glide.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-glide-js/dist/vue-glide.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".glide{position:relative;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.glide *{-webkit-box-sizing:inherit;box-sizing:inherit}.glide__slides,.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-ms-touch-action:pan-Y;touch-action:pan-Y;padding:0;white-space:nowrap;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;will-change:transform}.glide__slide,.glide__slides--dragging{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide__slide{width:100%;height:100%;-ms-flex-negative:0;flex-shrink:0;white-space:normal;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{-webkit-user-select:none;user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows,.glide__bullets{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide--rtl{direction:rtl}", ""]);
 
 // exports
 
@@ -1948,26 +1993,4689 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-carousel/dist/vue-carousel.min.js":
+/***/ "./node_modules/vue-glide-js/dist/vue-glide.common.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vue-carousel/dist/vue-carousel.min.js ***!
+  !*** ./node_modules/vue-glide-js/dist/vue-glide.common.js ***!
   \************************************************************/
 /*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "fb15");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "4d21":
 /***/ (function(module, exports, __webpack_require__) {
 
-/*!
- * vue-carousel v0.18.0-alpha
- * (c) 2019 todd.beauchamp@ssense.com
- * https://github.com/ssense/vue-carousel#readme
- */
-!function(t,e){ true?module.exports=e():undefined}(window,function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var i=e[r]={i:r,l:!1,exports:{}};return t[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var i in t)n.d(r,i,function(e){return t[e]}.bind(null,i));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=53)}([function(t,e,n){var r=n(30)("wks"),i=n(15),o=n(3).Symbol,a="function"==typeof o;(t.exports=function(t){return r[t]||(r[t]=a&&o[t]||(a?o:i)("Symbol."+t))}).store=r},function(t,e){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,e,n){var r=n(3),i=n(11),o=n(6),a=n(10),s=n(29),u=function(t,e,n){var c,l,f,d,h=t&u.F,p=t&u.G,g=t&u.S,v=t&u.P,y=t&u.B,m=p?r:g?r[e]||(r[e]={}):(r[e]||{}).prototype,b=p?i:i[e]||(i[e]={}),x=b.prototype||(b.prototype={});for(c in p&&(n=e),n)f=((l=!h&&m&&void 0!==m[c])?m:n)[c],d=y&&l?s(f,r):v&&"function"==typeof f?s(Function.call,f):f,m&&a(m,c,f,t&u.U),b[c]!=f&&o(b,c,d),v&&x[c]!=f&&(x[c]=f)};r.core=i,u.F=1,u.G=2,u.S=4,u.P=8,u.B=16,u.W=32,u.U=64,u.R=128,t.exports=u},function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e,n){var r=n(7),i=n(40),o=n(20),a=Object.defineProperty;e.f=n(5)?Object.defineProperty:function(t,e,n){if(r(t),e=o(e,!0),r(n),i)try{return a(t,e,n)}catch(t){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(t[e]=n.value),t}},function(t,e,n){t.exports=!n(1)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e,n){var r=n(4),i=n(14);t.exports=n(5)?function(t,e,n){return r.f(t,e,i(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e,n){var r=n(8);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){var r=n(3),i=n(6),o=n(9),a=n(15)("src"),s=Function.toString,u=(""+s).split("toString");n(11).inspectSource=function(t){return s.call(t)},(t.exports=function(t,e,n,s){var c="function"==typeof n;c&&(o(n,"name")||i(n,"name",e)),t[e]!==n&&(c&&(o(n,a)||i(n,a,t[e]?""+t[e]:u.join(String(e)))),t===r?t[e]=n:s?t[e]?t[e]=n:i(t,e,n):(delete t[e],i(t,e,n)))})(Function.prototype,"toString",function(){return"function"==typeof this&&this[a]||s.call(this)})},function(t,e){var n=t.exports={version:"2.5.7"};"number"==typeof __e&&(__e=n)},function(t,e,n){var r=n(47),i=n(17);t.exports=function(t){return r(i(t))}},function(t,e,n){var r=n(48),i=n(33);t.exports=Object.keys||function(t){return r(t,i)}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e){var n=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+r).toString(36))}},function(t,e,n){var r=n(17);t.exports=function(t){return Object(r(t))}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e){t.exports={}},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e,n){var r=n(8);t.exports=function(t,e){if(!r(t))return t;var n,i;if(e&&"function"==typeof(n=t.toString)&&!r(i=n.call(t)))return i;if("function"==typeof(n=t.valueOf)&&!r(i=n.call(t)))return i;if(!e&&"function"==typeof(n=t.toString)&&!r(i=n.call(t)))return i;throw TypeError("Can't convert object to primitive value")}},function(t,e){t.exports=!1},function(t,e){e.f={}.propertyIsEnumerable},function(t,e){t.exports=function(t){var e=[];return e.toString=function(){return this.map(function(e){var n=function(t,e){var n=t[1]||"",r=t[3];if(!r)return n;if(e&&"function"==typeof btoa){var i=function(t){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(t))))+" */"}(r),o=r.sources.map(function(t){return"/*# sourceURL="+r.sourceRoot+t+" */"});return[n].concat(o).concat([i]).join("\n")}return[n].join("\n")}(e,t);return e[2]?"@media "+e[2]+"{"+n+"}":n}).join("")},e.i=function(t,n){"string"==typeof t&&(t=[[null,t,""]]);for(var r={},i=0;i<this.length;i++){var o=this[i][0];"number"==typeof o&&(r[o]=!0)}for(i=0;i<t.length;i++){var a=t[i];"number"==typeof a[0]&&r[a[0]]||(n&&!a[2]?a[2]=n:n&&(a[2]="("+a[2]+") and ("+n+")"),e.push(a))}},e}},function(t,e,n){"use strict";function r(t,e){for(var n=[],r={},i=0;i<e.length;i++){var o=e[i],a=o[0],s={id:t+":"+i,css:o[1],media:o[2],sourceMap:o[3]};r[a]?r[a].parts.push(s):n.push(r[a]={id:a,parts:[s]})}return n}n.r(e),n.d(e,"default",function(){return p});var i="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!i)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var o={},a=i&&(document.head||document.getElementsByTagName("head")[0]),s=null,u=0,c=!1,l=function(){},f=null,d="data-vue-ssr-id",h="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());function p(t,e,n,i){c=n,f=i||{};var a=r(t,e);return g(a),function(e){for(var n=[],i=0;i<a.length;i++){var s=a[i];(u=o[s.id]).refs--,n.push(u)}for(e?g(a=r(t,e)):a=[],i=0;i<n.length;i++){var u;if(0===(u=n[i]).refs){for(var c=0;c<u.parts.length;c++)u.parts[c]();delete o[u.id]}}}}function g(t){for(var e=0;e<t.length;e++){var n=t[e],r=o[n.id];if(r){r.refs++;for(var i=0;i<r.parts.length;i++)r.parts[i](n.parts[i]);for(;i<n.parts.length;i++)r.parts.push(y(n.parts[i]));r.parts.length>n.parts.length&&(r.parts.length=n.parts.length)}else{var a=[];for(i=0;i<n.parts.length;i++)a.push(y(n.parts[i]));o[n.id]={id:n.id,refs:1,parts:a}}}}function v(){var t=document.createElement("style");return t.type="text/css",a.appendChild(t),t}function y(t){var e,n,r=document.querySelector("style["+d+'~="'+t.id+'"]');if(r){if(c)return l;r.parentNode.removeChild(r)}if(h){var i=u++;r=s||(s=v()),e=b.bind(null,r,i,!1),n=b.bind(null,r,i,!0)}else r=v(),e=function(t,e){var n=e.css,r=e.media,i=e.sourceMap;if(r&&t.setAttribute("media",r),f.ssrId&&t.setAttribute(d,e.id),i&&(n+="\n/*# sourceURL="+i.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(i))))+" */"),t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}.bind(null,r),n=function(){r.parentNode.removeChild(r)};return e(t),function(r){if(r){if(r.css===t.css&&r.media===t.media&&r.sourceMap===t.sourceMap)return;e(t=r)}else n()}}var m=function(){var t=[];return function(e,n){return t[e]=n,t.filter(Boolean).join("\n")}}();function b(t,e,n,r){var i=n?"":r.css;if(t.styleSheet)t.styleSheet.cssText=m(e,i);else{var o=document.createTextNode(i),a=t.childNodes;a[e]&&t.removeChild(a[e]),a.length?t.insertBefore(o,a[e]):t.appendChild(o)}}},function(t,e,n){var r=n(95);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals),(0,n(24).default)("1c9d4ce3",r,!1,{})},function(t,e,n){var r=n(98);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals),(0,n(24).default)("6a175419",r,!1,{})},function(t,e,n){var r=n(100);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals),(0,n(24).default)("07c48036",r,!1,{})},function(t,e,n){var r=n(102);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals),(0,n(24).default)("6eff00d0",r,!1,{})},function(t,e,n){var r=n(39);t.exports=function(t,e,n){if(r(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,r){return t.call(e,n,r)};case 3:return function(n,r,i){return t.call(e,n,r,i)}}return function(){return t.apply(e,arguments)}}},function(t,e,n){var r=n(11),i=n(3),o=i["__core-js_shared__"]||(i["__core-js_shared__"]={});(t.exports=function(t,e){return o[t]||(o[t]=void 0!==e?e:{})})("versions",[]).push({version:r.version,mode:n(21)?"pure":"global",copyright:"© 2018 Denis Pushkarev (zloirock.ru)"})},function(t,e,n){var r=n(7),i=n(67),o=n(33),a=n(32)("IE_PROTO"),s=function(){},u=function(){var t,e=n(41)("iframe"),r=o.length;for(e.style.display="none",n(69).appendChild(e),e.src="javascript:",(t=e.contentWindow.document).open(),t.write("<script>document.F=Object<\/script>"),t.close(),u=t.F;r--;)delete u.prototype[o[r]];return u()};t.exports=Object.create||function(t,e){var n;return null!==t?(s.prototype=r(t),n=new s,s.prototype=null,n[a]=t):n=u(),void 0===e?n:i(n,e)}},function(t,e,n){var r=n(30)("keys"),i=n(15);t.exports=function(t){return r[t]||(r[t]=i(t))}},function(t,e){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,e,n){var r=n(4).f,i=n(9),o=n(0)("toStringTag");t.exports=function(t,e,n){t&&!i(t=n?t:t.prototype,o)&&r(t,o,{configurable:!0,value:e})}},function(t,e){e.f=Object.getOwnPropertySymbols},function(t,e,n){var r=n(48),i=n(33).concat("length","prototype");e.f=Object.getOwnPropertyNames||function(t){return r(t,i)}},function(t,e,n){var r=n(22),i=n(14),o=n(12),a=n(20),s=n(9),u=n(40),c=Object.getOwnPropertyDescriptor;e.f=n(5)?c:function(t,e){if(t=o(t),e=a(e,!0),u)try{return c(t,e)}catch(t){}if(s(t,e))return i(!r.f.call(t,e),t[e])}},function(t,e,n){"use strict";var r=n(3),i=n(9),o=n(19),a=n(85),s=n(20),u=n(1),c=n(36).f,l=n(37).f,f=n(4).f,d=n(87).trim,h=r.Number,p=h,g=h.prototype,v="Number"==o(n(31)(g)),y="trim"in String.prototype,m=function(t){var e=s(t,!1);if("string"==typeof e&&e.length>2){var n,r,i,o=(e=y?e.trim():d(e,3)).charCodeAt(0);if(43===o||45===o){if(88===(n=e.charCodeAt(2))||120===n)return NaN}else if(48===o){switch(e.charCodeAt(1)){case 66:case 98:r=2,i=49;break;case 79:case 111:r=8,i=55;break;default:return+e}for(var a,u=e.slice(2),c=0,l=u.length;c<l;c++)if((a=u.charCodeAt(c))<48||a>i)return NaN;return parseInt(u,r)}}return+e};if(!h(" 0o1")||!h("0b1")||h("+0x1")){h=function(t){var e=arguments.length<1?0:t,n=this;return n instanceof h&&(v?u(function(){g.valueOf.call(n)}):"Number"!=o(n))?a(new p(m(e)),n,h):m(e)};for(var b,x=n(5)?c(p):"MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","),P=0;x.length>P;P++)i(p,b=x[P])&&!i(h,b)&&f(h,b,l(p,b));h.prototype=g,g.constructor=h,n(10)(r,"Number",h)}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e,n){t.exports=!n(5)&&!n(1)(function(){return 7!=Object.defineProperty(n(41)("div"),"a",{get:function(){return 7}}).a})},function(t,e,n){var r=n(8),i=n(3).document,o=r(i)&&r(i.createElement);t.exports=function(t){return o?i.createElement(t):{}}},function(t,e,n){var r=n(43),i=Math.min;t.exports=function(t){return t>0?i(r(t),9007199254740991):0}},function(t,e){var n=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:n)(t)}},function(t,e,n){"use strict";var r=n(7);t.exports=function(){var t=r(this),e="";return t.global&&(e+="g"),t.ignoreCase&&(e+="i"),t.multiline&&(e+="m"),t.unicode&&(e+="u"),t.sticky&&(e+="y"),e}},function(t,e,n){"use strict";var r=n(46),i=n(64),o=n(18),a=n(12);t.exports=n(65)(Array,"Array",function(t,e){this._t=a(t),this._i=0,this._k=e},function(){var t=this._t,e=this._k,n=this._i++;return!t||n>=t.length?(this._t=void 0,i(1)):i(0,"keys"==e?n:"values"==e?t[n]:[n,t[n]])},"values"),o.Arguments=o.Array,r("keys"),r("values"),r("entries")},function(t,e,n){var r=n(0)("unscopables"),i=Array.prototype;void 0==i[r]&&n(6)(i,r,{}),t.exports=function(t){i[r][t]=!0}},function(t,e,n){var r=n(19);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,e,n){var r=n(9),i=n(12),o=n(49)(!1),a=n(32)("IE_PROTO");t.exports=function(t,e){var n,s=i(t),u=0,c=[];for(n in s)n!=a&&r(s,n)&&c.push(n);for(;e.length>u;)r(s,n=e[u++])&&(~o(c,n)||c.push(n));return c}},function(t,e,n){var r=n(12),i=n(42),o=n(68);t.exports=function(t){return function(e,n,a){var s,u=r(e),c=i(u.length),l=o(a,c);if(t&&n!=n){for(;c>l;)if((s=u[l++])!=s)return!0}else for(;c>l;l++)if((t||l in u)&&u[l]===n)return t||l||0;return!t&&-1}}},function(t,e,n){var r=n(3),i=n(11),o=n(21),a=n(51),s=n(4).f;t.exports=function(t){var e=i.Symbol||(i.Symbol=o?{}:r.Symbol||{});"_"==t.charAt(0)||t in e||s(e,t,{value:a.f(t)})}},function(t,e,n){e.f=n(0)},function(t,e,n){var r=n(2);r(r.S+r.F,"Object",{assign:n(96)})},function(t,e,n){t.exports=n(103)},function(t,e,n){"use strict";var r=n(29),i=n(2),o=n(16),a=n(55),s=n(56),u=n(42),c=n(57),l=n(58);i(i.S+i.F*!n(60)(function(t){Array.from(t)}),"Array",{from:function(t){var e,n,i,f,d=o(t),h="function"==typeof this?this:Array,p=arguments.length,g=p>1?arguments[1]:void 0,v=void 0!==g,y=0,m=l(d);if(v&&(g=r(g,p>2?arguments[2]:void 0,2)),void 0==m||h==Array&&s(m))for(n=new h(e=u(d.length));e>y;y++)c(n,y,v?g(d[y],y):d[y]);else for(f=m.call(d),n=new h;!(i=f.next()).done;y++)c(n,y,v?a(f,g,[i.value,y],!0):i.value);return n.length=y,n}})},function(t,e,n){var r=n(7);t.exports=function(t,e,n,i){try{return i?e(r(n)[0],n[1]):e(n)}catch(e){var o=t.return;throw void 0!==o&&r(o.call(t)),e}}},function(t,e,n){var r=n(18),i=n(0)("iterator"),o=Array.prototype;t.exports=function(t){return void 0!==t&&(r.Array===t||o[i]===t)}},function(t,e,n){"use strict";var r=n(4),i=n(14);t.exports=function(t,e,n){e in t?r.f(t,e,i(0,n)):t[e]=n}},function(t,e,n){var r=n(59),i=n(0)("iterator"),o=n(18);t.exports=n(11).getIteratorMethod=function(t){if(void 0!=t)return t[i]||t["@@iterator"]||o[r(t)]}},function(t,e,n){var r=n(19),i=n(0)("toStringTag"),o="Arguments"==r(function(){return arguments}());t.exports=function(t){var e,n,a;return void 0===t?"Undefined":null===t?"Null":"string"==typeof(n=function(t,e){try{return t[e]}catch(t){}}(e=Object(t),i))?n:o?r(e):"Object"==(a=r(e))&&"function"==typeof e.callee?"Arguments":a}},function(t,e,n){var r=n(0)("iterator"),i=!1;try{var o=[7][r]();o.return=function(){i=!0},Array.from(o,function(){throw 2})}catch(t){}t.exports=function(t,e){if(!e&&!i)return!1;var n=!1;try{var o=[7],a=o[r]();a.next=function(){return{done:n=!0}},o[r]=function(){return a},t(o)}catch(t){}return n}},function(t,e,n){"use strict";n(62);var r=n(7),i=n(44),o=n(5),a=/./.toString,s=function(t){n(10)(RegExp.prototype,"toString",t,!0)};n(1)(function(){return"/a/b"!=a.call({source:"a",flags:"b"})})?s(function(){var t=r(this);return"/".concat(t.source,"/","flags"in t?t.flags:!o&&t instanceof RegExp?i.call(t):void 0)}):"toString"!=a.name&&s(function(){return a.call(this)})},function(t,e,n){n(5)&&"g"!=/./g.flags&&n(4).f(RegExp.prototype,"flags",{configurable:!0,get:n(44)})},function(t,e,n){for(var r=n(45),i=n(13),o=n(10),a=n(3),s=n(6),u=n(18),c=n(0),l=c("iterator"),f=c("toStringTag"),d=u.Array,h={CSSRuleList:!0,CSSStyleDeclaration:!1,CSSValueList:!1,ClientRectList:!1,DOMRectList:!1,DOMStringList:!1,DOMTokenList:!0,DataTransferItemList:!1,FileList:!1,HTMLAllCollection:!1,HTMLCollection:!1,HTMLFormElement:!1,HTMLSelectElement:!1,MediaList:!0,MimeTypeArray:!1,NamedNodeMap:!1,NodeList:!0,PaintRequestList:!1,Plugin:!1,PluginArray:!1,SVGLengthList:!1,SVGNumberList:!1,SVGPathSegList:!1,SVGPointList:!1,SVGStringList:!1,SVGTransformList:!1,SourceBufferList:!1,StyleSheetList:!0,TextTrackCueList:!1,TextTrackList:!1,TouchList:!1},p=i(h),g=0;g<p.length;g++){var v,y=p[g],m=h[y],b=a[y],x=b&&b.prototype;if(x&&(x[l]||s(x,l,d),x[f]||s(x,f,y),u[y]=d,m))for(v in r)x[v]||o(x,v,r[v],!0)}},function(t,e){t.exports=function(t,e){return{value:e,done:!!t}}},function(t,e,n){"use strict";var r=n(21),i=n(2),o=n(10),a=n(6),s=n(18),u=n(66),c=n(34),l=n(70),f=n(0)("iterator"),d=!([].keys&&"next"in[].keys()),h=function(){return this};t.exports=function(t,e,n,p,g,v,y){u(n,e,p);var m,b,x,P=function(t){if(!d&&t in O)return O[t];switch(t){case"keys":case"values":return function(){return new n(this,t)}}return function(){return new n(this,t)}},S=e+" Iterator",C="values"==g,w=!1,O=t.prototype,T=O[f]||O["@@iterator"]||g&&O[g],_=T||P(g),E=g?C?P("entries"):_:void 0,j="Array"==e&&O.entries||T;if(j&&(x=l(j.call(new t)))!==Object.prototype&&x.next&&(c(x,S,!0),r||"function"==typeof x[f]||a(x,f,h)),C&&T&&"values"!==T.name&&(w=!0,_=function(){return T.call(this)}),r&&!y||!d&&!w&&O[f]||a(O,f,_),s[e]=_,s[S]=h,g)if(m={values:C?_:P("values"),keys:v?_:P("keys"),entries:E},y)for(b in m)b in O||o(O,b,m[b]);else i(i.P+i.F*(d||w),e,m);return m}},function(t,e,n){"use strict";var r=n(31),i=n(14),o=n(34),a={};n(6)(a,n(0)("iterator"),function(){return this}),t.exports=function(t,e,n){t.prototype=r(a,{next:i(1,n)}),o(t,e+" Iterator")}},function(t,e,n){var r=n(4),i=n(7),o=n(13);t.exports=n(5)?Object.defineProperties:function(t,e){i(t);for(var n,a=o(e),s=a.length,u=0;s>u;)r.f(t,n=a[u++],e[n]);return t}},function(t,e,n){var r=n(43),i=Math.max,o=Math.min;t.exports=function(t,e){return(t=r(t))<0?i(t+e,0):o(t,e)}},function(t,e,n){var r=n(3).document;t.exports=r&&r.documentElement},function(t,e,n){var r=n(9),i=n(16),o=n(32)("IE_PROTO"),a=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=i(t),r(t,o)?t[o]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?a:null}},function(t,e,n){var r=n(16),i=n(13);n(72)("keys",function(){return function(t){return i(r(t))}})},function(t,e,n){var r=n(2),i=n(11),o=n(1);t.exports=function(t,e){var n=(i.Object||{})[t]||Object[t],a={};a[t]=e(n),r(r.S+r.F*o(function(){n(1)}),"Object",a)}},function(t,e,n){n(50)("asyncIterator")},function(t,e,n){"use strict";var r=n(3),i=n(9),o=n(5),a=n(2),s=n(10),u=n(75).KEY,c=n(1),l=n(30),f=n(34),d=n(15),h=n(0),p=n(51),g=n(50),v=n(76),y=n(77),m=n(7),b=n(8),x=n(12),P=n(20),S=n(14),C=n(31),w=n(78),O=n(37),T=n(4),_=n(13),E=O.f,j=T.f,A=w.f,M=r.Symbol,N=r.JSON,k=N&&N.stringify,L=h("_hidden"),V=h("toPrimitive"),$={}.propertyIsEnumerable,I=l("symbol-registry"),D=l("symbols"),W=l("op-symbols"),F=Object.prototype,R="function"==typeof M,B=r.QObject,H=!B||!B.prototype||!B.prototype.findChild,z=o&&c(function(){return 7!=C(j({},"a",{get:function(){return j(this,"a",{value:7}).a}})).a})?function(t,e,n){var r=E(F,e);r&&delete F[e],j(t,e,n),r&&t!==F&&j(F,e,r)}:j,U=function(t){var e=D[t]=C(M.prototype);return e._k=t,e},X=R&&"symbol"==typeof M.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof M},G=function(t,e,n){return t===F&&G(W,e,n),m(t),e=P(e,!0),m(n),i(D,e)?(n.enumerable?(i(t,L)&&t[L][e]&&(t[L][e]=!1),n=C(n,{enumerable:S(0,!1)})):(i(t,L)||j(t,L,S(1,{})),t[L][e]=!0),z(t,e,n)):j(t,e,n)},Y=function(t,e){m(t);for(var n,r=v(e=x(e)),i=0,o=r.length;o>i;)G(t,n=r[i++],e[n]);return t},q=function(t){var e=$.call(this,t=P(t,!0));return!(this===F&&i(D,t)&&!i(W,t))&&(!(e||!i(this,t)||!i(D,t)||i(this,L)&&this[L][t])||e)},J=function(t,e){if(t=x(t),e=P(e,!0),t!==F||!i(D,e)||i(W,e)){var n=E(t,e);return!n||!i(D,e)||i(t,L)&&t[L][e]||(n.enumerable=!0),n}},K=function(t){for(var e,n=A(x(t)),r=[],o=0;n.length>o;)i(D,e=n[o++])||e==L||e==u||r.push(e);return r},Q=function(t){for(var e,n=t===F,r=A(n?W:x(t)),o=[],a=0;r.length>a;)!i(D,e=r[a++])||n&&!i(F,e)||o.push(D[e]);return o};R||(s((M=function(){if(this instanceof M)throw TypeError("Symbol is not a constructor!");var t=d(arguments.length>0?arguments[0]:void 0),e=function(n){this===F&&e.call(W,n),i(this,L)&&i(this[L],t)&&(this[L][t]=!1),z(this,t,S(1,n))};return o&&H&&z(F,t,{configurable:!0,set:e}),U(t)}).prototype,"toString",function(){return this._k}),O.f=J,T.f=G,n(36).f=w.f=K,n(22).f=q,n(35).f=Q,o&&!n(21)&&s(F,"propertyIsEnumerable",q,!0),p.f=function(t){return U(h(t))}),a(a.G+a.W+a.F*!R,{Symbol:M});for(var Z="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),tt=0;Z.length>tt;)h(Z[tt++]);for(var et=_(h.store),nt=0;et.length>nt;)g(et[nt++]);a(a.S+a.F*!R,"Symbol",{for:function(t){return i(I,t+="")?I[t]:I[t]=M(t)},keyFor:function(t){if(!X(t))throw TypeError(t+" is not a symbol!");for(var e in I)if(I[e]===t)return e},useSetter:function(){H=!0},useSimple:function(){H=!1}}),a(a.S+a.F*!R,"Object",{create:function(t,e){return void 0===e?C(t):Y(C(t),e)},defineProperty:G,defineProperties:Y,getOwnPropertyDescriptor:J,getOwnPropertyNames:K,getOwnPropertySymbols:Q}),N&&a(a.S+a.F*(!R||c(function(){var t=M();return"[null]"!=k([t])||"{}"!=k({a:t})||"{}"!=k(Object(t))})),"JSON",{stringify:function(t){for(var e,n,r=[t],i=1;arguments.length>i;)r.push(arguments[i++]);if(n=e=r[1],(b(e)||void 0!==t)&&!X(t))return y(e)||(e=function(t,e){if("function"==typeof n&&(e=n.call(this,t,e)),!X(e))return e}),r[1]=e,k.apply(N,r)}}),M.prototype[V]||n(6)(M.prototype,V,M.prototype.valueOf),f(M,"Symbol"),f(Math,"Math",!0),f(r.JSON,"JSON",!0)},function(t,e,n){var r=n(15)("meta"),i=n(8),o=n(9),a=n(4).f,s=0,u=Object.isExtensible||function(){return!0},c=!n(1)(function(){return u(Object.preventExtensions({}))}),l=function(t){a(t,r,{value:{i:"O"+ ++s,w:{}}})},f=t.exports={KEY:r,NEED:!1,fastKey:function(t,e){if(!i(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!o(t,r)){if(!u(t))return"F";if(!e)return"E";l(t)}return t[r].i},getWeak:function(t,e){if(!o(t,r)){if(!u(t))return!0;if(!e)return!1;l(t)}return t[r].w},onFreeze:function(t){return c&&f.NEED&&u(t)&&!o(t,r)&&l(t),t}}},function(t,e,n){var r=n(13),i=n(35),o=n(22);t.exports=function(t){var e=r(t),n=i.f;if(n)for(var a,s=n(t),u=o.f,c=0;s.length>c;)u.call(t,a=s[c++])&&e.push(a);return e}},function(t,e,n){var r=n(19);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,e,n){var r=n(12),i=n(36).f,o={}.toString,a="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[];t.exports.f=function(t){return a&&"[object Window]"==o.call(t)?function(t){try{return i(t)}catch(t){return a.slice()}}(t):i(r(t))}},function(t,e,n){var r=n(2);r(r.S,"Math",{sign:n(80)})},function(t,e){t.exports=Math.sign||function(t){return 0==(t=+t)||t!=t?t:t<0?-1:1}},function(t,e,n){n(82)("match",1,function(t,e,n){return[function(n){"use strict";var r=t(this),i=void 0==n?void 0:n[e];return void 0!==i?i.call(n,r):new RegExp(n)[e](String(r))},n]})},function(t,e,n){"use strict";var r=n(6),i=n(10),o=n(1),a=n(17),s=n(0);t.exports=function(t,e,n){var u=s(t),c=n(a,u,""[t]),l=c[0],f=c[1];o(function(){var e={};return e[u]=function(){return 7},7!=""[t](e)})&&(i(String.prototype,t,l),r(RegExp.prototype,u,2==e?function(t,e){return f.call(t,this,e)}:function(t){return f.call(t,this)}))}},function(t,e,n){"use strict";var r=n(2),i=n(39),o=n(16),a=n(1),s=[].sort,u=[1,2,3];r(r.P+r.F*(a(function(){u.sort(void 0)})||!a(function(){u.sort(null)})||!n(84)(s)),"Array",{sort:function(t){return void 0===t?s.call(o(this)):s.call(o(this),i(t))}})},function(t,e,n){"use strict";var r=n(1);t.exports=function(t,e){return!!t&&r(function(){e?t.call(null,function(){},1):t.call(null)})}},function(t,e,n){var r=n(8),i=n(86).set;t.exports=function(t,e,n){var o,a=e.constructor;return a!==n&&"function"==typeof a&&(o=a.prototype)!==n.prototype&&r(o)&&i&&i(t,o),t}},function(t,e,n){var r=n(8),i=n(7),o=function(t,e){if(i(t),!r(e)&&null!==e)throw TypeError(e+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,e,r){try{(r=n(29)(Function.call,n(37).f(Object.prototype,"__proto__").set,2))(t,[]),e=!(t instanceof Array)}catch(t){e=!0}return function(t,n){return o(t,n),e?t.__proto__=n:r(t,n),t}}({},!1):void 0),check:o}},function(t,e,n){var r=n(2),i=n(17),o=n(1),a=n(88),s="["+a+"]",u=RegExp("^"+s+s+"*"),c=RegExp(s+s+"*$"),l=function(t,e,n){var i={},s=o(function(){return!!a[t]()||"​"!="​"[t]()}),u=i[t]=s?e(f):a[t];n&&(i[n]=u),r(r.P+r.F*s,"String",i)},f=l.trim=function(t,e){return t=String(i(t)),1&e&&(t=t.replace(u,"")),2&e&&(t=t.replace(c,"")),t};t.exports=l},function(t,e){t.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff"},function(t,e,n){"use strict";var r=n(2),i=n(49)(!0);r(r.P,"Array",{includes:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0)}}),n(46)("includes")},function(t,e,n){"use strict";var r=n(2),i=n(91);r(r.P+r.F*n(93)("includes"),"String",{includes:function(t){return!!~i(this,t,"includes").indexOf(t,arguments.length>1?arguments[1]:void 0)}})},function(t,e,n){var r=n(92),i=n(17);t.exports=function(t,e,n){if(r(e))throw TypeError("String#"+n+" doesn't accept regex!");return String(i(t))}},function(t,e,n){var r=n(8),i=n(19),o=n(0)("match");t.exports=function(t){var e;return r(t)&&(void 0!==(e=t[o])?!!e:"RegExp"==i(t))}},function(t,e,n){var r=n(0)("match");t.exports=function(t){var e=/./;try{"/./"[t](e)}catch(n){try{return e[r]=!1,!"/./"[t](e)}catch(t){}}return!0}},function(t,e,n){"use strict";var r=n(25);n.n(r).a},function(t,e,n){(t.exports=n(23)(!1)).push([t.i,'\n.VueCarousel-navigation-button[data-v-453ad8cd] {\n  position: absolute;\n  top: 50%;\n  box-sizing: border-box;\n  color: #000;\n  text-decoration: none;\n  appearance: none;\n  border: none;\n  background-color: transparent;\n  padding: 0;\n  cursor: pointer;\n  outline: none;\n}\n.VueCarousel-navigation-button[data-v-453ad8cd]:focus {\n  outline: 1px solid lightblue;\n}\n.VueCarousel-navigation-next[data-v-453ad8cd] {\n  right: 0;\n  transform: translateY(-50%) translateX(100%);\n  font-family: "system";\n}\n.VueCarousel-navigation-prev[data-v-453ad8cd] {\n  left: 0;\n  transform: translateY(-50%) translateX(-100%);\n  font-family: "system";\n}\n.VueCarousel-navigation--disabled[data-v-453ad8cd] {\n  opacity: 0.5;\n  cursor: default;\n}\n\n/* Define the "system" font family */\n@font-face {\n  font-family: system;\n  font-style: normal;\n  font-weight: 300;\n  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),\n    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Symbol"),\n    local("Roboto-Light"), local("DroidSans"), local("Tahoma");\n}\n',""])},function(t,e,n){"use strict";var r=n(13),i=n(35),o=n(22),a=n(16),s=n(47),u=Object.assign;t.exports=!u||n(1)(function(){var t={},e={},n=Symbol(),r="abcdefghijklmnopqrst";return t[n]=7,r.split("").forEach(function(t){e[t]=t}),7!=u({},t)[n]||Object.keys(u({},e)).join("")!=r})?function(t,e){for(var n=a(t),u=arguments.length,c=1,l=i.f,f=o.f;u>c;)for(var d,h=s(arguments[c++]),p=l?r(h).concat(l(h)):r(h),g=p.length,v=0;g>v;)f.call(h,d=p[v++])&&(n[d]=h[d]);return n}:u},function(t,e,n){"use strict";var r=n(26);n.n(r).a},function(t,e,n){(t.exports=n(23)(!1)).push([t.i,"\n.VueCarousel-pagination[data-v-438fd353] {\n  width: 100%;\n  text-align: center;\n}\n.VueCarousel-pagination--top-overlay[data-v-438fd353] {\n  position: absolute;\n  top: 0;\n}\n.VueCarousel-pagination--bottom-overlay[data-v-438fd353] {\n  position: absolute;\n  bottom: 0;\n}\n.VueCarousel-dot-container[data-v-438fd353] {\n  display: inline-block;\n  margin: 0 auto;\n  padding: 0;\n}\n.VueCarousel-dot[data-v-438fd353] {\n  display: inline-block;\n  cursor: pointer;\n  appearance: none;\n  border: none;\n  background-clip: content-box;\n  box-sizing: content-box;\n  padding: 0;\n  border-radius: 100%;\n  outline: none;\n}\n.VueCarousel-dot[data-v-438fd353]:focus {\n  outline: 1px solid lightblue;\n}\n",""])},function(t,e,n){"use strict";var r=n(27);n.n(r).a},function(t,e,n){(t.exports=n(23)(!1)).push([t.i,"\n.VueCarousel-slide {\n  flex-basis: inherit;\n  flex-grow: 0;\n  flex-shrink: 0;\n  user-select: none;\n  backface-visibility: hidden;\n  -webkit-touch-callout: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  outline: none;\n}\n.VueCarousel-slide-adjustableHeight {\n  display: table;\n  flex-basis: auto;\n  width: 100%;\n}\n",""])},function(t,e,n){"use strict";var r=n(28);n.n(r).a},function(t,e,n){(t.exports=n(23)(!1)).push([t.i,"\n.VueCarousel {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.VueCarousel--reverse {\n  flex-direction: column-reverse;\n}\n.VueCarousel-wrapper {\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n}\n.VueCarousel-inner {\n  display: flex;\n  flex-direction: row;\n  backface-visibility: hidden;\n}\n.VueCarousel-inner--center {\n  justify-content: center;\n}\n",""])},function(t,e,n){"use strict";n.r(e);var r=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"VueCarousel",class:{"VueCarousel--reverse":"top"===t.paginationPosition}},[n("div",{ref:"VueCarousel-wrapper",staticClass:"VueCarousel-wrapper"},[n("div",{ref:"VueCarousel-inner",class:["VueCarousel-inner",{"VueCarousel-inner--center":t.isCenterModeEnabled}],style:{transform:"translate("+t.currentOffset+"px, 0)",transition:t.dragging?"none":t.transitionStyle,"ms-flex-preferred-size":t.slideWidth+"px","webkit-flex-basis":t.slideWidth+"px","flex-basis":t.slideWidth+"px",visibility:t.slideWidth?"visible":"hidden",height:""+t.currentHeight,"padding-left":t.padding+"px","padding-right":t.padding+"px"}},[t._t("default")],2)]),t._v(" "),t.navigationEnabled?t._t("navigation",[t.isNavigationRequired?n("navigation",{attrs:{clickTargetSize:t.navigationClickTargetSize,nextLabel:t.navigationNextLabel,prevLabel:t.navigationPrevLabel},on:{navigationclick:t.handleNavigation}}):t._e()]):t._e(),t._v(" "),t.paginationEnabled?t._t("pagination",[n("pagination",{on:{paginationclick:function(e){t.goToPage(e,"pagination")}}})]):t._e()],2)};r._withStripped=!0,n(54),n(61),n(63),n(45),n(71),n(73),n(74),n(79),n(81),n(83),n(38),n(89),n(90);var i={props:{autoplay:{type:Boolean,default:!1},autoplayTimeout:{type:Number,default:2e3},autoplayHoverPause:{type:Boolean,default:!0},autoplayDirection:{type:String,default:"forward"}},data:function(){return{autoplayInterval:null}},destroyed:function(){this.$isServer||(this.$el.removeEventListener("mouseenter",this.pauseAutoplay),this.$el.removeEventListener("mouseleave",this.startAutoplay))},methods:{pauseAutoplay:function(){this.autoplayInterval&&(this.autoplayInterval=clearInterval(this.autoplayInterval))},startAutoplay:function(){this.autoplay&&(this.autoplayInterval=setInterval(this.autoplayAdvancePage,this.autoplayTimeout))},restartAutoplay:function(){this.pauseAutoplay(),this.startAutoplay()},autoplayAdvancePage:function(){this.advancePage(this.autoplayDirection)}},mounted:function(){!this.$isServer&&this.autoplayHoverPause&&(this.$el.addEventListener("mouseenter",this.pauseAutoplay),this.$el.addEventListener("mouseleave",this.startAutoplay)),this.startAutoplay()}},o=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"VueCarousel-navigation"},[n("button",{staticClass:"VueCarousel-navigation-button VueCarousel-navigation-prev",class:{"VueCarousel-navigation--disabled":!t.canAdvanceBackward},style:"padding: "+t.clickTargetSize+"px; margin-right: -"+t.clickTargetSize+"px;",attrs:{type:"button","aria-label":"Previous page",tabindex:t.canAdvanceBackward?0:-1},domProps:{innerHTML:t._s(t.prevLabel)},on:{click:function(e){e.preventDefault(),t.triggerPageAdvance("backward")}}}),t._v(" "),n("button",{staticClass:"VueCarousel-navigation-button VueCarousel-navigation-next",class:{"VueCarousel-navigation--disabled":!t.canAdvanceForward},style:"padding: "+t.clickTargetSize+"px; margin-left: -"+t.clickTargetSize+"px;",attrs:{type:"button","aria-label":"Next page",tabindex:t.canAdvanceForward?0:-1},domProps:{innerHTML:t._s(t.nextLabel)},on:{click:function(e){e.preventDefault(),t.triggerPageAdvance("forward")}}})])};o._withStripped=!0;var a={name:"navigation",inject:["carousel"],props:{clickTargetSize:{type:Number,default:8},nextLabel:{type:String,default:"&#9654"},prevLabel:{type:String,default:"&#9664"}},computed:{canAdvanceForward:function(){return this.carousel.canAdvanceForward||!1},canAdvanceBackward:function(){return this.carousel.canAdvanceBackward||!1}},methods:{triggerPageAdvance:function(t){this.$emit("navigationclick",t)}}};function s(t,e,n,r,i,o,a,s){var u,c="function"==typeof t?t.options:t;if(e&&(c.render=e,c.staticRenderFns=n,c._compiled=!0),r&&(c.functional=!0),o&&(c._scopeId="data-v-"+o),a?(u=function(t){(t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext)||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),i&&i.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(a)},c._ssrRegister=u):i&&(u=s?function(){i.call(this,this.$root.$options.shadowRoot)}:i),u)if(c.functional){c._injectStyles=u;var l=c.render;c.render=function(t,e){return u.call(e),l(t,e)}}else{var f=c.beforeCreate;c.beforeCreate=f?[].concat(f,u):[u]}return{exports:t,options:c}}n(94);var u=s(a,o,[],!1,null,"453ad8cd",null);u.options.__file="src/Navigation.vue";var c=u.exports,l=function(){var t,e=this,n=e.$createElement,r=e._self._c||n;return r("div",{directives:[{name:"show",rawName:"v-show",value:e.carousel.pageCount>1,expression:"carousel.pageCount > 1"}],staticClass:"VueCarousel-pagination",class:(t={},t["VueCarousel-pagination--"+e.paginationPositionModifierName]=e.paginationPositionModifierName,t)},[r("div",{staticClass:"VueCarousel-dot-container",style:e.dotContainerStyle,attrs:{role:"tablist"}},e._l(e.paginationCount,function(t,n){return r("button",{key:t+"_"+n,staticClass:"VueCarousel-dot",class:{"VueCarousel-dot--active":e.isCurrentDot(n)},style:e.dotStyle(n),attrs:{"aria-hidden":"false",role:"tab",title:e.getDotTitle(n),value:e.getDotTitle(n),"aria-label":e.getDotTitle(n),"aria-selected":e.isCurrentDot(n)?"true":"false"},on:{click:function(t){e.goToPage(n)}}})}))])};l._withStripped=!0,n(52);var f={name:"pagination",inject:["carousel"],computed:{paginationPositionModifierName:function(){var t=this.carousel.paginationPosition;if(!(t.indexOf("overlay")<0))return t},paginationPropertyBasedOnPosition:function(){return this.carousel.paginationPosition.indexOf("top")>=0?"bottom":"top"},paginationCount:function(){return this.carousel&&this.carousel.scrollPerPage?this.carousel.pageCount:this.carousel.slideCount||0},dotContainerStyle:function(){var t=this.carousel;if(-1===t.maxPaginationDotCount)return{"margin-top":"".concat(2*t.paginationPadding,"px")};var e=2*t.paginationPadding,n=t.maxPaginationDotCount*(t.paginationSize+e);return{"margin-top":"".concat(2*t.paginationPadding,"px"),overflow:"hidden",width:"".concat(n,"px"),margin:"0 auto","white-space":"nowrap"}}},methods:{goToPage:function(t){this.$emit("paginationclick",t)},isCurrentDot:function(t){return t===this.carousel.currentPage},getDotTitle:function(t){return this.carousel.$children[t].title?this.carousel.$children[t].title:"Item ".concat(t)},dotStyle:function(t){var e=this.carousel,n={};if(n["margin-".concat(this.paginationPropertyBasedOnPosition)]="".concat(2*e.paginationPadding,"px"),Object.assign(n,{padding:"".concat(e.paginationPadding,"px"),width:"".concat(e.paginationSize,"px"),height:"".concat(e.paginationSize,"px"),"background-color":"".concat(this.isCurrentDot(t)?e.paginationActiveColor:e.paginationColor)}),-1===e.maxPaginationDotCount)return n;var r=e.paginationSize+2*e.paginationPadding,i=e.pageCount-e.maxPaginationDotCount,o=0-r*(e.currentPage>i?i:e.currentPage<=e.maxPaginationDotCount/2?0:e.currentPage-Math.ceil(e.maxPaginationDotCount/2)+1);return Object.assign(n,{"-webkit-transform":"translate3d(".concat(o,"px,0,0)"),transform:"translate3d(".concat(o,"px,0,0)"),"-webkit-transition":"-webkit-transform ".concat(e.speed/1e3,"s"),transition:"transform ".concat(e.speed/1e3,"s")})}}},d=(n(97),s(f,l,[],!1,null,"438fd353",null));d.options.__file="src/Pagination.vue";var h=d.exports,p=function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"VueCarousel-slide",class:{"VueCarousel-slide-active":this.isActive,"VueCarousel-slide-center":this.isCenter,"VueCarousel-slide-adjustableHeight":this.isAdjustableHeight},attrs:{tabindex:"-1","aria-hidden":!this.isActive,role:"tabpanel"}},[this._t("default")],2)};p._withStripped=!0;var g={name:"slide",props:["title"],data:function(){return{width:null}},inject:["carousel"],mounted:function(){this.$isServer||this.$el.addEventListener("dragstart",function(t){return t.preventDefault()}),this.$el.addEventListener(this.carousel.isTouch?"touchend":"mouseup",this.onTouchEnd)},computed:{activeSlides:function(){for(var t=this.carousel,e=t.currentPage,n=t.breakpointSlidesPerPage,r=[],i=t.$children.filter(function(t){return t.$el&&t.$el.className.indexOf("VueCarousel-slide")>=0}).map(function(t){return t._uid}),o=0;o<n;){var a=i[e*n+o];r.push(a),o++}return r},isActive:function(){return this.activeSlides.indexOf(this._uid)>=0},isCenter:function(){var t=this.carousel.breakpointSlidesPerPage;return!(t%2==0||!this.isActive)&&this.activeSlides.indexOf(this._uid)===Math.floor(t/2)},isAdjustableHeight:function(){return this.carousel.adjustableHeight}},methods:{onTouchEnd:function(t){var e=this.carousel.isTouch&&t.changedTouches&&t.changedTouches.length>0?t.changedTouches[0].clientX:t.clientX,n=this.carousel.dragStartX-e;(0===this.carousel.minSwipeDistance||Math.abs(n)<this.carousel.minSwipeDistance)&&(this.$emit("slideclick",Object.assign({},t.currentTarget.dataset)),this.$emit("slide-click",Object.assign({},t.currentTarget.dataset)))}}},v=(n(99),s(g,p,[],!1,null,null,null));v.options.__file="src/Slide.vue";var y=v.exports;function m(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}function b(t){return(b="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var x={onwebkittransitionend:"webkitTransitionEnd",onmoztransitionend:"transitionend",onotransitionend:"oTransitionEnd otransitionend",ontransitionend:"transitionend"},P=function(){for(var t in x)if(t in window)return x[t]},S={name:"carousel",beforeUpdate:function(){this.computeCarouselWidth()},components:{Navigation:c,Pagination:h,Slide:y},data:function(){return{browserWidth:null,carouselWidth:0,currentPage:0,dragging:!1,dragMomentum:0,dragOffset:0,dragStartY:0,dragStartX:0,isTouch:"undefined"!=typeof window&&"ontouchstart"in window,offset:0,refreshRate:16,slideCount:0,transitionstart:"transitionstart",transitionend:"transitionend",currentHeight:"auto"}},mixins:[i],provide:function(){return{carousel:this}},props:{adjustableHeight:{type:Boolean,default:!1},adjustableHeightEasing:{type:String},centerMode:{type:Boolean,default:!1},easing:{type:String,validator:function(t){return-1!==["ease","linear","ease-in","ease-out","ease-in-out"].indexOf(t)||t.includes("cubic-bezier")},default:"ease"},loop:{type:Boolean,default:!1},minSwipeDistance:{type:Number,default:8},mouseDrag:{type:Boolean,default:!0},touchDrag:{type:Boolean,default:!0},navigateTo:{type:[Number,Array],default:0},navigationClickTargetSize:{type:Number,default:8},navigationEnabled:{type:Boolean,default:!1},navigationNextLabel:{type:String,default:"&#9654"},navigationPrevLabel:{type:String,default:"&#9664"},paginationActiveColor:{type:String,default:"#000000"},paginationColor:{type:String,default:"#efefef"},paginationEnabled:{type:Boolean,default:!0},paginationPadding:{type:Number,default:10},paginationPosition:{type:String,default:"bottom"},paginationSize:{type:Number,default:10},perPage:{type:Number,default:2},perPageCustom:{type:Array},resistanceCoef:{type:Number,default:20},scrollPerPage:{type:Boolean,default:!0},spacePadding:{type:Number,default:0},spacePaddingMaxOffsetFactor:{type:Number,default:0},speed:{type:Number,default:500},tagName:{type:String,default:"slide"},value:{type:Number},maxPaginationDotCount:{type:Number,default:-1},rtl:{type:Boolean,default:!1}},watch:{value:function(t){t!==this.currentPage&&(this.goToPage(t),this.render())},navigateTo:{immediate:!0,handler:function(t){var e=this;"object"===b(t)?(0==t[1]&&(this.dragging=!0,setTimeout(function(){e.dragging=!1},this.refreshRate)),this.$nextTick(function(){e.goToPage(t[0])})):this.$nextTick(function(){e.goToPage(t)})}},currentPage:function(t){this.$emit("pageChange",t),this.$emit("page-change",t),this.$emit("input",t)},autoplay:function(t){!1===t?this.pauseAutoplay():this.restartAutoplay()}},computed:{breakpointSlidesPerPage:function(){if(!this.perPageCustom)return this.perPage;var t=this.perPageCustom,e=this.browserWidth,n=t.sort(function(t,e){return t[0]>e[0]?-1:1}).filter(function(t){return e>=t[0]});return n[0]&&n[0][1]||this.perPage},canAdvanceForward:function(){return this.loop||this.offset<this.maxOffset},canAdvanceBackward:function(){return this.loop||this.currentPage>0},currentPerPage:function(){return!this.perPageCustom||this.$isServer?this.perPage:this.breakpointSlidesPerPage},currentOffset:function(){return this.isCenterModeEnabled?0:this.rtl?1*(this.offset-this.dragOffset):-1*(this.offset+this.dragOffset)},isHidden:function(){return this.carouselWidth<=0},maxOffset:function(){return Math.max(this.slideWidth*(this.slideCount-this.currentPerPage)-this.spacePadding*this.spacePaddingMaxOffsetFactor,0)},pageCount:function(){return this.scrollPerPage?Math.ceil(this.slideCount/this.currentPerPage):this.slideCount-this.currentPerPage+1},slideWidth:function(){return(this.carouselWidth-2*this.spacePadding)/this.currentPerPage},isNavigationRequired:function(){return this.slideCount>this.currentPerPage},isCenterModeEnabled:function(){return this.centerMode&&!this.isNavigationRequired},transitionStyle:function(){var t="".concat(this.speed/1e3,"s"),e="".concat(t," ").concat(this.easing," transform");return this.adjustableHeight?"".concat(e,", height ").concat(t," ").concat(this.adjustableHeightEasing||this.easing):e},padding:function(){var t=this.spacePadding;return t>0&&t}},methods:{getNextPage:function(){return this.currentPage<this.pageCount-1?this.currentPage+1:this.loop?0:this.currentPage},getPreviousPage:function(){return this.currentPage>0?this.currentPage-1:this.loop?this.pageCount-1:this.currentPage},advancePage:function(t){t&&"backward"===t&&this.canAdvanceBackward?this.goToPage(this.getPreviousPage(),"navigation"):(!t||t&&"backward"!==t)&&this.canAdvanceForward&&this.goToPage(this.getNextPage(),"navigation")},goToLastSlide:function(){var t=this;this.dragging=!0,setTimeout(function(){t.dragging=!1},this.refreshRate),this.$nextTick(function(){t.goToPage(t.pageCount)})},attachMutationObserver:function(){var t=this,e=window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver;if(e){var n={attributes:!0,data:!0};if(this.adjustableHeight&&(n=function(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},r=Object.keys(n);"function"==typeof Object.getOwnPropertySymbols&&(r=r.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),r.forEach(function(e){m(t,e,n[e])})}return t}({},n,{childList:!0,subtree:!0,characterData:!0})),this.mutationObserver=new e(function(){t.$nextTick(function(){t.computeCarouselWidth(),t.computeCarouselHeight()})}),this.$parent.$el)for(var r=this.$el.getElementsByClassName("VueCarousel-inner"),i=0;i<r.length;i++)this.mutationObserver.observe(r[i],n)}},handleNavigation:function(t){this.advancePage(t),this.pauseAutoplay(),this.$emit("navigation-click",t)},detachMutationObserver:function(){this.mutationObserver&&this.mutationObserver.disconnect()},getBrowserWidth:function(){return this.browserWidth=window.innerWidth,this.browserWidth},getCarouselWidth:function(){for(var t=this.$el.getElementsByClassName("VueCarousel-inner"),e=0;e<t.length;e++)t[e].clientWidth>0&&(this.carouselWidth=t[e].clientWidth||0);return this.carouselWidth},getCarouselHeight:function(){var t=this;if(!this.adjustableHeight)return"auto";var e=this.currentPerPage*(this.currentPage+1)-1,n=function(t){return function(t){if(Array.isArray(t)){for(var e=0,n=new Array(t.length);e<t.length;e++)n[e]=t[e];return n}}(t)||function(t){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t))return Array.from(t)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()}(Array(this.currentPerPage)).map(function(n,r){return t.getSlide(e+r)}).reduce(function(t,e){return Math.max(t,e&&e.$el.clientHeight||0)},0);return this.currentHeight=0===n?"auto":"".concat(n,"px"),this.currentHeight},getSlideCount:function(){var t=this;this.slideCount=this.$slots&&this.$slots.default&&this.$slots.default.filter(function(e){return e.tag&&null!==e.tag.match("^vue-component-\\d+-".concat(t.tagName,"$"))}).length||0},getSlide:function(t){var e=this;return this.$children.filter(function(t){return null!==t.$vnode.tag.match("^vue-component-\\d+-".concat(e.tagName,"$"))})[t]},goToPage:function(t,e){t>=0&&t<=this.pageCount&&(this.offset=this.scrollPerPage?Math.min(this.slideWidth*this.currentPerPage*t,this.maxOffset):this.slideWidth*t,this.autoplay&&!this.autoplayHoverPause&&this.restartAutoplay(),this.currentPage=t,"pagination"===e&&(this.pauseAutoplay(),this.$emit("pagination-click",t)))},onStart:function(t){2!=t.button&&(document.addEventListener(this.isTouch?"touchend":"mouseup",this.onEnd,!0),document.addEventListener(this.isTouch?"touchmove":"mousemove",this.onDrag,!0),this.startTime=t.timeStamp,this.dragging=!0,this.dragStartX=this.isTouch?t.touches[0].clientX:t.clientX,this.dragStartY=this.isTouch?t.touches[0].clientY:t.clientY)},onEnd:function(t){this.autoplay&&!this.autoplayHoverPause&&this.restartAutoplay(),this.pauseAutoplay();var e=this.isTouch?t.changedTouches[0].clientX:t.clientX,n=this.dragStartX-e;if(this.dragMomentum=n/(t.timeStamp-this.startTime),0!==this.minSwipeDistance&&Math.abs(n)>=this.minSwipeDistance){var r=this.scrollPerPage?this.slideWidth*this.currentPerPage:this.slideWidth;this.dragOffset=this.dragOffset+Math.sign(n)*(r/2)}this.rtl?this.offset-=this.dragOffset:this.offset+=this.dragOffset,this.dragOffset=0,this.dragging=!1,this.render(),document.removeEventListener(this.isTouch?"touchend":"mouseup",this.onEnd,!0),document.removeEventListener(this.isTouch?"touchmove":"mousemove",this.onDrag,!0)},onDrag:function(t){var e=this.isTouch?t.touches[0].clientX:t.clientX,n=this.isTouch?t.touches[0].clientY:t.clientY,r=this.dragStartX-e,i=this.dragStartY-n;if(!(this.isTouch&&Math.abs(r)<Math.abs(i))){t.stopImmediatePropagation(),this.dragOffset=r;var o=this.offset+this.dragOffset;this.rtl?0==this.offset&&this.dragOffset>0?this.dragOffset=Math.sqrt(this.resistanceCoef*this.dragOffset):this.offset==this.maxOffset&&this.dragOffset<0&&(this.dragOffset=-Math.sqrt(-this.resistanceCoef*this.dragOffset)):o<0?this.dragOffset=-Math.sqrt(-this.resistanceCoef*this.dragOffset):o>this.maxOffset&&(this.dragOffset=Math.sqrt(this.resistanceCoef*this.dragOffset))}},onResize:function(){var t=this;this.computeCarouselWidth(),this.computeCarouselHeight(),this.dragging=!0,this.render(),setTimeout(function(){t.dragging=!1},this.refreshRate)},render:function(){this.rtl?this.offset-=Math.max(1-this.currentPerPage,Math.min(Math.round(this.dragMomentum),this.currentPerPage-1))*this.slideWidth:this.offset+=Math.max(1-this.currentPerPage,Math.min(Math.round(this.dragMomentum),this.currentPerPage-1))*this.slideWidth;var t=this.scrollPerPage?this.slideWidth*this.currentPerPage:this.slideWidth,e=t*Math.floor(this.slideCount/(this.currentPerPage-1)),n=e+this.slideWidth*(this.slideCount%this.currentPerPage);this.offset>(e+n)/2?this.offset=n:this.offset=t*Math.round(this.offset/t),this.offset=Math.max(0,Math.min(this.offset,this.maxOffset)),this.currentPage=this.scrollPerPage?Math.round(this.offset/this.slideWidth/this.currentPerPage):Math.round(this.offset/this.slideWidth)},computeCarouselWidth:function(){this.getSlideCount(),this.getBrowserWidth(),this.getCarouselWidth(),this.setCurrentPageInBounds()},computeCarouselHeight:function(){this.getCarouselHeight()},setCurrentPageInBounds:function(){if(!this.canAdvanceForward&&this.scrollPerPage){var t=this.pageCount-1;this.currentPage=t>=0?t:0,this.offset=Math.max(0,Math.min(this.offset,this.maxOffset))}},handleTransitionStart:function(){this.$emit("transitionStart"),this.$emit("transition-start")},handleTransitionEnd:function(){this.$emit("transitionEnd"),this.$emit("transition-end")}},mounted:function(){window.addEventListener("resize",function(t,e,n){var r;return function(){var i=n&&!r;clearTimeout(r),r=setTimeout(function(){r=null,n||t.apply(void 0)},e),i&&t.apply(void 0)}}(this.onResize,this.refreshRate)),(this.isTouch&&this.touchDrag||this.mouseDrag)&&this.$refs["VueCarousel-wrapper"].addEventListener(this.isTouch?"touchstart":"mousedown",this.onStart),this.attachMutationObserver(),this.computeCarouselWidth(),this.computeCarouselHeight(),this.transitionstart=P(),this.$refs["VueCarousel-inner"].addEventListener(this.transitionstart,this.handleTransitionStart),this.transitionend=P(),this.$refs["VueCarousel-inner"].addEventListener(this.transitionend,this.handleTransitionEnd),this.$emit("mounted"),"backward"===this.autoplayDirection&&this.goToLastSlide()},beforeDestroy:function(){this.detachMutationObserver(),window.removeEventListener("resize",this.getBrowserWidth),this.$refs["VueCarousel-inner"].removeEventListener(this.transitionstart,this.handleTransitionStart),this.$refs["VueCarousel-inner"].removeEventListener(this.transitionend,this.handleTransitionEnd),this.$refs["VueCarousel-wrapper"].removeEventListener(this.isTouch?"touchstart":"mousedown",this.onStart)}},C=(n(101),s(S,r,[],!1,null,null,null));C.options.__file="src/Carousel.vue";var w=C.exports;n.d(e,"Carousel",function(){return w}),n.d(e,"Slide",function(){return y}),e.default={install:function(t){t.component("carousel",w),t.component("slide",y)}}}])});
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
-  \****************************************************************************************************************************************************************************************************************/
+/***/ "fb15":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+// This file is imported into lib/wc client bundles.
+
+if (typeof window !== 'undefined') {
+  var i
+  if ((i = window.document.currentScript) && (i = i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
+    __webpack_require__.p = i[1] // eslint-disable-line
+  }
+}
+
+// Indicate to webpack that this file can be concatenated
+/* harmony default export */ var setPublicPath = (null);
+
+// CONCATENATED MODULE: ./node_modules/@glidejs/glide/dist/glide.esm.js
+/*!
+ * Glide.js v3.2.4
+ * (c) 2013-2018 Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com/)
+ * Released under the MIT License.
+ */
+
+var defaults = {
+  /**
+   * Type of the movement.
+   *
+   * Available types:
+   * `slider` - Rewinds slider to the start/end when it reaches the first or last slide.
+   * `carousel` - Changes slides without starting over when it reaches the first or last slide.
+   *
+   * @type {String}
+   */
+  type: 'slider',
+
+  /**
+   * Start at specific slide number defined with zero-based index.
+   *
+   * @type {Number}
+   */
+  startAt: 0,
+
+  /**
+   * A number of slides visible on the single viewport.
+   *
+   * @type {Number}
+   */
+  perView: 1,
+
+  /**
+   * Focus currently active slide at a specified position in the track.
+   *
+   * Available inputs:
+   * `center` - Current slide will be always focused at the center of a track.
+   * `0,1,2,3...` - Current slide will be focused on the specified zero-based index.
+   *
+   * @type {String|Number}
+   */
+  focusAt: 0,
+
+  /**
+   * A size of the gap added between slides.
+   *
+   * @type {Number}
+   */
+  gap: 10,
+
+  /**
+   * Change slides after a specified interval. Use `false` for turning off autoplay.
+   *
+   * @type {Number|Boolean}
+   */
+  autoplay: false,
+
+  /**
+   * Stop autoplay on mouseover event.
+   *
+   * @type {Boolean}
+   */
+  hoverpause: true,
+
+  /**
+   * Allow for changing slides with left and right keyboard arrows.
+   *
+   * @type {Boolean}
+   */
+  keyboard: true,
+
+  /**
+   * Stop running `perView` number of slides from the end. Use this
+   * option if you don't want to have an empty space after
+   * a slider. Works only with `slider` type and a
+   * non-centered `focusAt` setting.
+   *
+   * @type {Boolean}
+   */
+  bound: false,
+
+  /**
+   * Minimal swipe distance needed to change the slide. Use `false` for turning off a swiping.
+   *
+   * @type {Number|Boolean}
+   */
+  swipeThreshold: 80,
+
+  /**
+   * Minimal mouse drag distance needed to change the slide. Use `false` for turning off a dragging.
+   *
+   * @type {Number|Boolean}
+   */
+  dragThreshold: 120,
+
+  /**
+   * A maximum number of slides to which movement will be made on swiping or dragging. Use `false` for unlimited.
+   *
+   * @type {Number|Boolean}
+   */
+  perTouch: false,
+
+  /**
+   * Moving distance ratio of the slides on a swiping and dragging.
+   *
+   * @type {Number}
+   */
+  touchRatio: 0.5,
+
+  /**
+   * Angle required to activate slides moving on swiping or dragging.
+   *
+   * @type {Number}
+   */
+  touchAngle: 45,
+
+  /**
+   * Duration of the animation in milliseconds.
+   *
+   * @type {Number}
+   */
+  animationDuration: 400,
+
+  /**
+   * Allows looping the `slider` type. Slider will rewind to the first/last slide when it's at the start/end.
+   *
+   * @type {Boolean}
+   */
+  rewind: true,
+
+  /**
+   * Duration of the rewinding animation of the `slider` type in milliseconds.
+   *
+   * @type {Number}
+   */
+  rewindDuration: 800,
+
+  /**
+   * Easing function for the animation.
+   *
+   * @type {String}
+   */
+  animationTimingFunc: 'cubic-bezier(.165, .840, .440, 1)',
+
+  /**
+   * Throttle costly events at most once per every wait milliseconds.
+   *
+   * @type {Number}
+   */
+  throttle: 10,
+
+  /**
+   * Moving direction mode.
+   *
+   * Available inputs:
+   * - 'ltr' - left to right movement,
+   * - 'rtl' - right to left movement.
+   *
+   * @type {String}
+   */
+  direction: 'ltr',
+
+  /**
+   * The distance value of the next and previous viewports which
+   * have to peek in the current view. Accepts number and
+   * pixels as a string. Left and right peeking can be
+   * set up separately with a directions object.
+   *
+   * For example:
+   * `100` - Peek 100px on the both sides.
+   * { before: 100, after: 50 }` - Peek 100px on the left side and 50px on the right side.
+   *
+   * @type {Number|String|Object}
+   */
+  peek: 0,
+
+  /**
+   * Collection of options applied at specified media breakpoints.
+   * For example: display two slides per view under 800px.
+   * `{
+   *   '800px': {
+   *     perView: 2
+   *   }
+   * }`
+   */
+  breakpoints: {},
+
+  /**
+   * Collection of internally used HTML classes.
+   *
+   * @todo Refactor `slider` and `carousel` properties to single `type: { slider: '', carousel: '' }` object
+   * @type {Object}
+   */
+  classes: {
+    direction: {
+      ltr: 'glide--ltr',
+      rtl: 'glide--rtl'
+    },
+    slider: 'glide--slider',
+    carousel: 'glide--carousel',
+    swipeable: 'glide--swipeable',
+    dragging: 'glide--dragging',
+    cloneSlide: 'glide__slide--clone',
+    activeNav: 'glide__bullet--active',
+    activeSlide: 'glide__slide--active',
+    disabledArrow: 'glide__arrow--disabled'
+  }
+};
+
+/**
+ * Outputs warning message to the bowser console.
+ *
+ * @param  {String} msg
+ * @return {Void}
+ */
+function warn(msg) {
+  console.error("[Glide warn]: " + msg);
+}
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var get = function get(object, property, receiver) {
+  if (object === null) object = Function.prototype;
+  var desc = Object.getOwnPropertyDescriptor(object, property);
+
+  if (desc === undefined) {
+    var parent = Object.getPrototypeOf(object);
+
+    if (parent === null) {
+      return undefined;
+    } else {
+      return get(parent, property, receiver);
+    }
+  } else if ("value" in desc) {
+    return desc.value;
+  } else {
+    var getter = desc.get;
+
+    if (getter === undefined) {
+      return undefined;
+    }
+
+    return getter.call(receiver);
+  }
+};
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+/**
+ * Converts value entered as number
+ * or string to integer value.
+ *
+ * @param {String} value
+ * @returns {Number}
+ */
+function toInt(value) {
+  return parseInt(value);
+}
+
+/**
+ * Converts value entered as number
+ * or string to flat value.
+ *
+ * @param {String} value
+ * @returns {Number}
+ */
+function toFloat(value) {
+  return parseFloat(value);
+}
+
+/**
+ * Indicates whether the specified value is a string.
+ *
+ * @param  {*}   value
+ * @return {Boolean}
+ */
+function isString(value) {
+  return typeof value === 'string';
+}
+
+/**
+ * Indicates whether the specified value is an object.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ *
+ * @see https://github.com/jashkenas/underscore
+ */
+function isObject(value) {
+  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
+
+  return type === 'function' || type === 'object' && !!value; // eslint-disable-line no-mixed-operators
+}
+
+/**
+ * Indicates whether the specified value is a number.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isNumber(value) {
+  return typeof value === 'number';
+}
+
+/**
+ * Indicates whether the specified value is a function.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isFunction(value) {
+  return typeof value === 'function';
+}
+
+/**
+ * Indicates whether the specified value is undefined.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isUndefined(value) {
+  return typeof value === 'undefined';
+}
+
+/**
+ * Indicates whether the specified value is an array.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isArray(value) {
+  return value.constructor === Array;
+}
+
+/**
+ * Creates and initializes specified collection of extensions.
+ * Each extension receives access to instance of glide and rest of components.
+ *
+ * @param {Object} glide
+ * @param {Object} extensions
+ *
+ * @returns {Object}
+ */
+function mount(glide, extensions, events) {
+  var components = {};
+
+  for (var name in extensions) {
+    if (isFunction(extensions[name])) {
+      components[name] = extensions[name](glide, components, events);
+    } else {
+      warn('Extension must be a function');
+    }
+  }
+
+  for (var _name in components) {
+    if (isFunction(components[_name].mount)) {
+      components[_name].mount();
+    }
+  }
+
+  return components;
+}
+
+/**
+ * Defines getter and setter property on the specified object.
+ *
+ * @param  {Object} obj         Object where property has to be defined.
+ * @param  {String} prop        Name of the defined property.
+ * @param  {Object} definition  Get and set definitions for the property.
+ * @return {Void}
+ */
+function define(obj, prop, definition) {
+  Object.defineProperty(obj, prop, definition);
+}
+
+/**
+ * Sorts aphabetically object keys.
+ *
+ * @param  {Object} obj
+ * @return {Object}
+ */
+function sortKeys(obj) {
+  return Object.keys(obj).sort().reduce(function (r, k) {
+    r[k] = obj[k];
+
+    return r[k], r;
+  }, {});
+}
+
+/**
+ * Merges passed settings object with default options.
+ *
+ * @param  {Object} defaults
+ * @param  {Object} settings
+ * @return {Object}
+ */
+function mergeOptions(defaults, settings) {
+  var options = _extends({}, defaults, settings);
+
+  // `Object.assign` do not deeply merge objects, so we
+  // have to do it manually for every nested object
+  // in options. Although it does not look smart,
+  // it's smaller and faster than some fancy
+  // merging deep-merge algorithm script.
+  if (settings.hasOwnProperty('classes')) {
+    options.classes = _extends({}, defaults.classes, settings.classes);
+
+    if (settings.classes.hasOwnProperty('direction')) {
+      options.classes.direction = _extends({}, defaults.classes.direction, settings.classes.direction);
+    }
+  }
+
+  if (settings.hasOwnProperty('breakpoints')) {
+    options.breakpoints = _extends({}, defaults.breakpoints, settings.breakpoints);
+  }
+
+  return options;
+}
+
+var EventsBus = function () {
+  /**
+   * Construct a EventBus instance.
+   *
+   * @param {Object} events
+   */
+  function EventsBus() {
+    var events = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    classCallCheck(this, EventsBus);
+
+    this.events = events;
+    this.hop = events.hasOwnProperty;
+  }
+
+  /**
+   * Adds listener to the specifed event.
+   *
+   * @param {String|Array} event
+   * @param {Function} handler
+   */
+
+
+  createClass(EventsBus, [{
+    key: 'on',
+    value: function on(event, handler) {
+      if (isArray(event)) {
+        for (var i = 0; i < event.length; i++) {
+          this.on(event[i], handler);
+        }
+      }
+
+      // Create the event's object if not yet created
+      if (!this.hop.call(this.events, event)) {
+        this.events[event] = [];
+      }
+
+      // Add the handler to queue
+      var index = this.events[event].push(handler) - 1;
+
+      // Provide handle back for removal of event
+      return {
+        remove: function remove() {
+          delete this.events[event][index];
+        }
+      };
+    }
+
+    /**
+     * Runs registered handlers for specified event.
+     *
+     * @param {String|Array} event
+     * @param {Object=} context
+     */
+
+  }, {
+    key: 'emit',
+    value: function emit(event, context) {
+      if (isArray(event)) {
+        for (var i = 0; i < event.length; i++) {
+          this.emit(event[i], context);
+        }
+      }
+
+      // If the event doesn't exist, or there's no handlers in queue, just leave
+      if (!this.hop.call(this.events, event)) {
+        return;
+      }
+
+      // Cycle through events queue, fire!
+      this.events[event].forEach(function (item) {
+        item(context || {});
+      });
+    }
+  }]);
+  return EventsBus;
+}();
+
+var Glide = function () {
+  /**
+   * Construct glide.
+   *
+   * @param  {String} selector
+   * @param  {Object} options
+   */
+  function Glide(selector) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    classCallCheck(this, Glide);
+
+    this._c = {};
+    this._t = [];
+    this._e = new EventsBus();
+
+    this.disabled = false;
+    this.selector = selector;
+    this.settings = mergeOptions(defaults, options);
+    this.index = this.settings.startAt;
+  }
+
+  /**
+   * Initializes glide.
+   *
+   * @param {Object} extensions Collection of extensions to initialize.
+   * @return {Glide}
+   */
+
+
+  createClass(Glide, [{
+    key: 'mount',
+    value: function mount$$1() {
+      var extensions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this._e.emit('mount.before');
+
+      if (isObject(extensions)) {
+        this._c = mount(this, extensions, this._e);
+      } else {
+        warn('You need to provide a object on `mount()`');
+      }
+
+      this._e.emit('mount.after');
+
+      return this;
+    }
+
+    /**
+     * Collects an instance `translate` transformers.
+     *
+     * @param  {Array} transformers Collection of transformers.
+     * @return {Void}
+     */
+
+  }, {
+    key: 'mutate',
+    value: function mutate() {
+      var transformers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+
+      if (isArray(transformers)) {
+        this._t = transformers;
+      } else {
+        warn('You need to provide a array on `mutate()`');
+      }
+
+      return this;
+    }
+
+    /**
+     * Updates glide with specified settings.
+     *
+     * @param {Object} settings
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'update',
+    value: function update() {
+      var settings = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this.settings = mergeOptions(this.settings, settings);
+
+      if (settings.hasOwnProperty('startAt')) {
+        this.index = settings.startAt;
+      }
+
+      this._e.emit('update');
+
+      return this;
+    }
+
+    /**
+     * Change slide with specified pattern. A pattern must be in the special format:
+     * `>` - Move one forward
+     * `<` - Move one backward
+     * `={i}` - Go to {i} zero-based slide (eq. '=1', will go to second slide)
+     * `>>` - Rewinds to end (last slide)
+     * `<<` - Rewinds to start (first slide)
+     *
+     * @param {String} pattern
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'go',
+    value: function go(pattern) {
+      this._c.Run.make(pattern);
+
+      return this;
+    }
+
+    /**
+     * Move track by specified distance.
+     *
+     * @param {String} distance
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'move',
+    value: function move(distance) {
+      this._c.Transition.disable();
+      this._c.Move.make(distance);
+
+      return this;
+    }
+
+    /**
+     * Destroy instance and revert all changes done by this._c.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'destroy',
+    value: function destroy() {
+      this._e.emit('destroy');
+
+      return this;
+    }
+
+    /**
+     * Start instance autoplaying.
+     *
+     * @param {Boolean|Number} interval Run autoplaying with passed interval regardless of `autoplay` settings
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'play',
+    value: function play() {
+      var interval = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+      if (interval) {
+        this.settings.autoplay = interval;
+      }
+
+      this._e.emit('play');
+
+      return this;
+    }
+
+    /**
+     * Stop instance autoplaying.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'pause',
+    value: function pause() {
+      this._e.emit('pause');
+
+      return this;
+    }
+
+    /**
+     * Sets glide into a idle status.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'disable',
+    value: function disable() {
+      this.disabled = true;
+
+      return this;
+    }
+
+    /**
+     * Sets glide into a active status.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'enable',
+    value: function enable() {
+      this.disabled = false;
+
+      return this;
+    }
+
+    /**
+     * Adds cuutom event listener with handler.
+     *
+     * @param  {String|Array} event
+     * @param  {Function} handler
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'on',
+    value: function on(event, handler) {
+      this._e.on(event, handler);
+
+      return this;
+    }
+
+    /**
+     * Checks if glide is a precised type.
+     *
+     * @param  {String} name
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'isType',
+    value: function isType(name) {
+      return this.settings.type === name;
+    }
+
+    /**
+     * Gets value of the core options.
+     *
+     * @return {Object}
+     */
+
+  }, {
+    key: 'settings',
+    get: function get$$1() {
+      return this._o;
+    }
+
+    /**
+     * Sets value of the core options.
+     *
+     * @param  {Object} o
+     * @return {Void}
+     */
+    ,
+    set: function set$$1(o) {
+      if (isObject(o)) {
+        this._o = o;
+      } else {
+        warn('Options must be an `object` instance.');
+      }
+    }
+
+    /**
+     * Gets current index of the slider.
+     *
+     * @return {Object}
+     */
+
+  }, {
+    key: 'index',
+    get: function get$$1() {
+      return this._i;
+    }
+
+    /**
+     * Sets current index a slider.
+     *
+     * @return {Object}
+     */
+    ,
+    set: function set$$1(i) {
+      this._i = toInt(i);
+    }
+
+    /**
+     * Gets type name of the slider.
+     *
+     * @return {String}
+     */
+
+  }, {
+    key: 'type',
+    get: function get$$1() {
+      return this.settings.type;
+    }
+
+    /**
+     * Gets value of the idle status.
+     *
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'disabled',
+    get: function get$$1() {
+      return this._d;
+    }
+
+    /**
+     * Sets value of the idle status.
+     *
+     * @return {Boolean}
+     */
+    ,
+    set: function set$$1(status) {
+      this._d = !!status;
+    }
+  }]);
+  return Glide;
+}();
+
+function Run (Glide, Components, Events) {
+  var Run = {
+    /**
+     * Initializes autorunning of the glide.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this._o = false;
+    },
+
+
+    /**
+     * Makes glides running based on the passed moving schema.
+     *
+     * @param {String} move
+     */
+    make: function make(move) {
+      var _this = this;
+
+      if (!Glide.disabled) {
+        Glide.disable();
+
+        this.move = move;
+
+        Events.emit('run.before', this.move);
+
+        this.calculate();
+
+        Events.emit('run', this.move);
+
+        Components.Transition.after(function () {
+          if (_this.isOffset('<') || _this.isOffset('>')) {
+            _this._o = false;
+
+            Events.emit('run.offset', _this.move);
+          }
+
+          Events.emit('run.after', _this.move);
+
+          Glide.enable();
+        });
+      }
+    },
+
+
+    /**
+     * Calculates current index based on defined move.
+     *
+     * @return {Void}
+     */
+    calculate: function calculate() {
+      var move = this.move,
+          length = this.length;
+      var steps = move.steps,
+          direction = move.direction;
+
+
+      var countableSteps = isNumber(toInt(steps)) && toInt(steps) !== 0;
+
+      switch (direction) {
+        case '>':
+          if (steps === '>') {
+            Glide.index = length;
+          } else if (this.isEnd()) {
+            if (!(Glide.isType('slider') && !Glide.settings.rewind)) {
+              this._o = true;
+
+              Glide.index = 0;
+            }
+
+            Events.emit('run.end', move);
+          } else if (countableSteps) {
+            Glide.index += Math.min(length - Glide.index, -toInt(steps));
+          } else {
+            Glide.index++;
+          }
+          break;
+
+        case '<':
+          if (steps === '<') {
+            Glide.index = 0;
+          } else if (this.isStart()) {
+            if (!(Glide.isType('slider') && !Glide.settings.rewind)) {
+              this._o = true;
+
+              Glide.index = length;
+            }
+
+            Events.emit('run.start', move);
+          } else if (countableSteps) {
+            Glide.index -= Math.min(Glide.index, toInt(steps));
+          } else {
+            Glide.index--;
+          }
+          break;
+
+        case '=':
+          Glide.index = steps;
+          break;
+      }
+    },
+
+
+    /**
+     * Checks if we are on the first slide.
+     *
+     * @return {Boolean}
+     */
+    isStart: function isStart() {
+      return Glide.index === 0;
+    },
+
+
+    /**
+     * Checks if we are on the last slide.
+     *
+     * @return {Boolean}
+     */
+    isEnd: function isEnd() {
+      return Glide.index === this.length;
+    },
+
+
+    /**
+     * Checks if we are making a offset run.
+     *
+     * @param {String} direction
+     * @return {Boolean}
+     */
+    isOffset: function isOffset(direction) {
+      return this._o && this.move.direction === direction;
+    }
+  };
+
+  define(Run, 'move', {
+    /**
+     * Gets value of the move schema.
+     *
+     * @returns {Object}
+     */
+    get: function get() {
+      return this._m;
+    },
+
+
+    /**
+     * Sets value of the move schema.
+     *
+     * @returns {Object}
+     */
+    set: function set(value) {
+      this._m = {
+        direction: value.substr(0, 1),
+        steps: value.substr(1) ? value.substr(1) : 0
+      };
+    }
+  });
+
+  define(Run, 'length', {
+    /**
+     * Gets value of the running distance based
+     * on zero-indexing number of slides.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var settings = Glide.settings;
+      var length = Components.Html.slides.length;
+
+      // If the `bound` option is acitve, a maximum running distance should be
+      // reduced by `perView` and `focusAt` settings. Running distance
+      // should end before creating an empty space after instance.
+
+      if (Glide.isType('slider') && settings.focusAt !== 'center' && settings.bound) {
+        return length - 1 - (toInt(settings.perView) - 1) + toInt(settings.focusAt);
+      }
+
+      return length - 1;
+    }
+  });
+
+  define(Run, 'offset', {
+    /**
+     * Gets status of the offsetting flag.
+     *
+     * @return {Boolean}
+     */
+    get: function get() {
+      return this._o;
+    }
+  });
+
+  return Run;
+}
+
+/**
+ * Returns a current time.
+ *
+ * @return {Number}
+ */
+function now() {
+  return new Date().getTime();
+}
+
+/**
+ * Returns a function, that, when invoked, will only be triggered
+ * at most once during a given window of time.
+ *
+ * @param {Function} func
+ * @param {Number} wait
+ * @param {Object=} options
+ * @return {Function}
+ *
+ * @see https://github.com/jashkenas/underscore
+ */
+function throttle(func, wait, options) {
+  var timeout = void 0,
+      context = void 0,
+      args = void 0,
+      result = void 0;
+  var previous = 0;
+  if (!options) options = {};
+
+  var later = function later() {
+    previous = options.leading === false ? 0 : now();
+    timeout = null;
+    result = func.apply(context, args);
+    if (!timeout) context = args = null;
+  };
+
+  var throttled = function throttled() {
+    var at = now();
+    if (!previous && options.leading === false) previous = at;
+    var remaining = wait - (at - previous);
+    context = this;
+    args = arguments;
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      previous = at;
+      result = func.apply(context, args);
+      if (!timeout) context = args = null;
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+
+  throttled.cancel = function () {
+    clearTimeout(timeout);
+    previous = 0;
+    timeout = context = args = null;
+  };
+
+  return throttled;
+}
+
+var MARGIN_TYPE = {
+  ltr: ['marginLeft', 'marginRight'],
+  rtl: ['marginRight', 'marginLeft']
+};
+
+function Gaps (Glide, Components, Events) {
+  var Gaps = {
+    /**
+     * Applies gaps between slides. First and last
+     * slides do not receive it's edge margins.
+     *
+     * @param {HTMLCollection} slides
+     * @return {Void}
+     */
+    apply: function apply(slides) {
+      for (var i = 0, len = slides.length; i < len; i++) {
+        var style = slides[i].style;
+        var direction = Components.Direction.value;
+
+        if (i !== 0) {
+          style[MARGIN_TYPE[direction][0]] = this.value / 2 + 'px';
+        } else {
+          style[MARGIN_TYPE[direction][0]] = '';
+        }
+
+        if (i !== slides.length - 1) {
+          style[MARGIN_TYPE[direction][1]] = this.value / 2 + 'px';
+        } else {
+          style[MARGIN_TYPE[direction][1]] = '';
+        }
+      }
+    },
+
+
+    /**
+     * Removes gaps from the slides.
+     *
+     * @param {HTMLCollection} slides
+     * @returns {Void}
+    */
+    remove: function remove(slides) {
+      for (var i = 0, len = slides.length; i < len; i++) {
+        var style = slides[i].style;
+
+        style.marginLeft = '';
+        style.marginRight = '';
+      }
+    }
+  };
+
+  define(Gaps, 'value', {
+    /**
+     * Gets value of the gap.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return toInt(Glide.settings.gap);
+    }
+  });
+
+  define(Gaps, 'grow', {
+    /**
+     * Gets additional dimentions value caused by gaps.
+     * Used to increase width of the slides wrapper.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return Gaps.value * (Components.Sizes.length - 1);
+    }
+  });
+
+  define(Gaps, 'reductor', {
+    /**
+     * Gets reduction value caused by gaps.
+     * Used to subtract width of the slides.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      var perView = Glide.settings.perView;
+
+      return Gaps.value * (perView - 1) / perView;
+    }
+  });
+
+  /**
+   * Apply calculated gaps:
+   * - after building, so slides (including clones) will receive proper margins
+   * - on updating via API, to recalculate gaps with new options
+   */
+  Events.on(['build.after', 'update'], throttle(function () {
+    Gaps.apply(Components.Html.wrapper.children);
+  }, 30));
+
+  /**
+   * Remove gaps:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Gaps.remove(Components.Html.wrapper.children);
+  });
+
+  return Gaps;
+}
+
+/**
+ * Finds siblings nodes of the passed node.
+ *
+ * @param  {Element} node
+ * @return {Array}
+ */
+function siblings(node) {
+  if (node && node.parentNode) {
+    var n = node.parentNode.firstChild;
+    var matched = [];
+
+    for (; n; n = n.nextSibling) {
+      if (n.nodeType === 1 && n !== node) {
+        matched.push(n);
+      }
+    }
+
+    return matched;
+  }
+
+  return [];
+}
+
+/**
+ * Checks if passed node exist and is a valid element.
+ *
+ * @param  {Element} node
+ * @return {Boolean}
+ */
+function exist(node) {
+  if (node && node instanceof window.HTMLElement) {
+    return true;
+  }
+
+  return false;
+}
+
+var TRACK_SELECTOR = '[data-glide-el="track"]';
+
+function Html (Glide, Components) {
+  var Html = {
+    /**
+     * Setup slider HTML nodes.
+     *
+     * @param {Glide} glide
+     */
+    mount: function mount() {
+      this.root = Glide.selector;
+      this.track = this.root.querySelector(TRACK_SELECTOR);
+      this.slides = Array.prototype.slice.call(this.wrapper.children).filter(function (slide) {
+        return !slide.classList.contains(Glide.settings.classes.cloneSlide);
+      });
+    }
+  };
+
+  define(Html, 'root', {
+    /**
+     * Gets node of the glide main element.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html._r;
+    },
+
+
+    /**
+     * Sets node of the glide main element.
+     *
+     * @return {Object}
+     */
+    set: function set(r) {
+      if (isString(r)) {
+        r = document.querySelector(r);
+      }
+
+      if (exist(r)) {
+        Html._r = r;
+      } else {
+        warn('Root element must be a existing Html node');
+      }
+    }
+  });
+
+  define(Html, 'track', {
+    /**
+     * Gets node of the glide track with slides.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html._t;
+    },
+
+
+    /**
+     * Sets node of the glide track with slides.
+     *
+     * @return {Object}
+     */
+    set: function set(t) {
+      if (exist(t)) {
+        Html._t = t;
+      } else {
+        warn('Could not find track element. Please use ' + TRACK_SELECTOR + ' attribute.');
+      }
+    }
+  });
+
+  define(Html, 'wrapper', {
+    /**
+     * Gets node of the slides wrapper.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html.track.children[0];
+    }
+  });
+
+  return Html;
+}
+
+function Peek (Glide, Components, Events) {
+  var Peek = {
+    /**
+     * Setups how much to peek based on settings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.value = Glide.settings.peek;
+    }
+  };
+
+  define(Peek, 'value', {
+    /**
+     * Gets value of the peek.
+     *
+     * @returns {Number|Object}
+     */
+    get: function get() {
+      return Peek._v;
+    },
+
+
+    /**
+     * Sets value of the peek.
+     *
+     * @param {Number|Object} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      if (isObject(value)) {
+        value.before = toInt(value.before);
+        value.after = toInt(value.after);
+      } else {
+        value = toInt(value);
+      }
+
+      Peek._v = value;
+    }
+  });
+
+  define(Peek, 'reductor', {
+    /**
+     * Gets reduction value caused by peek.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      var value = Peek.value;
+      var perView = Glide.settings.perView;
+
+      if (isObject(value)) {
+        return value.before / perView + value.after / perView;
+      }
+
+      return value * 2 / perView;
+    }
+  });
+
+  /**
+   * Recalculate peeking sizes on:
+   * - when resizing window to update to proper percents
+   */
+  Events.on(['resize', 'update'], function () {
+    Peek.mount();
+  });
+
+  return Peek;
+}
+
+function Move (Glide, Components, Events) {
+  var Move = {
+    /**
+     * Constructs move component.
+     *
+     * @returns {Void}
+     */
+    mount: function mount() {
+      this._o = 0;
+    },
+
+
+    /**
+     * Calculates a movement value based on passed offset and currently active index.
+     *
+     * @param  {Number} offset
+     * @return {Void}
+     */
+    make: function make() {
+      var _this = this;
+
+      var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      this.offset = offset;
+
+      Events.emit('move', {
+        movement: this.value
+      });
+
+      Components.Transition.after(function () {
+        Events.emit('move.after', {
+          movement: _this.value
+        });
+      });
+    }
+  };
+
+  define(Move, 'offset', {
+    /**
+     * Gets an offset value used to modify current translate.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Move._o;
+    },
+
+
+    /**
+     * Sets an offset value used to modify current translate.
+     *
+     * @return {Object}
+     */
+    set: function set(value) {
+      Move._o = !isUndefined(value) ? toInt(value) : 0;
+    }
+  });
+
+  define(Move, 'translate', {
+    /**
+     * Gets a raw movement value.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Sizes.slideWidth * Glide.index;
+    }
+  });
+
+  define(Move, 'value', {
+    /**
+     * Gets an actual movement value corrected by offset.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var offset = this.offset;
+      var translate = this.translate;
+
+      if (Components.Direction.is('rtl')) {
+        return translate + offset;
+      }
+
+      return translate - offset;
+    }
+  });
+
+  /**
+   * Make movement to proper slide on:
+   * - before build, so glide will start at `startAt` index
+   * - on each standard run to move to newly calculated index
+   */
+  Events.on(['build.before', 'run'], function () {
+    Move.make();
+  });
+
+  return Move;
+}
+
+function Sizes (Glide, Components, Events) {
+  var Sizes = {
+    /**
+     * Setups dimentions of slides.
+     *
+     * @return {Void}
+     */
+    setupSlides: function setupSlides() {
+      var slides = Components.Html.slides;
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = this.slideWidth + 'px';
+      }
+    },
+
+
+    /**
+     * Setups dimentions of slides wrapper.
+     *
+     * @return {Void}
+     */
+    setupWrapper: function setupWrapper(dimention) {
+      Components.Html.wrapper.style.width = this.wrapperSize + 'px';
+    },
+
+
+    /**
+     * Removes applied styles from HTML elements.
+     *
+     * @returns {Void}
+     */
+    remove: function remove() {
+      var slides = Components.Html.slides;
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = '';
+      }
+
+      Components.Html.wrapper.style.width = '';
+    }
+  };
+
+  define(Sizes, 'length', {
+    /**
+     * Gets count number of the slides.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Html.slides.length;
+    }
+  });
+
+  define(Sizes, 'width', {
+    /**
+     * Gets width value of the glide.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Html.root.offsetWidth;
+    }
+  });
+
+  define(Sizes, 'wrapperSize', {
+    /**
+     * Gets size of the slides wrapper.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Sizes.slideWidth * Sizes.length + Components.Gaps.grow + Components.Clones.grow;
+    }
+  });
+
+  define(Sizes, 'slideWidth', {
+    /**
+     * Gets width value of the single slide.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Sizes.width / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
+    }
+  });
+
+  /**
+   * Apply calculated glide's dimensions:
+   * - before building, so other dimentions (e.g. translate) will be calculated propertly
+   * - when resizing window to recalculate sildes dimensions
+   * - on updating via API, to calculate dimensions based on new options
+   */
+  Events.on(['build.before', 'resize', 'update'], function () {
+    Sizes.setupSlides();
+    Sizes.setupWrapper();
+  });
+
+  /**
+   * Remove calculated glide's dimensions:
+   * - on destoting to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Sizes.remove();
+  });
+
+  return Sizes;
+}
+
+function Build (Glide, Components, Events) {
+  var Build = {
+    /**
+     * Init glide building. Adds classes, sets
+     * dimensions and setups initial state.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      Events.emit('build.before');
+
+      this.typeClass();
+      this.activeClass();
+
+      Events.emit('build.after');
+    },
+
+
+    /**
+     * Adds `type` class to the glide element.
+     *
+     * @return {Void}
+     */
+    typeClass: function typeClass() {
+      Components.Html.root.classList.add(Glide.settings.classes[Glide.settings.type]);
+    },
+
+
+    /**
+     * Sets active class to current slide.
+     *
+     * @return {Void}
+     */
+    activeClass: function activeClass() {
+      var classes = Glide.settings.classes;
+      var slide = Components.Html.slides[Glide.index];
+
+      if (slide) {
+        slide.classList.add(classes.activeSlide);
+
+        siblings(slide).forEach(function (sibling) {
+          sibling.classList.remove(classes.activeSlide);
+        });
+      }
+    },
+
+
+    /**
+     * Removes HTML classes applied at building.
+     *
+     * @return {Void}
+     */
+    removeClasses: function removeClasses() {
+      var classes = Glide.settings.classes;
+
+      Components.Html.root.classList.remove(classes[Glide.settings.type]);
+
+      Components.Html.slides.forEach(function (sibling) {
+        sibling.classList.remove(classes.activeSlide);
+      });
+    }
+  };
+
+  /**
+   * Clear building classes:
+   * - on destroying to bring HTML to its initial state
+   * - on updating to remove classes before remounting component
+   */
+  Events.on(['destroy', 'update'], function () {
+    Build.removeClasses();
+  });
+
+  /**
+   * Remount component:
+   * - on resizing of the window to calculate new dimentions
+   * - on updating settings via API
+   */
+  Events.on(['resize', 'update'], function () {
+    Build.mount();
+  });
+
+  /**
+   * Swap active class of current slide:
+   * - after each move to the new index
+   */
+  Events.on('move.after', function () {
+    Build.activeClass();
+  });
+
+  return Build;
+}
+
+function Clones (Glide, Components, Events) {
+  var Clones = {
+    /**
+     * Create pattern map and collect slides to be cloned.
+     */
+    mount: function mount() {
+      this.items = [];
+
+      if (Glide.isType('carousel')) {
+        this.items = this.collect();
+      }
+    },
+
+
+    /**
+     * Collect clones with pattern.
+     *
+     * @return {Void}
+     */
+    collect: function collect() {
+      var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+      var slides = Components.Html.slides;
+      var _Glide$settings = Glide.settings,
+          perView = _Glide$settings.perView,
+          classes = _Glide$settings.classes;
+
+
+      var peekIncrementer = +!!Glide.settings.peek;
+      var part = perView + peekIncrementer;
+      var start = slides.slice(0, part);
+      var end = slides.slice(-part);
+
+      for (var r = 0; r < Math.max(1, Math.floor(perView / slides.length)); r++) {
+        for (var i = 0; i < start.length; i++) {
+          var clone = start[i].cloneNode(true);
+
+          clone.classList.add(classes.cloneSlide);
+
+          items.push(clone);
+        }
+
+        for (var _i = 0; _i < end.length; _i++) {
+          var _clone = end[_i].cloneNode(true);
+
+          _clone.classList.add(classes.cloneSlide);
+
+          items.unshift(_clone);
+        }
+      }
+
+      return items;
+    },
+
+
+    /**
+     * Append cloned slides with generated pattern.
+     *
+     * @return {Void}
+     */
+    append: function append() {
+      var items = this.items;
+      var _Components$Html = Components.Html,
+          wrapper = _Components$Html.wrapper,
+          slides = _Components$Html.slides;
+
+
+      var half = Math.floor(items.length / 2);
+      var prepend = items.slice(0, half).reverse();
+      var append = items.slice(half, items.length);
+
+      for (var i = 0; i < append.length; i++) {
+        wrapper.appendChild(append[i]);
+      }
+
+      for (var _i2 = 0; _i2 < prepend.length; _i2++) {
+        wrapper.insertBefore(prepend[_i2], slides[0]);
+      }
+
+      for (var _i3 = 0; _i3 < items.length; _i3++) {
+        items[_i3].style.width = Components.Sizes.slideWidth + 'px';
+      }
+    },
+
+
+    /**
+     * Remove all cloned slides.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      var items = this.items;
+
+
+      for (var i = 0; i < items.length; i++) {
+        Components.Html.wrapper.removeChild(items[i]);
+      }
+    }
+  };
+
+  define(Clones, 'grow', {
+    /**
+     * Gets additional dimentions value caused by clones.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return (Components.Sizes.slideWidth + Components.Gaps.value) * Clones.items.length;
+    }
+  });
+
+  /**
+   * Append additional slide's clones:
+   * - while glide's type is `carousel`
+   */
+  Events.on('update', function () {
+    Clones.remove();
+    Clones.mount();
+    Clones.append();
+  });
+
+  /**
+   * Append additional slide's clones:
+   * - while glide's type is `carousel`
+   */
+  Events.on('build.before', function () {
+    if (Glide.isType('carousel')) {
+      Clones.append();
+    }
+  });
+
+  /**
+   * Remove clones HTMLElements:
+   * - on destroying, to bring HTML to its initial state
+   */
+  Events.on('destroy', function () {
+    Clones.remove();
+  });
+
+  return Clones;
+}
+
+var EventsBinder = function () {
+  /**
+   * Construct a EventsBinder instance.
+   */
+  function EventsBinder() {
+    var listeners = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    classCallCheck(this, EventsBinder);
+
+    this.listeners = listeners;
+  }
+
+  /**
+   * Adds events listeners to arrows HTML elements.
+   *
+   * @param  {String|Array} events
+   * @param  {Element|Window|Document} el
+   * @param  {Function} closure
+   * @param  {Boolean|Object} capture
+   * @return {Void}
+   */
+
+
+  createClass(EventsBinder, [{
+    key: 'on',
+    value: function on(events, el, closure) {
+      var capture = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+      if (isString(events)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        this.listeners[events[i]] = closure;
+
+        el.addEventListener(events[i], this.listeners[events[i]], capture);
+      }
+    }
+
+    /**
+     * Removes event listeners from arrows HTML elements.
+     *
+     * @param  {String|Array} events
+     * @param  {Element|Window|Document} el
+     * @return {Void}
+     */
+
+  }, {
+    key: 'off',
+    value: function off(events, el) {
+      if (isString(events)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        el.removeEventListener(events[i], this.listeners[events[i]], false);
+      }
+    }
+
+    /**
+     * Destroy collected listeners.
+     *
+     * @returns {Void}
+     */
+
+  }, {
+    key: 'destroy',
+    value: function destroy() {
+      delete this.listeners;
+    }
+  }]);
+  return EventsBinder;
+}();
+
+function Resize (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Resize = {
+    /**
+     * Initializes window bindings.
+     */
+    mount: function mount() {
+      this.bind();
+    },
+
+
+    /**
+     * Binds `rezsize` listener to the window.
+     * It's a costly event, so we are debouncing it.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('resize', window, throttle(function () {
+        Events.emit('resize');
+      }, Glide.settings.throttle));
+    },
+
+
+    /**
+     * Unbinds listeners from the window.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('resize', window);
+    }
+  };
+
+  /**
+   * Remove bindings from window:
+   * - on destroying, to remove added EventListener
+   */
+  Events.on('destroy', function () {
+    Resize.unbind();
+    Binder.destroy();
+  });
+
+  return Resize;
+}
+
+var VALID_DIRECTIONS = ['ltr', 'rtl'];
+var FLIPED_MOVEMENTS = {
+  '>': '<',
+  '<': '>',
+  '=': '='
+};
+
+function Direction (Glide, Components, Events) {
+  var Direction = {
+    /**
+     * Setups gap value based on settings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.value = Glide.settings.direction;
+    },
+
+
+    /**
+     * Resolves pattern based on direction value
+     *
+     * @param {String} pattern
+     * @returns {String}
+     */
+    resolve: function resolve(pattern) {
+      var token = pattern.slice(0, 1);
+
+      if (this.is('rtl')) {
+        return pattern.split(token).join(FLIPED_MOVEMENTS[token]);
+      }
+
+      return pattern;
+    },
+
+
+    /**
+     * Checks value of direction mode.
+     *
+     * @param {String} direction
+     * @returns {Boolean}
+     */
+    is: function is(direction) {
+      return this.value === direction;
+    },
+
+
+    /**
+     * Applies direction class to the root HTML element.
+     *
+     * @return {Void}
+     */
+    addClass: function addClass() {
+      Components.Html.root.classList.add(Glide.settings.classes.direction[this.value]);
+    },
+
+
+    /**
+     * Removes direction class from the root HTML element.
+     *
+     * @return {Void}
+     */
+    removeClass: function removeClass() {
+      Components.Html.root.classList.remove(Glide.settings.classes.direction[this.value]);
+    }
+  };
+
+  define(Direction, 'value', {
+    /**
+     * Gets value of the direction.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return Direction._v;
+    },
+
+
+    /**
+     * Sets value of the direction.
+     *
+     * @param {String} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      if (VALID_DIRECTIONS.indexOf(value) > -1) {
+        Direction._v = value;
+      } else {
+        warn('Direction value must be `ltr` or `rtl`');
+      }
+    }
+  });
+
+  /**
+   * Clear direction class:
+   * - on destroy to bring HTML to its initial state
+   * - on update to remove class before reappling bellow
+   */
+  Events.on(['destroy', 'update'], function () {
+    Direction.removeClass();
+  });
+
+  /**
+   * Remount component:
+   * - on update to reflect changes in direction value
+   */
+  Events.on('update', function () {
+    Direction.mount();
+  });
+
+  /**
+   * Apply direction class:
+   * - before building to apply class for the first time
+   * - on updating to reapply direction class that may changed
+   */
+  Events.on(['build.before', 'update'], function () {
+    Direction.addClass();
+  });
+
+  return Direction;
+}
+
+/**
+ * Reflects value of glide movement.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Rtl (Glide, Components) {
+  return {
+    /**
+     * Negates the passed translate if glide is in RTL option.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      if (Components.Direction.is('rtl')) {
+        return -translate;
+      }
+
+      return translate;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `gap` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Gap (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with number in the `gap` settings.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      return translate + Components.Gaps.value * Glide.index;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with width of additional clones width.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Grow (Glide, Components) {
+  return {
+    /**
+     * Adds to the passed translate width of the half of clones.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      return translate + Components.Clones.grow / 2;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `peek` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Peeking (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with a `peek` setting.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      if (Glide.settings.focusAt >= 0) {
+        var peek = Components.Peek.value;
+
+        if (isObject(peek)) {
+          return translate - peek.before;
+        }
+
+        return translate - peek;
+      }
+
+      return translate;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `focusAt` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Focusing (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with index in the `focusAt` setting.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      var gap = Components.Gaps.value;
+      var width = Components.Sizes.width;
+      var focusAt = Glide.settings.focusAt;
+      var slideWidth = Components.Sizes.slideWidth;
+
+      if (focusAt === 'center') {
+        return translate - (width / 2 - slideWidth / 2);
+      }
+
+      return translate - slideWidth * focusAt - gap * focusAt;
+    }
+  };
+}
+
+/**
+ * Applies diffrent transformers on translate value.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function mutator (Glide, Components, Events) {
+  /**
+   * Merge instance transformers with collection of default transformers.
+   * It's important that the Rtl component be last on the list,
+   * so it reflects all previous transformations.
+   *
+   * @type {Array}
+   */
+  var TRANSFORMERS = [Gap, Grow, Peeking, Focusing].concat(Glide._t, [Rtl]);
+
+  return {
+    /**
+     * Piplines translate value with registered transformers.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    mutate: function mutate(translate) {
+      for (var i = 0; i < TRANSFORMERS.length; i++) {
+        var transformer = TRANSFORMERS[i];
+
+        if (isFunction(transformer) && isFunction(transformer().modify)) {
+          translate = transformer(Glide, Components, Events).modify(translate);
+        } else {
+          warn('Transformer should be a function that returns an object with `modify()` method');
+        }
+      }
+
+      return translate;
+    }
+  };
+}
+
+function Translate (Glide, Components, Events) {
+  var Translate = {
+    /**
+     * Sets value of translate on HTML element.
+     *
+     * @param {Number} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      var transform = mutator(Glide, Components).mutate(value);
+
+      Components.Html.wrapper.style.transform = 'translate3d(' + -1 * transform + 'px, 0px, 0px)';
+    },
+
+
+    /**
+     * Removes value of translate from HTML element.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      Components.Html.wrapper.style.transform = '';
+    }
+  };
+
+  /**
+   * Set new translate value:
+   * - on move to reflect index change
+   * - on updating via API to reflect possible changes in options
+   */
+  Events.on('move', function (context) {
+    var gap = Components.Gaps.value;
+    var length = Components.Sizes.length;
+    var width = Components.Sizes.slideWidth;
+
+    if (Glide.isType('carousel') && Components.Run.isOffset('<')) {
+      Components.Transition.after(function () {
+        Events.emit('translate.jump', width * (length - 1));
+
+        Translate.set(width * (length - 1));
+      });
+
+      return Translate.set(-width - gap * length);
+    }
+
+    if (Glide.isType('carousel') && Components.Run.isOffset('>')) {
+      Components.Transition.after(function () {
+        Events.emit('translate.jump');
+
+        Translate.set(0);
+      });
+
+      return Translate.set(width * length + gap * length);
+    }
+
+    return Translate.set(context.movement);
+  });
+
+  /**
+   * Remove translate:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Translate.remove();
+  });
+
+  return Translate;
+}
+
+function Transition (Glide, Components, Events) {
+  /**
+   * Holds inactivity status of transition.
+   * When true transition is not applied.
+   *
+   * @type {Boolean}
+   */
+  var disabled = false;
+
+  var Transition = {
+    /**
+     * Composes string of the CSS transition.
+     *
+     * @param {String} property
+     * @return {String}
+     */
+    compose: function compose(property) {
+      var settings = Glide.settings;
+
+      if (!disabled) {
+        return property + ' ' + this.duration + 'ms ' + settings.animationTimingFunc;
+      }
+
+      return property + ' 0ms ' + settings.animationTimingFunc;
+    },
+
+
+    /**
+     * Sets value of transition on HTML element.
+     *
+     * @param {String=} property
+     * @return {Void}
+     */
+    set: function set() {
+      var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'transform';
+
+      Components.Html.wrapper.style.transition = this.compose(property);
+    },
+
+
+    /**
+     * Removes value of transition from HTML element.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      Components.Html.wrapper.style.transition = '';
+    },
+
+
+    /**
+     * Runs callback after animation.
+     *
+     * @param  {Function} callback
+     * @return {Void}
+     */
+    after: function after(callback) {
+      setTimeout(function () {
+        callback();
+      }, this.duration);
+    },
+
+
+    /**
+     * Enable transition.
+     *
+     * @return {Void}
+     */
+    enable: function enable() {
+      disabled = false;
+
+      this.set();
+    },
+
+
+    /**
+     * Disable transition.
+     *
+     * @return {Void}
+     */
+    disable: function disable() {
+      disabled = true;
+
+      this.set();
+    }
+  };
+
+  define(Transition, 'duration', {
+    /**
+     * Gets duration of the transition based
+     * on currently running animation type.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var settings = Glide.settings;
+
+      if (Glide.isType('slider') && Components.Run.offset) {
+        return settings.rewindDuration;
+      }
+
+      return settings.animationDuration;
+    }
+  });
+
+  /**
+   * Set transition `style` value:
+   * - on each moving, because it may be cleared by offset move
+   */
+  Events.on('move', function () {
+    Transition.set();
+  });
+
+  /**
+   * Disable transition:
+   * - before initial build to avoid transitioning from `0` to `startAt` index
+   * - while resizing window and recalculating dimentions
+   * - on jumping from offset transition at start and end edges in `carousel` type
+   */
+  Events.on(['build.before', 'resize', 'translate.jump'], function () {
+    Transition.disable();
+  });
+
+  /**
+   * Enable transition:
+   * - on each running, because it may be disabled by offset move
+   */
+  Events.on('run', function () {
+    Transition.enable();
+  });
+
+  /**
+   * Remove transition:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Transition.remove();
+  });
+
+  return Transition;
+}
+
+/**
+ * Test via a getter in the options object to see
+ * if the passive property is accessed.
+ *
+ * @see https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+ */
+
+var supportsPassive = false;
+
+try {
+  var opts = Object.defineProperty({}, 'passive', {
+    get: function get() {
+      supportsPassive = true;
+    }
+  });
+
+  window.addEventListener('testPassive', null, opts);
+  window.removeEventListener('testPassive', null, opts);
+} catch (e) {}
+
+var supportsPassive$1 = supportsPassive;
+
+var START_EVENTS = ['touchstart', 'mousedown'];
+var MOVE_EVENTS = ['touchmove', 'mousemove'];
+var END_EVENTS = ['touchend', 'touchcancel', 'mouseup', 'mouseleave'];
+var MOUSE_EVENTS = ['mousedown', 'mousemove', 'mouseup', 'mouseleave'];
+
+function Swipe (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var swipeSin = 0;
+  var swipeStartX = 0;
+  var swipeStartY = 0;
+  var disabled = false;
+  var moveable = true;
+  var capture = supportsPassive$1 ? { passive: true } : false;
+
+  var Swipe = {
+    /**
+     * Initializes swipe bindings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.bindSwipeStart();
+    },
+
+
+    /**
+     * Handler for `swipestart` event. Calculates entry points of the user's tap.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    start: function start(event) {
+      if (!disabled && !Glide.disabled) {
+        this.disable();
+
+        var swipe = this.touches(event);
+
+        moveable = true;
+        swipeSin = null;
+        swipeStartX = toInt(swipe.pageX);
+        swipeStartY = toInt(swipe.pageY);
+
+        this.bindSwipeMove();
+        this.bindSwipeEnd();
+
+        Events.emit('swipe.start');
+      }
+    },
+
+
+    /**
+     * Handler for `swipemove` event. Calculates user's tap angle and distance.
+     *
+     * @param {Object} event
+     */
+    move: function move(event) {
+      if (!Glide.disabled) {
+        var _Glide$settings = Glide.settings,
+            touchAngle = _Glide$settings.touchAngle,
+            touchRatio = _Glide$settings.touchRatio,
+            classes = _Glide$settings.classes;
+
+
+        var swipe = this.touches(event);
+
+        var subExSx = toInt(swipe.pageX) - swipeStartX;
+        var subEySy = toInt(swipe.pageY) - swipeStartY;
+        var powEX = Math.abs(subExSx << 2);
+        var powEY = Math.abs(subEySy << 2);
+        var swipeHypotenuse = Math.sqrt(powEX + powEY);
+        var swipeCathetus = Math.sqrt(powEY);
+
+        swipeSin = Math.asin(swipeCathetus / swipeHypotenuse);
+
+        if (moveable && swipeSin * 180 / Math.PI < touchAngle) {
+          event.stopPropagation();
+
+          Components.Move.make(subExSx * toFloat(touchRatio));
+
+          Components.Html.root.classList.add(classes.dragging);
+
+          Events.emit('swipe.move');
+        } else {
+          moveable = false;
+
+          return false;
+        }
+      }
+    },
+
+
+    /**
+     * Handler for `swipeend` event. Finitializes user's tap and decides about glide move.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    end: function end(event) {
+      if (!Glide.disabled) {
+        var settings = Glide.settings;
+
+        var swipe = this.touches(event);
+        var threshold = this.threshold(event);
+
+        var swipeDistance = swipe.pageX - swipeStartX;
+        var swipeDeg = swipeSin * 180 / Math.PI;
+        var steps = Math.round(swipeDistance / Components.Sizes.slideWidth);
+
+        this.enable();
+
+        if (moveable) {
+          if (swipeDistance > threshold && swipeDeg < settings.touchAngle) {
+            // While swipe is positive and greater than threshold move backward.
+            if (settings.perTouch) {
+              steps = Math.min(steps, toInt(settings.perTouch));
+            }
+
+            if (Components.Direction.is('rtl')) {
+              steps = -steps;
+            }
+
+            Components.Run.make(Components.Direction.resolve('<' + steps));
+          } else if (swipeDistance < -threshold && swipeDeg < settings.touchAngle) {
+            // While swipe is negative and lower than negative threshold move forward.
+            if (settings.perTouch) {
+              steps = Math.max(steps, -toInt(settings.perTouch));
+            }
+
+            if (Components.Direction.is('rtl')) {
+              steps = -steps;
+            }
+
+            Components.Run.make(Components.Direction.resolve('>' + steps));
+          } else {
+            // While swipe don't reach distance apply previous transform.
+            Components.Move.make();
+          }
+        }
+
+        Components.Html.root.classList.remove(settings.classes.dragging);
+
+        this.unbindSwipeMove();
+        this.unbindSwipeEnd();
+
+        Events.emit('swipe.end');
+      }
+    },
+
+
+    /**
+     * Binds swipe's starting event.
+     *
+     * @return {Void}
+     */
+    bindSwipeStart: function bindSwipeStart() {
+      var _this = this;
+
+      var settings = Glide.settings;
+
+      if (settings.swipeThreshold) {
+        Binder.on(START_EVENTS[0], Components.Html.wrapper, function (event) {
+          _this.start(event);
+        }, capture);
+      }
+
+      if (settings.dragThreshold) {
+        Binder.on(START_EVENTS[1], Components.Html.wrapper, function (event) {
+          _this.start(event);
+        }, capture);
+      }
+    },
+
+
+    /**
+     * Unbinds swipe's starting event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeStart: function unbindSwipeStart() {
+      Binder.off(START_EVENTS[0], Components.Html.wrapper);
+      Binder.off(START_EVENTS[1], Components.Html.wrapper);
+    },
+
+
+    /**
+     * Binds swipe's moving event.
+     *
+     * @return {Void}
+     */
+    bindSwipeMove: function bindSwipeMove() {
+      var _this2 = this;
+
+      Binder.on(MOVE_EVENTS, Components.Html.wrapper, throttle(function (event) {
+        _this2.move(event);
+      }, Glide.settings.throttle), capture);
+    },
+
+
+    /**
+     * Unbinds swipe's moving event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeMove: function unbindSwipeMove() {
+      Binder.off(MOVE_EVENTS, Components.Html.wrapper);
+    },
+
+
+    /**
+     * Binds swipe's ending event.
+     *
+     * @return {Void}
+     */
+    bindSwipeEnd: function bindSwipeEnd() {
+      var _this3 = this;
+
+      Binder.on(END_EVENTS, Components.Html.wrapper, function (event) {
+        _this3.end(event);
+      });
+    },
+
+
+    /**
+     * Unbinds swipe's ending event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeEnd: function unbindSwipeEnd() {
+      Binder.off(END_EVENTS, Components.Html.wrapper);
+    },
+
+
+    /**
+     * Normalizes event touches points accorting to different types.
+     *
+     * @param {Object} event
+     */
+    touches: function touches(event) {
+      if (MOUSE_EVENTS.indexOf(event.type) > -1) {
+        return event;
+      }
+
+      return event.touches[0] || event.changedTouches[0];
+    },
+
+
+    /**
+     * Gets value of minimum swipe distance settings based on event type.
+     *
+     * @return {Number}
+     */
+    threshold: function threshold(event) {
+      var settings = Glide.settings;
+
+      if (MOUSE_EVENTS.indexOf(event.type) > -1) {
+        return settings.dragThreshold;
+      }
+
+      return settings.swipeThreshold;
+    },
+
+
+    /**
+     * Enables swipe event.
+     *
+     * @return {self}
+     */
+    enable: function enable() {
+      disabled = false;
+
+      Components.Transition.enable();
+
+      return this;
+    },
+
+
+    /**
+     * Disables swipe event.
+     *
+     * @return {self}
+     */
+    disable: function disable() {
+      disabled = true;
+
+      Components.Transition.disable();
+
+      return this;
+    }
+  };
+
+  /**
+   * Add component class:
+   * - after initial building
+   */
+  Events.on('build.after', function () {
+    Components.Html.root.classList.add(Glide.settings.classes.swipeable);
+  });
+
+  /**
+   * Remove swiping bindings:
+   * - on destroying, to remove added EventListeners
+   */
+  Events.on('destroy', function () {
+    Swipe.unbindSwipeStart();
+    Swipe.unbindSwipeMove();
+    Swipe.unbindSwipeEnd();
+    Binder.destroy();
+  });
+
+  return Swipe;
+}
+
+function Images (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Images = {
+    /**
+     * Binds listener to glide wrapper.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.bind();
+    },
+
+
+    /**
+     * Binds `dragstart` event on wrapper to prevent dragging images.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('dragstart', Components.Html.wrapper, this.dragstart);
+    },
+
+
+    /**
+     * Unbinds `dragstart` event on wrapper.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('dragstart', Components.Html.wrapper);
+    },
+
+
+    /**
+     * Event handler. Prevents dragging.
+     *
+     * @return {Void}
+     */
+    dragstart: function dragstart(event) {
+      event.preventDefault();
+    }
+  };
+
+  /**
+   * Remove bindings from images:
+   * - on destroying, to remove added EventListeners
+   */
+  Events.on('destroy', function () {
+    Images.unbind();
+    Binder.destroy();
+  });
+
+  return Images;
+}
+
+function Anchors (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  /**
+   * Holds detaching status of anchors.
+   * Prevents detaching of already detached anchors.
+   *
+   * @private
+   * @type {Boolean}
+   */
+  var detached = false;
+
+  /**
+   * Holds preventing status of anchors.
+   * If `true` redirection after click will be disabled.
+   *
+   * @private
+   * @type {Boolean}
+   */
+  var prevented = false;
+
+  var Anchors = {
+    /**
+     * Setups a initial state of anchors component.
+     *
+     * @returns {Void}
+     */
+    mount: function mount() {
+      /**
+       * Holds collection of anchors elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._a = Components.Html.wrapper.querySelectorAll('a');
+
+      this.bind();
+    },
+
+
+    /**
+     * Binds events to anchors inside a track.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('click', Components.Html.wrapper, this.click);
+    },
+
+
+    /**
+     * Unbinds events attached to anchors inside a track.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('click', Components.Html.wrapper);
+    },
+
+
+    /**
+     * Handler for click event. Prevents clicks when glide is in `prevent` status.
+     *
+     * @param  {Object} event
+     * @return {Void}
+     */
+    click: function click(event) {
+      event.stopPropagation();
+
+      if (prevented) {
+        event.preventDefault();
+      }
+    },
+
+
+    /**
+     * Detaches anchors click event inside glide.
+     *
+     * @return {self}
+     */
+    detach: function detach() {
+      prevented = true;
+
+      if (!detached) {
+        for (var i = 0; i < this.items.length; i++) {
+          this.items[i].draggable = false;
+
+          this.items[i].setAttribute('data-href', this.items[i].getAttribute('href'));
+
+          this.items[i].removeAttribute('href');
+        }
+
+        detached = true;
+      }
+
+      return this;
+    },
+
+
+    /**
+     * Attaches anchors click events inside glide.
+     *
+     * @return {self}
+     */
+    attach: function attach() {
+      prevented = false;
+
+      if (detached) {
+        for (var i = 0; i < this.items.length; i++) {
+          this.items[i].draggable = true;
+
+          this.items[i].setAttribute('href', this.items[i].getAttribute('data-href'));
+        }
+
+        detached = false;
+      }
+
+      return this;
+    }
+  };
+
+  define(Anchors, 'items', {
+    /**
+     * Gets collection of the arrows HTML elements.
+     *
+     * @return {HTMLElement[]}
+     */
+    get: function get() {
+      return Anchors._a;
+    }
+  });
+
+  /**
+   * Detach anchors inside slides:
+   * - on swiping, so they won't redirect to its `href` attributes
+   */
+  Events.on('swipe.move', function () {
+    Anchors.detach();
+  });
+
+  /**
+   * Attach anchors inside slides:
+   * - after swiping and transitions ends, so they can redirect after click again
+   */
+  Events.on('swipe.end', function () {
+    Components.Transition.after(function () {
+      Anchors.attach();
+    });
+  });
+
+  /**
+   * Unbind anchors inside slides:
+   * - on destroying, to bring anchors to its initial state
+   */
+  Events.on('destroy', function () {
+    Anchors.attach();
+    Anchors.unbind();
+    Binder.destroy();
+  });
+
+  return Anchors;
+}
+
+var NAV_SELECTOR = '[data-glide-el="controls[nav]"]';
+var CONTROLS_SELECTOR = '[data-glide-el^="controls"]';
+
+function Controls (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Controls = {
+    /**
+     * Inits arrows. Binds events listeners
+     * to the arrows HTML elements.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      /**
+       * Collection of navigation HTML elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._n = Components.Html.root.querySelectorAll(NAV_SELECTOR);
+
+      /**
+       * Collection of controls HTML elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._c = Components.Html.root.querySelectorAll(CONTROLS_SELECTOR);
+
+      this.addBindings();
+    },
+
+
+    /**
+     * Sets active class to current slide.
+     *
+     * @return {Void}
+     */
+    setActive: function setActive() {
+      for (var i = 0; i < this._n.length; i++) {
+        this.addClass(this._n[i].children);
+      }
+    },
+
+
+    /**
+     * Removes active class to current slide.
+     *
+     * @return {Void}
+     */
+    removeActive: function removeActive() {
+      for (var i = 0; i < this._n.length; i++) {
+        this.removeClass(this._n[i].children);
+      }
+    },
+
+
+    /**
+     * Toggles active class on items inside navigation.
+     *
+     * @param  {HTMLElement} controls
+     * @return {Void}
+     */
+    addClass: function addClass(controls) {
+      var settings = Glide.settings;
+      var item = controls[Glide.index];
+
+      item.classList.add(settings.classes.activeNav);
+
+      siblings(item).forEach(function (sibling) {
+        sibling.classList.remove(settings.classes.activeNav);
+      });
+    },
+
+
+    /**
+     * Removes active class from active control.
+     *
+     * @param  {HTMLElement} controls
+     * @return {Void}
+     */
+    removeClass: function removeClass(controls) {
+      controls[Glide.index].classList.remove(Glide.settings.classes.activeNav);
+    },
+
+
+    /**
+     * Adds handles to the each group of controls.
+     *
+     * @return {Void}
+     */
+    addBindings: function addBindings() {
+      for (var i = 0; i < this._c.length; i++) {
+        this.bind(this._c[i].children);
+      }
+    },
+
+
+    /**
+     * Removes handles from the each group of controls.
+     *
+     * @return {Void}
+     */
+    removeBindings: function removeBindings() {
+      for (var i = 0; i < this._c.length; i++) {
+        this.unbind(this._c[i].children);
+      }
+    },
+
+
+    /**
+     * Binds events to arrows HTML elements.
+     *
+     * @param {HTMLCollection} elements
+     * @return {Void}
+     */
+    bind: function bind(elements) {
+      for (var i = 0; i < elements.length; i++) {
+        Binder.on(['click', 'touchstart'], elements[i], this.click);
+      }
+    },
+
+
+    /**
+     * Unbinds events binded to the arrows HTML elements.
+     *
+     * @param {HTMLCollection} elements
+     * @return {Void}
+     */
+    unbind: function unbind(elements) {
+      for (var i = 0; i < elements.length; i++) {
+        Binder.off(['click', 'touchstart'], elements[i]);
+      }
+    },
+
+
+    /**
+     * Handles `click` event on the arrows HTML elements.
+     * Moves slider in driection precised in
+     * `data-glide-dir` attribute.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    click: function click(event) {
+      event.preventDefault();
+
+      Components.Run.make(Components.Direction.resolve(event.currentTarget.getAttribute('data-glide-dir')));
+    }
+  };
+
+  define(Controls, 'items', {
+    /**
+     * Gets collection of the controls HTML elements.
+     *
+     * @return {HTMLElement[]}
+     */
+    get: function get() {
+      return Controls._c;
+    }
+  });
+
+  /**
+   * Swap active class of current navigation item:
+   * - after mounting to set it to initial index
+   * - after each move to the new index
+   */
+  Events.on(['mount.after', 'move.after'], function () {
+    Controls.setActive();
+  });
+
+  /**
+   * Remove bindings and HTML Classes:
+   * - on destroying, to bring markup to its initial state
+   */
+  Events.on('destroy', function () {
+    Controls.removeBindings();
+    Controls.removeActive();
+    Binder.destroy();
+  });
+
+  return Controls;
+}
+
+function Keyboard (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Keyboard = {
+    /**
+     * Binds keyboard events on component mount.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      if (Glide.settings.keyboard) {
+        this.bind();
+      }
+    },
+
+
+    /**
+     * Adds keyboard press events.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('keyup', document, this.press);
+    },
+
+
+    /**
+     * Removes keyboard press events.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('keyup', document);
+    },
+
+
+    /**
+     * Handles keyboard's arrows press and moving glide foward and backward.
+     *
+     * @param  {Object} event
+     * @return {Void}
+     */
+    press: function press(event) {
+      if (event.keyCode === 39) {
+        Components.Run.make(Components.Direction.resolve('>'));
+      }
+
+      if (event.keyCode === 37) {
+        Components.Run.make(Components.Direction.resolve('<'));
+      }
+    }
+  };
+
+  /**
+   * Remove bindings from keyboard:
+   * - on destroying to remove added events
+   * - on updating to remove events before remounting
+   */
+  Events.on(['destroy', 'update'], function () {
+    Keyboard.unbind();
+  });
+
+  /**
+   * Remount component
+   * - on updating to reflect potential changes in settings
+   */
+  Events.on('update', function () {
+    Keyboard.mount();
+  });
+
+  /**
+   * Destroy binder:
+   * - on destroying to remove listeners
+   */
+  Events.on('destroy', function () {
+    Binder.destroy();
+  });
+
+  return Keyboard;
+}
+
+function Autoplay (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Autoplay = {
+    /**
+     * Initializes autoplaying and events.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.start();
+
+      if (Glide.settings.hoverpause) {
+        this.bind();
+      }
+    },
+
+
+    /**
+     * Starts autoplaying in configured interval.
+     *
+     * @param {Boolean|Number} force Run autoplaying with passed interval regardless of `autoplay` settings
+     * @return {Void}
+     */
+    start: function start() {
+      var _this = this;
+
+      if (Glide.settings.autoplay) {
+        if (isUndefined(this._i)) {
+          this._i = setInterval(function () {
+            _this.stop();
+
+            Components.Run.make('>');
+
+            _this.start();
+          }, this.time);
+        }
+      }
+    },
+
+
+    /**
+     * Stops autorunning of the glide.
+     *
+     * @return {Void}
+     */
+    stop: function stop() {
+      this._i = clearInterval(this._i);
+    },
+
+
+    /**
+     * Stops autoplaying while mouse is over glide's area.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      var _this2 = this;
+
+      Binder.on('mouseover', Components.Html.root, function () {
+        _this2.stop();
+      });
+
+      Binder.on('mouseout', Components.Html.root, function () {
+        _this2.start();
+      });
+    },
+
+
+    /**
+     * Unbind mouseover events.
+     *
+     * @returns {Void}
+     */
+    unbind: function unbind() {
+      Binder.off(['mouseover', 'mouseout'], Components.Html.root);
+    }
+  };
+
+  define(Autoplay, 'time', {
+    /**
+     * Gets time period value for the autoplay interval. Prioritizes
+     * times in `data-glide-autoplay` attrubutes over options.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var autoplay = Components.Html.slides[Glide.index].getAttribute('data-glide-autoplay');
+
+      if (autoplay) {
+        return toInt(autoplay);
+      }
+
+      return toInt(Glide.settings.autoplay);
+    }
+  });
+
+  /**
+   * Stop autoplaying and unbind events:
+   * - on destroying, to clear defined interval
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on(['destroy', 'update'], function () {
+    Autoplay.unbind();
+  });
+
+  /**
+   * Stop autoplaying:
+   * - before each run, to restart autoplaying
+   * - on pausing via API
+   * - on destroying, to clear defined interval
+   * - while starting a swipe
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on(['run.before', 'pause', 'destroy', 'swipe.start', 'update'], function () {
+    Autoplay.stop();
+  });
+
+  /**
+   * Start autoplaying:
+   * - after each run, to restart autoplaying
+   * - on playing via API
+   * - while ending a swipe
+   */
+  Events.on(['run.after', 'play', 'swipe.end'], function () {
+    Autoplay.start();
+  });
+
+  /**
+   * Remount autoplaying:
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on('update', function () {
+    Autoplay.mount();
+  });
+
+  /**
+   * Destroy a binder:
+   * - on destroying glide instance to clearup listeners
+   */
+  Events.on('destroy', function () {
+    Binder.destroy();
+  });
+
+  return Autoplay;
+}
+
+/**
+ * Sorts keys of breakpoint object so they will be ordered from lower to bigger.
+ *
+ * @param {Object} points
+ * @returns {Object}
+ */
+function sortBreakpoints(points) {
+  if (isObject(points)) {
+    return sortKeys(points);
+  } else {
+    warn('Breakpoints option must be an object');
+  }
+
+  return {};
+}
+
+function Breakpoints (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  /**
+   * Holds reference to settings.
+   *
+   * @type {Object}
+   */
+  var settings = Glide.settings;
+
+  /**
+   * Holds reference to breakpoints object in settings. Sorts breakpoints
+   * from smaller to larger. It is required in order to proper
+   * matching currently active breakpoint settings.
+   *
+   * @type {Object}
+   */
+  var points = sortBreakpoints(settings.breakpoints);
+
+  /**
+   * Cache initial settings before overwritting.
+   *
+   * @type {Object}
+   */
+  var defaults = _extends({}, settings);
+
+  var Breakpoints = {
+    /**
+     * Matches settings for currectly matching media breakpoint.
+     *
+     * @param {Object} points
+     * @returns {Object}
+     */
+    match: function match(points) {
+      if (typeof window.matchMedia !== 'undefined') {
+        for (var point in points) {
+          if (points.hasOwnProperty(point)) {
+            if (window.matchMedia('(max-width: ' + point + 'px)').matches) {
+              return points[point];
+            }
+          }
+        }
+      }
+
+      return defaults;
+    }
+  };
+
+  /**
+   * Overwrite instance settings with currently matching breakpoint settings.
+   * This happens right after component initialization.
+   */
+  _extends(settings, Breakpoints.match(points));
+
+  /**
+   * Update glide with settings of matched brekpoint:
+   * - window resize to update slider
+   */
+  Binder.on('resize', window, throttle(function () {
+    Glide.settings = mergeOptions(settings, Breakpoints.match(points));
+  }, Glide.settings.throttle));
+
+  /**
+   * Resort and update default settings:
+   * - on reinit via API, so breakpoint matching will be performed with options
+   */
+  Events.on('update', function () {
+    points = sortBreakpoints(points);
+
+    defaults = _extends({}, settings);
+  });
+
+  /**
+   * Unbind resize listener:
+   * - on destroying, to bring markup to its initial state
+   */
+  Events.on('destroy', function () {
+    Binder.off('resize', window);
+  });
+
+  return Breakpoints;
+}
+
+var COMPONENTS = {
+  // Required
+  Html: Html,
+  Translate: Translate,
+  Transition: Transition,
+  Direction: Direction,
+  Peek: Peek,
+  Sizes: Sizes,
+  Gaps: Gaps,
+  Move: Move,
+  Clones: Clones,
+  Resize: Resize,
+  Build: Build,
+  Run: Run,
+
+  // Optional
+  Swipe: Swipe,
+  Images: Images,
+  Anchors: Anchors,
+  Controls: Controls,
+  Keyboard: Keyboard,
+  Autoplay: Autoplay,
+  Breakpoints: Breakpoints
+};
+
+var Glide$1 = function (_Core) {
+  inherits(Glide$$1, _Core);
+
+  function Glide$$1() {
+    classCallCheck(this, Glide$$1);
+    return possibleConstructorReturn(this, (Glide$$1.__proto__ || Object.getPrototypeOf(Glide$$1)).apply(this, arguments));
+  }
+
+  createClass(Glide$$1, [{
+    key: 'mount',
+    value: function mount() {
+      var extensions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      return get(Glide$$1.prototype.__proto__ || Object.getPrototypeOf(Glide$$1.prototype), 'mount', this).call(this, _extends({}, COMPONENTS, extensions));
+    }
+  }]);
+  return Glide$$1;
+}(Glide);
+
+/* harmony default export */ var glide_esm = (Glide$1);
+
+// EXTERNAL MODULE: ./node_modules/@glidejs/glide/dist/css/glide.core.min.css
+var glide_core_min = __webpack_require__("4d21");
+
+// CONCATENATED MODULE: ./src/components/events.js
+/* harmony default export */ var events = (['build.after', 'build.before', 'mount.after', 'mount.before', 'move.after', 'move', 'pause', 'play', 'resize', 'run.after', 'run.before', 'run.end', 'run.offset', 'run.start', 'run', 'swipe.end', 'swipe.move', 'swipe.start', 'translate.jump', 'update']);
+// CONCATENATED MODULE: ./src/components/Glide.js
+
+
+
+/* harmony default export */ var components_Glide = ({
+  name: 'VueGlide',
+  model: {
+    prop: 'active',
+    event: 'change'
+  },
+  props: {
+    type: {
+      type: String,
+      default: 'slider'
+    },
+    startAt: {
+      type: Number,
+      default: 0
+    },
+    perView: {
+      type: Number,
+      default: 3
+    },
+    focusAt: {
+      type: [String, Number],
+      default: 0
+    },
+    gap: {
+      type: Number,
+      default: 10
+    },
+    autoplay: {
+      type: [Number, Boolean],
+      default: false
+    },
+    hoverpause: {
+      type: Boolean,
+      default: true
+    },
+    keyboard: {
+      type: Boolean,
+      default: true
+    },
+    bound: {
+      type: Boolean,
+      default: false
+    },
+    swipeThreshold: {
+      type: [Number, Boolean],
+      default: 80
+    },
+    dragThreshold: {
+      type: [Number, Boolean],
+      default: 120
+    },
+    perTouch: {
+      type: [Number, Boolean],
+      default: false
+    },
+    touchRatio: {
+      type: Number,
+      default: 0.5
+    },
+    touchAngle: {
+      type: Number,
+      default: 45
+    },
+    animationDuration: {
+      type: Number,
+      default: 400
+    },
+    rewind: {
+      type: Boolean,
+      default: true
+    },
+    rewindDuration: {
+      type: Number,
+      default: 800
+    },
+    animationTimingFunc: {
+      type: String,
+      default: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'
+    },
+    direction: {
+      type: String,
+      default: 'ltr'
+    },
+    peek: {
+      type: [Number, Object],
+      default: 0
+    },
+    breakpoints: {
+      type: Object,
+      default: function _default() {}
+    },
+    classes: {
+      type: Object,
+      default: function _default() {}
+    },
+    throttle: {
+      type: Number,
+      default: 25
+    },
+    toSlideByClick: {
+      type: Boolean,
+      default: false
+    },
+    bullet: {
+      type: Boolean,
+      default: false
+    },
+    options: {
+      type: Object,
+      default: function _default() {}
+    },
+    active: {
+      type: Number,
+      default: null
+    }
+  },
+  provide: function provide() {
+    return {
+      root: this
+    };
+  },
+  data: function data() {
+    return {
+      glide: undefined
+    };
+  },
+  render: function render(h) {
+    var control;
+    var bullet;
+    var buttons = []; // Pass only vue-glide-slide
+
+    var slides = this.$slots.default.filter(function (c) {
+      return c.componentOptions && c.componentOptions.tag === 'vue-glide-slide';
+    });
+
+    if (this.$slots.control && this.$slots.control.length) {
+      control = h("div", {
+        "attrs": {
+          "data-glide-el": "controls"
+        }
+      }, [this.$slots.control]);
+    }
+
+    if (this.bullet) {
+      for (var i = 0; i < this.slidesCount; i++) {
+        buttons.push(h('button', {
+          key: i,
+          attrs: {
+            'data-glide-dir': '=' + i,
+            class: 'glide__bullet'
+          }
+        }));
+      }
+
+      bullet = h("div", {
+        "class": "glide__bullets",
+        "attrs": {
+          "data-glide-el": "controls[nav]"
+        }
+      }, [buttons]);
+    }
+
+    return h("div", {
+      "class": "glide"
+    }, [h("div", {
+      "class": "glide__track",
+      "attrs": {
+        "data-glide-el": "track"
+      }
+    }, [h("ul", {
+      "class": "glide__slides"
+    }, [slides])]), control, bullet]);
+  },
+  watch: {
+    active: function active() {
+      this.changeSlideByModel();
+    }
+  },
+  computed: {
+    currentSlide: function currentSlide() {
+      return this.glide.index;
+    },
+    slidesCount: function slidesCount() {
+      return this.$slots.default.filter(function (c) {
+        return c.componentOptions && c.componentOptions.tag === 'vue-glide-slide';
+      }).length;
+    }
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+  methods: {
+    /**
+     * Initialization glide
+     */
+    init: function init() {
+      var defaultClasses = {
+        direction: {
+          ltr: 'glide--ltr',
+          rtl: 'glide--rtl'
+        },
+        slider: 'glide--slider',
+        carousel: 'glide--carousel',
+        swipeable: 'glide--swipeable',
+        dragging: 'glide--dragging',
+        cloneSlide: 'glide__slide--clone',
+        activeNav: 'glide__bullet--active',
+        activeSlide: 'glide__slide--active',
+        disabledArrow: 'glide__arrow--disabled'
+      };
+      var initOptions = Object.assign({}, this.$props); // Remove additional props 'options'
+
+      delete initOptions.options;
+      initOptions.classes = Object.assign(defaultClasses, this.classes);
+      var mergedOptions = Object.assign(initOptions, this.options);
+
+      if (this.toSlideByClick) {
+        this.goToSlideByClick();
+      }
+
+      this.glide = new glide_esm(this.$el, mergedOptions);
+      this.eventConnector(events);
+      this.glide.mount();
+      this.bindModel();
+      this.changeSlideByModel();
+    },
+
+    /**
+     * Go to the slide
+     * @param {string} pattern - special format glide.js api
+     * Available pattern:
+     * * > - Move one forward
+     * * < - Move one backward
+     * * ={i} - Go to {i} zero-based slide (eq. '=1', will go to second slide)
+     * * >> - Rewinds to end (last slide)
+     * * << - Rewinds to start (first slide)
+     */
+    go: function go(pattern) {
+      this.glide.go(pattern);
+    },
+
+    /**
+     * Go to the slide by click on slide
+     */
+    goToSlideByClick: function goToSlideByClick() {
+      var _this = this;
+
+      this.$on('glide:slide-click', function (e) {
+        return _this.go("=".concat(e));
+      });
+    },
+
+    /**
+     * Pass glide events to Vue events
+     * @param {array} - glide events
+     */
+    eventConnector: function eventConnector(events) {
+      var _this2 = this;
+
+      events.map(function (event) {
+        _this2.glide.on(event, function (e) {
+          var emitter = event.replace(/\./, '-');
+
+          _this2.$emit("glide:".concat(emitter), e);
+        });
+      });
+    },
+
+    /**
+     * Bind v-model
+     */
+    bindModel: function bindModel() {
+      var _this3 = this;
+
+      this.$on('glide:move', function () {
+        _this3.$emit('change', _this3.currentSlide);
+      });
+    },
+
+    /**
+     * Change slide by v-model
+     */
+    changeSlideByModel: function changeSlideByModel() {
+      if (this.active === null) return;
+
+      if (this.active > this.slidesCount - 1) {
+        return this.go("=".concat(this.slidesCount - 1));
+      }
+
+      if (this.active < 0) {
+        return this.go('=0');
+      }
+
+      this.go("=".concat(this.active));
+    }
+  }
+});
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"476ad4ea-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GlideSlide.vue?vue&type=template&id=e112506c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"glide__slide",attrs:{"data-glide-index":_vm.index},on:{"click":function($event){_vm.root.$emit('glide:slide-click')}}},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue?vue&type=template&id=e112506c&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GlideSlide.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var GlideSlidevue_type_script_lang_js_ = ({
+  name: 'VueGlideSlide',
+  inject: ['root'],
+  computed: {
+    /**
+     * Get index of current slide
+     */
+    index: function index() {
+      var _this = this;
+
+      return this.$parent.$children.findIndex(function (slide) {
+        return slide._uid === _this._uid;
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_GlideSlidevue_type_script_lang_js_ = (GlideSlidevue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue
+
+
+
+
+
+/* normalize component */
+
+var component = normalizeComponent(
+  components_GlideSlidevue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var GlideSlide = (component.exports);
+// CONCATENATED MODULE: ./src/index.js
+
+
+/* harmony default export */ var src = ({
+  install: function install(Vue, options) {
+    Vue.component(components_Glide.name, components_Glide);
+    Vue.component(GlideSlide.name, GlideSlide);
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+/* concated harmony reexport Glide */__webpack_require__.d(__webpack_exports__, "Glide", function() { return components_Glide; });
+/* concated harmony reexport GlideSlide */__webpack_require__.d(__webpack_exports__, "GlideSlide", function() { return GlideSlide; });
+
+
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src);
+
+
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=vue-glide.common.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vue-glide-js/dist/vue-glide.css":
+/*!******************************************************!*\
+  !*** ./node_modules/vue-glide-js/dist/vue-glide.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./vue-glide.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-glide-js/dist/vue-glide.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "page-2 page about" }, [
+      _c("div", { staticClass: "about__body" }, [
+        _c("div", { staticClass: "about__body__bar" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__title mb-5" }, [
+          _vm._v("Be a part of UNCC's first")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__content" }, [
+          _vm._v(
+            "statement making showcases technological advancements in fashion and wearable technology"
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__title mt-5" }, [
+          _vm._v("Campus wide maker fashion show!")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "about__body__bar" })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "page-5 page contact" }, [
+      _c("div", { staticClass: "contact__body" }, [
+        _c("div", { staticClass: "contact__body__social my-3 my-lg-5" }, [
+          _c("a", { attrs: { href: "mailto:jokerlun@uncc.edu" } }, [
+            _c("i", { staticClass: "fas fa-envelope-square" })
+          ]),
+          _vm._v(" "),
+          _c("a", [_c("i", { staticClass: "fab fa-facebook" })]),
+          _vm._v(" "),
+          _c("a", [_c("i", { staticClass: "fab fa-instagram" })]),
+          _vm._v(" "),
+          _c("a", [_c("i", { staticClass: "fab fa-twitter-square" })])
+        ]),
+        _vm._v(" "),
+        _c(
+          "form",
+          {
+            staticClass: "contact__body__form",
+            attrs: { action: "/contact", method: "POST" }
+          },
+          [
+            _c("div", { staticClass: "form-row mb-3" }, [
+              _c("div", { staticClass: "col-md-6 col-12" }, [
+                _c("label", { attrs: { for: "form__email" } }, [
+                  _vm._v("Email address")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "form__email",
+                    placeholder: "Your email",
+                    name: "email",
+                    required: ""
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6 col-12" }, [
+                _c("label", { attrs: { for: "form__name" } }, [_vm._v("Name")]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    id: "form__name",
+                    placeholder: "Your name",
+                    name: "name",
+                    required: ""
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group mb-3" }, [
+              _c("label", { attrs: { form: "form__message" } }, [
+                _vm._v("Message")
+              ]),
+              _vm._v(" "),
+              _c("textarea", {
+                staticClass: "form-control",
+                attrs: {
+                  id: "form__message",
+                  placeholder: "Your message",
+                  name: "message",
+                  required: ""
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn form__submit", attrs: { type: "submit" } },
+              [_vm._v("Submit")]
+            )
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "page-4 page events" }, [
+      _c("div", { staticClass: "events__body" }, [
+        _c("div", { staticClass: "event row" }, [
+          _c("div", { staticClass: "event__date col-3" }, [
+            _c("div", { staticClass: "event__date__month" }, [
+              _vm._v("\r\n                    APR\r\n                ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "event__date__day" }, [
+              _vm._v("\r\n                    27\r\n                ")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "event__body col-9" }, [
+            _c("div", { staticClass: "event__body__title" }, [
+              _vm._v("statement making fashion show")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "event__body__desc" }, [
+              _vm._v("Thu 6PM - 326 guests")
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "page-3 page gallery" }, [
+    _c(
+      "div",
+      { staticClass: "gallery__body" },
+      [
+        _c(
+          "vue-glide",
+          {
+            attrs: {
+              bullet: true,
+              breakpoints: {
+                767.98: { perView: 1 },
+                991.98: { perView: 2 }
+              }
+            },
+            model: {
+              value: _vm.active,
+              callback: function($$v) {
+                _vm.active = $$v
+              },
+              expression: "active"
+            }
+          },
+          _vm._l(6, function(i) {
+            return _c("vue-glide-slide", { key: i }, [
+              _c("img", {
+                staticClass: "glide__img img-fluid",
+                attrs: { src: "/img/slide/1.png" }
+              })
+            ])
+          }),
+          1
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "page-1 page home", on: { mousemove: _vm.moveShapes } },
+    [
+      _c("img", {
+        staticClass: "blue-rec shape",
+        style: {
+          marginLeft: _vm.blue.left + "px",
+          marginTop: _vm.blue.top + "px"
+        },
+        attrs: { src: "/img/blue_rec.svg" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "yellow-rec shape",
+        style: {
+          marginLeft: _vm.yellow.left + "px",
+          marginTop: _vm.yellow.top + "px"
+        },
+        attrs: { src: "/img/yellow_rec.svg" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "teal-rec shape",
+        style: {
+          marginLeft: _vm.teal.left + "px",
+          marginTop: _vm.teal.top + "px"
+        },
+        attrs: { src: "/img/teal_rec.svg" }
+      }),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "home__scroll",
+          on: {
+            click: function($event) {
+              return _vm.moveTo(1)
+            }
+          }
+        },
+        [_vm._v("\r\n        scroll to learn more...\r\n    ")]
+      ),
+      _vm._v(" "),
+      _vm._m(1)
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "home__heading  d-none d-md-block" }, [
+      _vm._v("ready to make a "),
+      _c("span", { staticClass: "font-weight-bold title-font" }, [
+        _vm._v("STATEMENT")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "home__model" }, [
+      _c("img", {
+        staticClass: "home__model__image",
+        attrs: { src: "/img/model.png" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "model__content" }, [
+        _c("div", { staticClass: "content__heading mb-3" }, [
+          _c("span", { staticClass: "title-font" }, [_vm._v("Statement ")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("making")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "content__body" }, [
+          _vm._v("\r\n                Thursday March 15th"),
+          _c("br"),
+          _vm._v("\r\n                7PM Storrs Atrium"),
+          _c("br"),
+          _c("br"),
+          _vm._v("\r\n                Digital Fabrication."),
+          _c("br"),
+          _vm._v("\r\n                Connection."),
+          _c("br"),
+          _vm._v("\r\n                Fashion.\r\n            ")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2139,109 +6847,17 @@ var render = function() {
         staticClass: "fullpage-wp"
       },
       [
-        _c(
-          "div",
-          {
-            staticClass: "page-1 page home",
-            on: { mousemove: _vm.moveShapes }
-          },
-          [
-            _c("img", {
-              staticClass: "blue-rec shape",
-              style: {
-                marginLeft: _vm.blue.left + "px",
-                marginTop: _vm.blue.top + "px"
-              },
-              attrs: { src: "/img/blue_rec.svg" }
-            }),
-            _vm._v(" "),
-            _c("img", {
-              staticClass: "yellow-rec shape",
-              style: {
-                marginLeft: _vm.yellow.left + "px",
-                marginTop: _vm.yellow.top + "px"
-              },
-              attrs: { src: "/img/yellow_rec.svg" }
-            }),
-            _vm._v(" "),
-            _c("img", {
-              staticClass: "teal-rec shape",
-              style: {
-                marginLeft: _vm.teal.left + "px",
-                marginTop: _vm.teal.top + "px"
-              },
-              attrs: { src: "/img/teal_rec.svg" }
-            }),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "home__scroll",
-                on: {
-                  click: function($event) {
-                    return _vm.moveTo(1)
-                  }
-                }
-              },
-              [
-                _vm._v(
-                  "\r\n              scroll to learn more...\r\n            "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(2)
-          ]
-        ),
+        _c("landing-page"),
         _vm._v(" "),
-        _vm._m(3),
+        _c("about-page"),
         _vm._v(" "),
-        _c("div", { staticClass: "page-3 page gallery" }, [
-          _c("div", { staticClass: "gallery__body" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-12 col-lg-8" }, [
-                _vm._v("\r\n                    stylesheet\r\n                ")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-12 col-lg-4" },
-                [
-                  _c(
-                    "carousel",
-                    { attrs: { perPage: 1 } },
-                    [
-                      _c("slide", [
-                        _c("img", { attrs: { src: "/img/slide/1.png" } })
-                      ]),
-                      _vm._v(" "),
-                      _c("slide", [
-                        _c("img", { attrs: { src: "/img/slide/1.png" } })
-                      ]),
-                      _vm._v(" "),
-                      _c("slide", [
-                        _c("img", { attrs: { src: "/img/slide/1.png" } })
-                      ]),
-                      _vm._v(" "),
-                      _c("slide", [
-                        _c("img", { attrs: { src: "/img/slide/1.png" } })
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ])
-          ])
-        ]),
+        _c("gallery-page"),
         _vm._v(" "),
-        _c("div", { staticClass: "page-4 page event" }),
+        _c("event-page"),
         _vm._v(" "),
-        _vm._m(4)
-      ]
+        _c("contact-page")
+      ],
+      1
     )
   ])
 }
@@ -2263,146 +6879,6 @@ var staticRenderFns = [
         })
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "home__heading" }, [
-      _vm._v("ready to make a "),
-      _c("span", { staticClass: "font-weight-bold title-font" }, [
-        _vm._v("STATEMENT")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "home__model" }, [
-      _c("img", {
-        staticClass: "home__model__image",
-        attrs: { src: "/img/model.png" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "model__content" }, [
-        _c("div", { staticClass: "content__heading mb-3" }, [
-          _c("span", { staticClass: "title-font" }, [_vm._v("Statement ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v("making")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "content__body" }, [
-          _vm._v("\r\n                  Thursday March 15th"),
-          _c("br"),
-          _vm._v("\r\n                  7PM Storrs Atrium"),
-          _c("br"),
-          _c("br"),
-          _vm._v("\r\n                  Digital Fabrication."),
-          _c("br"),
-          _vm._v("\r\n                  Connection."),
-          _c("br"),
-          _vm._v("\r\n                  Fashion.\r\n                ")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "page-2 page about" }, [
-      _c("div", { staticClass: "about__body" }, [
-        _c("div", { staticClass: "about__body__bar" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "about__body__title mb-5" }, [
-          _vm._v("Be a part of UNCC's first")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "about__body__content" }, [
-          _vm._v(
-            "statement making showcases technological advancements in fashion and wearable technology"
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "about__body__title mt-5" }, [
-          _vm._v("Campus wide maker fashion show!")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "about__body__bar" })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "page-5 page contact" }, [
-      _c(
-        "form",
-        {
-          staticClass: "contact__form",
-          attrs: { action: "/contact", method: "POST" }
-        },
-        [
-          _c("div", { staticClass: "form-row mb-3" }, [
-            _c("div", { staticClass: "col-md-6 col-12" }, [
-              _c("label", { attrs: { for: "form__email" } }, [
-                _vm._v("Email address")
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "email",
-                  id: "form__email",
-                  placeholder: "Your email",
-                  name: "email",
-                  required: ""
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6 col-12" }, [
-              _c("label", { attrs: { for: "form__name" } }, [_vm._v("Name")]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  id: "form__name",
-                  placeholder: "Your name",
-                  name: "name",
-                  required: ""
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group mb-3" }, [
-            _c("label", { attrs: { form: "form__message" } }, [
-              _vm._v("Message")
-            ]),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass: "form-control",
-              attrs: {
-                id: "form__message",
-                placeholder: "Your message",
-                name: "message",
-                required: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn form__submit", attrs: { type: "submit" } },
-            [_vm._v("Submit")]
-          )
-        ]
-      )
-    ])
   }
 ]
 render._withStripped = true
@@ -14529,15 +19005,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(animate_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var fullpage_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fullpage-vue */ "./node_modules/fullpage-vue/dist/fullpage.js");
 /* harmony import */ var fullpage_vue__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(fullpage_vue__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var vue_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-carousel */ "./node_modules/vue-carousel/dist/vue-carousel.min.js");
-/* harmony import */ var vue_carousel__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_carousel__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-glide-js */ "./node_modules/vue-glide-js/dist/vue-glide.common.js");
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_glide_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_glide_js_dist_vue_glide_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-glide-js/dist/vue-glide.css */ "./node_modules/vue-glide-js/dist/vue-glide.css");
+/* harmony import */ var vue_glide_js_dist_vue_glide_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue_glide_js_dist_vue_glide_css__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(fullpage_vue__WEBPACK_IMPORTED_MODULE_2___default.a);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_carousel__WEBPACK_IMPORTED_MODULE_3___default.a);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home', __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_glide_js__WEBPACK_IMPORTED_MODULE_3___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home', __webpack_require__(/*! ./components/LayoutComponent.vue */ "./resources/js/components/LayoutComponent.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -14550,29 +19029,27 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 
 /***/ }),
 
-/***/ "./resources/js/components/HomeComponent.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/components/HomeComponent.vue ***!
-  \***************************************************/
+/***/ "./resources/js/components/AboutPage.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/AboutPage.vue ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=template&id=782dcf83& */ "./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&");
-/* harmony import */ var _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AboutPage.vue?vue&type=template&id=1a32d7e1& */ "./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-
-
+var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -14582,38 +19059,337 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/HomeComponent.vue"
+component.options.__file = "resources/js/components/AboutPage.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./HomeComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
-  \**********************************************************************************/
+/***/ "./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1& ***!
+  \******************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./HomeComponent.vue?vue&type=template&id=782dcf83& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./AboutPage.vue?vue&type=template&id=1a32d7e1& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AboutPage.vue?vue&type=template&id=1a32d7e1&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutPage_vue_vue_type_template_id_1a32d7e1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ContactPage.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/ContactPage.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactPage.vue?vue&type=template&id=48de3398& */ "./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ContactPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactPage.vue?vue&type=template&id=48de3398& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactPage.vue?vue&type=template&id=48de3398&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactPage_vue_vue_type_template_id_48de3398___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/EventPage.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/EventPage.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventPage.vue?vue&type=template&id=21a26c24& */ "./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/EventPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./EventPage.vue?vue&type=template&id=21a26c24& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EventPage.vue?vue&type=template&id=21a26c24&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventPage_vue_vue_type_template_id_21a26c24___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/GalleryPage.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/GalleryPage.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GalleryPage.vue?vue&type=template&id=5780e766& */ "./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766&");
+/* harmony import */ var _GalleryPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GalleryPage.vue?vue&type=script&lang=js& */ "./resources/js/components/GalleryPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _GalleryPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/GalleryPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/GalleryPage.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/GalleryPage.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GalleryPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./GalleryPage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GalleryPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GalleryPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./GalleryPage.vue?vue&type=template&id=5780e766& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GalleryPage.vue?vue&type=template&id=5780e766&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GalleryPage_vue_vue_type_template_id_5780e766___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/LandingPage.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/LandingPage.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LandingPage.vue?vue&type=template&id=643fd5aa& */ "./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa&");
+/* harmony import */ var _LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LandingPage.vue?vue&type=script&lang=js& */ "./resources/js/components/LandingPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LandingPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LandingPage.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/LandingPage.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./LandingPage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LandingPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LandingPage.vue?vue&type=template&id=643fd5aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LandingPage.vue?vue&type=template&id=643fd5aa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_643fd5aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/LayoutComponent.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/LayoutComponent.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LayoutComponent.vue?vue&type=template&id=477ce850& */ "./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850&");
+/* harmony import */ var _LayoutComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LayoutComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LayoutComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LayoutComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LayoutComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./LayoutComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LayoutComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LayoutComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850& ***!
+  \************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LayoutComponent.vue?vue&type=template&id=477ce850& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LayoutComponent.vue?vue&type=template&id=477ce850&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LayoutComponent_vue_vue_type_template_id_477ce850___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

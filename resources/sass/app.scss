@@ -29,7 +29,6 @@ body {
 
 .title-font {
   font-family: 'CaslonGraphiqueEF', serif;
-  font-size: $h2-font-size;
 }
 
 .header {
@@ -309,43 +308,98 @@ $heading-content-margin: $bar-heading-margin * 2;
     &__body {
       @extend .about__body;
     }
-    .VueCarousel-slide {
-        text-align: center;
 
-        img {
-            max-height: 80vh;
+    .glide {
+      &__bullets, &__slide {
+        text-align: center;
+      }
+      &__bullet {
+        background-color: #eee;
+        border: 0;
+        outline: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:not(:first-of-type) {
+          margin-left: 10px;
         }
+
+        &--active {
+          width: 15px;
+          height: 15px;
+          background: $pink;
+          top: 2px;
+          position: relative;
+        }
+      }
+      &__img {
+          height: 70vh;
+      }
     }
 }
 
-.page-4 {
+.events {
     background-color: $red;
+    &__body {
+      @extend .about__body;
+      color: $white;
+      .event {
+          &__date {
+            border-right: 3px solid $white;
+            text-align: center;
+            @extend .title-font;
+            &__month {
+              font-size: $h2-font-size;
+            }
+            &__day {
+              font-size: $h1-font-size;
+              font-weight: 600;
+            }
+          }
+          &__body {
+            font-size: $h3-font-size;
+            &__desc {
+              opacity: 0.8;
+            }
+          }
+      }
+    }
 }
 
-.page-5 {
+.contact {
     background-color: $pink;
-
-    .contact__form {
-        color: $white;
-        @extend .about__body;
-
-        .form {
-            &__submit {
-                border: 3px solid white;
-                color: white;
-                font-weight: 600;
-                text-transform: uppercase;
-                width: 100%;
-            }
+    &__body {
+      color: $white;
+      @extend .about__body;
+      &__social {
+        text-align: center;
+        a {
+          margin: 0 10px;
+          color: $white;
+          font-size: $h2-font-size;
         }
+      }
+      &__form {
+          .form {
+              &__submit {
+                  border: 3px solid white;
+                  color: white;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  width: 100%;
+              }
+          }
 
-        textarea {
-            resize: none;
-        }
+          textarea {
+              resize: none;
+          }
 
-        label {
-            font-weight: 600;
-            font-size: $h4-font-size;
-        }
+          label {
+              font-weight: 600;
+              font-size: $h4-font-size;
+          }
+      }
     }
 }

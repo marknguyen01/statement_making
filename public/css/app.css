@@ -10678,9 +10678,9 @@ body {
   font-family: "Nexa", sans-serif;
 }
 
-.title-font {
+.title-font,
+.events__body .event__date {
   font-family: "CaslonGraphiqueEF", serif;
-  font-size: 1.8rem;
 }
 
 .header {
@@ -10925,7 +10925,8 @@ body {
 }
 
 .about__body,
-.page-5 .contact__form,
+.contact__body,
+.events__body,
 .gallery__body {
   top: 50%;
   position: relative;
@@ -10936,7 +10937,8 @@ body {
 
 @media (min-width: 768px) {
   .about__body,
-  .page-5 .contact__form,
+  .contact__body,
+  .events__body,
   .gallery__body {
     padding: 0 10vw;
   }
@@ -10944,7 +10946,8 @@ body {
 
 @media (min-width: 992px) {
   .about__body,
-  .page-5 .contact__form,
+  .contact__body,
+  .events__body,
   .gallery__body {
     padding: 0 20vw;
   }
@@ -10990,27 +10993,86 @@ body {
   background-color: #55C1EF;
 }
 
-.gallery .VueCarousel-slide {
+.gallery .glide__bullets,
+.gallery .glide__slide {
   text-align: center;
 }
 
-.gallery .VueCarousel-slide img {
-  max-height: 80vh;
+.gallery .glide__bullet {
+  background-color: #eee;
+  border: 0;
+  outline: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
-.page-4 {
+.gallery .glide__bullet:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.gallery .glide__bullet--active {
+  width: 15px;
+  height: 15px;
+  background: #ED5C85;
+  top: 2px;
+  position: relative;
+}
+
+.gallery .glide__img {
+  height: 70vh;
+}
+
+.events {
   background-color: #ED572D;
 }
 
-.page-5 {
-  background-color: #ED5C85;
-}
-
-.page-5 .contact__form {
+.events__body {
   color: #fff;
 }
 
-.page-5 .contact__form .form__submit {
+.events__body .event__date {
+  border-right: 3px solid #fff;
+  text-align: center;
+}
+
+.events__body .event__date__month {
+  font-size: 1.8rem;
+}
+
+.events__body .event__date__day {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.events__body .event__body {
+  font-size: 1.575rem;
+}
+
+.events__body .event__body__desc {
+  opacity: 0.8;
+}
+
+.contact {
+  background-color: #ED5C85;
+}
+
+.contact__body {
+  color: #fff;
+}
+
+.contact__body__social {
+  text-align: center;
+}
+
+.contact__body__social a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.contact__body__form .form__submit {
   border: 3px solid white;
   color: white;
   font-weight: 600;
@@ -11018,11 +11080,11 @@ body {
   width: 100%;
 }
 
-.page-5 .contact__form textarea {
+.contact__body__form textarea {
   resize: none;
 }
 
-.page-5 .contact__form label {
+.contact__body__form label {
   font-weight: 600;
   font-size: 1.35rem;
 }
