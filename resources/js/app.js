@@ -2,11 +2,14 @@
 import Vue from 'vue';
 import 'animate.css';
 import VueFullpage from 'fullpage-vue';
-import VueGlide from 'vue-glide-js'
-import 'vue-glide-js/dist/vue-glide.css'
+import VueGlide from 'vue-glide-js';
+import 'vue-glide-js/dist/vue-glide.css';
+import VueAnime from 'vue-animejs';
+
 
 Vue.use(VueFullpage);
 Vue.use(VueGlide);
+Vue.use(VueAnime);
 
 Vue.component('home', require('./components/LayoutComponent.vue').default);
 /**

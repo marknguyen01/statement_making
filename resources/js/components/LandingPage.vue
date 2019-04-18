@@ -3,16 +3,17 @@
     <img src="/img/blue_rec.svg" class="blue-rec shape" :style="{marginLeft: blue.left + 'px', marginTop: blue.top + 'px'}">
     <img src="/img/yellow_rec.svg" class="yellow-rec shape" :style="{marginLeft: yellow.left + 'px', marginTop: yellow.top + 'px'}">
     <img src="/img/teal_rec.svg" class="teal-rec shape" :style="{marginLeft: teal.left + 'px', marginTop: teal.top + 'px'}">
-    <div class="home__heading  d-none d-md-block">ready to make a <span class="font-weight-bold title-font">STATEMENT</span>
+    <div class="home__heading  d-none d-md-block">ready to make a <span class="font-weight-bold title-font xl-font-size">STATEMENT?</span>
     </div>
     <div class="home__scroll" @click="moveTo(1)">
-        scroll to learn more...
+        scroll to learn more
+        <div class="arrow bounce" style="margin-left: calc(50% - 20px)"></div>
     </div>
     <div class="home__model">
         <img src="/img/model.png" class="home__model__image">
         <div class="model__content">
             <div class="content__heading mb-3">
-                <span class="title-font">Statement </span>
+                <span class="title-font">STATEMENT </span>
                 <p>making</p>
             </div>
             <div class="content__body">
@@ -29,7 +30,6 @@
 <script>
 export default {
     data() {
-        let that = this;
         return {
             active: 0,
             blue: {

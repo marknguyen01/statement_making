@@ -2,36 +2,36 @@
 <div class="fullpage-container">
     <header class="header">
         <nav class="navbar navbar-expand">
-            <a href="/" alt="Statement Making" class="header__logo navbar-brand">
+            <a alt="Statement Making" class="header__logo navbar-brand d-none d-md-inline">
                 <img src="/img/logo.png" class="img-fluid" alt="Statement Making Logo">
             </a>
-            <ul class="header__navbar navbar-nav mr-auto">
+            <ul class="header__navbar navbar-nav mx-auto ml-md-0 mr-md-auto">
                 <li class="header__navbar__item nav-item active px-lg-3 px-1">
-                    <a :class="{active:index == 0}" class="nav-link" @click="moveTo(0)">
+                    <a :class="{active:index == 0}" class="nav-link" @click="moveTo(0)" title="Home">
                         <i class="fas fa-home d-block d-md-none"></i>
                         <span class="d-none d-md-inline-block">Home</span>
                     </a>
                 </li>
                 <li class="header__navbar__item nav-item px-lg-3 px-1">
-                    <a :class="{active:index == 1}" class="nav-link" @click="moveTo(1)">
+                    <a :class="{active:index == 1}" class="nav-link" @click="moveTo(1)" title="About">
                         <i class="fas fa-info d-block d-md-none"></i>
                         <span class="d-none d-md-inline-block">About</span>
                     </a>
                 </li>
                 <li class="header__navbar__item nav-item px-lg-3 px-1">
-                    <a :class="{active:index == 2}" class="nav-link" @click="moveTo(2)">
+                    <a :class="{active:index == 2}" class="nav-link" @click="moveTo(2)" title="Gallery">
                         <i class="fas fa-images d-block d-md-none"></i>
                         <span class="d-none d-md-inline-block">Gallery</span>
                     </a>
                 </li>
                 <li class="header__navbar__item nav-item px-lg-3 px-1">
-                    <a :class="{active:index == 3}" class="nav-link" @click="moveTo(3)">
+                    <a :class="{active:index == 3}" class="nav-link" @click="moveTo(3)" title="Events">
                         <i class="fas fa-calendar-alt d-block d-md-none"></i>
                         <span class="d-none d-md-inline-block">Events</span>
                     </a>
                 </li>
                 <li class="header__navbar__item nav-item px-lg-3 px-1">
-                    <a :class="{active:index == 4}" class="nav-link" @click="moveTo(4)">
+                    <a :class="{active:index == 4}" class="nav-link" @click="moveTo(4)" title="Contact">
                         <i class="fas fa-envelope-open-text d-block d-md-none"></i>
                         <span class="d-none d-md-inline-block">Contact</span>
                     </a>
@@ -65,7 +65,7 @@ export default {
       'contact-page': ContactPage,
     },
     mounted() {
-        console.log('Component mounted.')
+        console.log('Component mounted.');
     },
     data() {
         let that = this;
@@ -91,7 +91,7 @@ export default {
     methods: {
         moveTo: function(index) {
             this.$refs.fullpage.$fullpage.moveTo(index, true);
-        }
+        },
     }
 }
 </script>
