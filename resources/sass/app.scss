@@ -494,3 +494,27 @@ $heading-content-margin: $bar-heading-margin * 2;
 .bounce {
   animation: bounce 2s infinite;
 }
+
+.white-circle {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+    width: 50px;
+    &:hover {
+      box-shadow: 0 0 8px $text-primary-color;
+    }
+}
+
+.audio-control {
+    cursor: pointer;
+    text-align: center;
+    right: 5vw;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    width: 150px;
+    #message {
+      color: $white;
+    }
+}

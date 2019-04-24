@@ -11200,3 +11200,29 @@ body {
           animation: bounce 2s infinite;
 }
 
+.white-circle {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 100px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.white-circle:hover {
+  box-shadow: 0 0 8px #585858;
+}
+
+.audio-control {
+  cursor: pointer;
+  text-align: center;
+  right: 5vw;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+  width: 150px;
+}
+
+.audio-control #message {
+  color: #fff;
+}
+
