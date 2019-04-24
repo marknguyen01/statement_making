@@ -11014,6 +11014,10 @@ body {
   padding-top: 5vh;
 }
 
+.gallery h3 {
+  color: #fff;
+}
+
 .gallery .glide__bullets,
 .gallery .glide__slide {
   text-align: center;
@@ -11042,7 +11046,7 @@ body {
 }
 
 .gallery .glide__img {
-  height: 70vh;
+  height: 60vh;
 }
 
 .events {

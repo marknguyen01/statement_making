@@ -1559,6 +1559,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var that = this;
@@ -8071,6 +8072,10 @@ var render = function() {
       "div",
       { staticClass: "gallery__body" },
       [
+        _c("h3", { staticClass: "text-center" }, [
+          _vm._v("2018 STATEMENT MAKING FASHION SHOW")
+        ]),
+        _vm._v(" "),
         _c(
           "vue-glide",
           {
