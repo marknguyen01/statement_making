@@ -6,7 +6,7 @@
           991.98: { perView: 2},
           }">
             <vue-glide-slide v-for="i in 6" :key="i">
-                <img src="/img/slide/1.png" class="glide__img img-fluid">
+                <img :src="'/img/slide/' + i + '.png'" class="glide__img img-fluid" alt="Statement making 2018">
             </vue-glide-slide>
         </vue-glide>
     </div>

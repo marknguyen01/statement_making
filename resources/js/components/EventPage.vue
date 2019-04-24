@@ -7,12 +7,13 @@
                     APR
                 </div>
                 <div class="event__date__day">
-                    27
+                    24
                 </div>
             </div>
             <div class="event__body col-8">
-                <div class="event__body__title">statement making fashion show</div>
-                <div class="event__body__desc">Thu 6PM - 326 guests</div>
+                <div class="event__body__title">Statement Making Fashion Show</div>
+                <div class="event_body__desc">Open to Public</div>
+                <div class="eveny__body__location">Wednesday 7PM @ Storrs</div>
             </div>
         </div>
         <div class="event row">
@@ -21,26 +22,28 @@
                     APR
                 </div>
                 <div class="event__date__day">
-                    27
+                    22
                 </div>
             </div>
             <div class="event__body col-8">
-                <div class="event__body__title">statement making fashion show</div>
-                <div class="event__body__desc">Thu 6PM - 326 guests</div>
+                <div class="event__body__title">Workshop</div>
+                <div class="event__body__desc">Fabric 3D Printing - RSVP Needed</div>
+                <div class="event__body__location">Monday 7PM @ CCI SpaceMakers</div>
             </div>
         </div>
         <div class="event row">
             <div class="event__date col-auto">
                 <div class="event__date__month">
-                    APR
+                    FEB
                 </div>
                 <div class="event__date__day">
-                    27
+                    7
                 </div>
             </div>
             <div class="event__body col-8">
-                <div class="event__body__title">statement making fashion show</div>
-                <div class="event__body__desc">Thu 6PM - 326 guests</div>
+                <div class="event__body__title">Workshop</div>
+                <div class="event__body__desc">Laser Cut Fabric - RSVP Needed</div>
+                <div class="event__body__location">Thu 6PM @ CCI SpaceMakers</div>
             </div>
         </div>
     </div>

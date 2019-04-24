@@ -7971,17 +7971,21 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "event__date__day" }, [
-              _vm._v("\r\n                    27\r\n                ")
+              _vm._v("\r\n                    24\r\n                ")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "event__body col-8" }, [
             _c("div", { staticClass: "event__body__title" }, [
-              _vm._v("statement making fashion show")
+              _vm._v("Statement Making Fashion Show")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "event__body__desc" }, [
-              _vm._v("Thu 6PM - 326 guests")
+            _c("div", { staticClass: "event_body__desc" }, [
+              _vm._v("Open to Public")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "eveny__body__location" }, [
+              _vm._v("Wednesday 7PM @ Storrs")
             ])
           ])
         ]),
@@ -7993,17 +7997,21 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "event__date__day" }, [
-              _vm._v("\r\n                    27\r\n                ")
+              _vm._v("\r\n                    22\r\n                ")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "event__body col-8" }, [
             _c("div", { staticClass: "event__body__title" }, [
-              _vm._v("statement making fashion show")
+              _vm._v("Workshop")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "event__body__desc" }, [
-              _vm._v("Thu 6PM - 326 guests")
+              _vm._v("Fabric 3D Printing - RSVP Needed")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "event__body__location" }, [
+              _vm._v("Monday 7PM @ CCI SpaceMakers")
             ])
           ])
         ]),
@@ -8011,21 +8019,25 @@ var staticRenderFns = [
         _c("div", { staticClass: "event row" }, [
           _c("div", { staticClass: "event__date col-auto" }, [
             _c("div", { staticClass: "event__date__month" }, [
-              _vm._v("\r\n                    APR\r\n                ")
+              _vm._v("\r\n                    FEB\r\n                ")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "event__date__day" }, [
-              _vm._v("\r\n                    27\r\n                ")
+              _vm._v("\r\n                    7\r\n                ")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "event__body col-8" }, [
             _c("div", { staticClass: "event__body__title" }, [
-              _vm._v("statement making fashion show")
+              _vm._v("Workshop")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "event__body__desc" }, [
-              _vm._v("Thu 6PM - 326 guests")
+              _vm._v("Laser Cut Fabric - RSVP Needed")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "event__body__location" }, [
+              _vm._v("Thu 6PM @ CCI SpaceMakers")
             ])
           ])
         ])
@@ -8081,7 +8093,10 @@ var render = function() {
             return _c("vue-glide-slide", { key: i }, [
               _c("img", {
                 staticClass: "glide__img img-fluid",
-                attrs: { src: "/img/slide/1.png" }
+                attrs: {
+                  src: "/img/slide/" + i + ".png",
+                  alt: "Statement making 2018"
+                }
               })
             ])
           }),
