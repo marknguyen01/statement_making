@@ -44,7 +44,8 @@
 <script>
 export default {
     methods: {
-        startMorph: function() {
+        startMorph: function(event) {
+            event.preventDefault();
             var morphing = this.$anime({
                 targets: '.polygon',
                 points: [{

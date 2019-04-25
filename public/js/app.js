@@ -1479,7 +1479,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
-    startMorph: function startMorph() {
+    startMorph: function startMorph(event) {
+      event.preventDefault();
       var morphing = this.$anime({
         targets: '.polygon',
         points: [{
